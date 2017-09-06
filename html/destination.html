@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index-destination.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/dong1.css"/>
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<meta name="viewport" content="width=640">
+		<script src="../js/mobile-util.js"></script>
+	</head>
+	<body>	
+		<div class="wyb-wrap">
+			<div class="w-box" id="wbox">
+			  <div class="w-b1">
+			        <div class="w-bi-top">
+						<span id="wbox1">x</span>
+						<p>你只需要决定出发</p>
+						<ol>-剩下的一切交给无二之旅就好-</ol>
+						<ul class="w-bp-list ww-bp-list2">
+							<li><input type="text" placeholder="姓名" /><input type="text" placeholder="海外目的地" /><input type="text" placeholder="天数" /></li>
+							<li><input type="text" placeholder="手机" /></li>
+							<li>备注内容</li>
+							<li><button>提交</button></li>
+						</ul>
+					</div>	
+			</div>
+		</div>
+			
+			<!--top start-->
+			<div class="wyb-top">	
+				<div class="min-width">
+					<img src="../img/w-img/logo2.png" class="img-top">
+					<ul class="ul-top">
+						<li><a>首页</a></li>
+						<li><a>定制旅行</a></li>
+						<li><a>定制书</a></li>
+						<li><a>路书</a></li>
+						<li><a>故事案例</a></li>
+						<li><a href="destination.html">目的地</a></li>
+						<li><a>婚礼婚拍</a></li>
+						<li><a>关于我们</a></li>
+					</ul>
+					<div class="phone-top">
+						<div class="tel-top"><img src="../img/w-img/phone.png"></div>
+						<p class="num-top">400 890 3040</p>
+					</div>
+					<div class="consult-top" id="consult">	
+						免费咨询
+					</div>
+				</div>
+			</div>
+			<!--top end-->
+			<!--nav start-->
+			
+			<div class="w-navwrap" id="wNavWrap">
+				<div class="w-navtop" id="w-xdt">
+					<ul class="w-toplist" id="wToplist">
+						<li class="w-li w-first">欧洲</li>
+						<li class="w-li1">北美洲</li>
+						<li class="w-li1">大洋洲</li>
+						<li class="w-li">亚洲</li>
+						<li class="w-li">海岛</li>
+						<p class="w-li2" id="w-li2"><span>其他目的地</span></p>
+					</ul>
+					<div id="wTop">
+					    <div class="w-nav-dw w-nav-active">
+					    		<p class="w-nav-p"><img src="../img/w-img/nav-logo-one.png"><span>目的地</span></p>
+					    	    <ul class="w-nav-ul1">
+					    	    	<li><span>意大利</span><span>法国</span><span>瑞士</span><span>希腊</span><span>瑞士</span><span>摩纳哥</span></li>
+					    	    	<li><span>德国</span><span>捷克</span><span>奥地利</span><span>匈牙利</span><span>斯洛文尼亚</span><span>克罗地亚</span></li>
+					    	    	<li><span>英国</span><span>荷兰</span><span>比利时</span><span>匈卢森堡</span><span>西班牙</span><span>葡萄牙</span></li>
+					    	    	<li><span>冰岛</span><span>芬兰</span><span>挪威</span><span>瑞典</span><span>丹麦</span><span>爱沙尼亚</span></li>
+					    	    </ul>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-two.png"><span>天数</span><em>不限</em><em>9天以下</em><em>10-14天</em><em>15天以上</em></p>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-three.png"><span>特色</span><em>不限</em><em>经典</em><em>蜜月</em><em>亲子</em><em>家庭游</em><em>热销</em></p>
+					    </div>
+					    <div class="w-nav-dw">
+					    	    <p class="w-nav-p"><img src="../img/w-img/nav-logo-one.png"><span>目的地</span></p>
+					    	    <ul class="w-nav-ul1">
+					    	    	<li><span>美国</span><span>加拿大</span></li>
+					    	    	
+					    	    </ul>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-two.png"><span>天数</span><em>不限</em><em>9天以下</em><em>10-14天</em><em>15天以上</em></p>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-three.png"><span>特色</span><em>不限</em><em>经典</em><em>蜜月</em><em>亲子</em><em>家庭游</em><em>热销</em></p>
+					    </div>
+					    <div class="w-nav-dw">
+					    	<p class="w-nav-p"><img src="../img/w-img/nav-logo-one.png"><span>目的地</span></p>
+					    	    <ul class="w-nav-ul1">
+					    	    	<li><span>新西兰</span><span>澳大利亚</span></li>
+					    	    	
+					    	    </ul>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-two.png"><span>天数</span><em>不限</em><em>9天以下</em><em>10-14天</em><em>15天以上</em></p>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-three.png"><span>特色</span><em>不限</em><em>经典</em><em>蜜月</em><em>亲子</em><em>家庭游</em><em>热销</em></p>
+					    </div>
+					    <div class="w-nav-dw">
+					    	<p class="w-nav-p"><img src="../img/w-img/nav-logo-one.png"><span>目的地</span></p>
+					    	    <ul class="w-nav-ul1">
+					    	    	<li><span>阿拉伯联合酋长国</span><span>日本</span><span>台湾</span><span>新加坡</span></li>
+					    	    	
+					    	    </ul>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-two.png"><span>天数</span><em>不限</em><em>9天以下</em><em>10-14天</em><em>15天以上</em></p>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-three.png"><span>特色</span><em>不限</em><em>经典</em><em>蜜月</em><em>亲子</em><em>家庭游</em><em>热销</em></p>
+					    </div>
+					    <div class="w-nav-dw">
+					    	<p class="w-nav-p"><img src="../img/w-img/nav-logo-one.png"><span>目的地</span></p>
+					    	    <ul class="w-nav-ul1">
+					    	    	<li><span>美国</span><span>加拿大</span></li>
+					    	    	
+					    	    </ul>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-two.png"><span>天数</span><em>不限</em><em>9天以下</em><em>10-14天</em><em>15天以上</em></p>
+					    	    <p class="w-nav-p1"><img src="../img/w-img/nav-logo-three.png"><span>特色</span><em>不限</em><em>经典</em><em>蜜月</em><em>亲子</em><em>家庭游</em><em>热销</em></p>
+					    </div>
+					</div> 
+				</div>
+				<div class="w-b" id="wB">
+				        <div class="w-banner w-banner-block"><img src="../img/w-img/banner.jpg"></div>
+				        <div class="w-banner"><img src="../img/w-img/banner1.jpg"></div>
+				        <div class="w-banner"><img src="../img/w-img/banner2.jpg"></div>
+				        <div class="w-banner"><img src="../img/w-img/banner3.jpg"></div>
+				        <div class="w-banner"><img src="../img/w-img/banner4.jpg"></div>
+				    </div>
+			</div>
+			<!--nav end-->
+			<div class="w-content-dk">
+				<div class="w-sort">
+					<li class="w-sort-first">综合排序</li>
+					<li>天数<span></span></li>
+					<li>价格<span></span></li>
+				</div>
+				<div class="w-content-box">
+					<ul class="w-content-left">
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-one.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">从华盛顿一路到纽约，漫游国际大都市</span><span class="w-c-l-s1">7天</span></p>
+					    		<a href="w-aside.html"><span class="w-c-l-s2">奥兰多-湾湖-奥兰多-纽约</span></a>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">逛遍经典博物馆</span></a>
+					    		<div class="w-c-l-d"><a href="w-aside.html"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:豪华</span></p></a><a href="w-aside.html"><p><img src="../img/w-img/w-small-er.png"><span>景点活动:34个</span></p></a><a href="w-aside.html"><ol><i>18986</i>人/起</ol></a></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这条夏威夷旅游线路是为想去夏威夷度蜜月的新婚夫妇们定制的，有火山公园和珍珠港，也有充足的购物时光。这是一条轻松惬意的夏威夷旅游线路，酒店安排在威基基海滩附近，出门就是DFS免税商场，可以愉快地购物。除了观光的行程，还安排了刺激的跳伞、参观好莱坞电影拍摄地、在大岛参观火山河独特的火山地貌、游览珍珠港等等，都是独特的</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    <li>
+					    	<a  href="w-aside.html"><img src="../img/w-img/w-cont-two.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">太平洋幸福假期</span><span class="w-c-l-s1">8天</span></p>
+					    		<a href="w-aside.html"><span class="w-c-l-s2">毛伊岛-夏威夷大岛-瓦胡岛</span></a>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">浪漫</span></a><a href="w-aside.html"><span class="w-c-l-s3">人文</span></a><a href="w-aside.html"><span class="w-c-l-s3">经典一日游</span></a><a href="w-aside.html"><span class="w-c-l-s3">特色小镇</span></a><a href="w-aside.html"><span class="w-c-l-s3">文艺</span></a>
+					    		<div class="w-c-l-d"><a href="w-aside.html"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:豪华</span></p></a><a href="w-aside.html"><p><img src="../img/w-img/w-small-er.png"><span>景点活动:54个</span></p></a><a href="w-aside.html"><ol><i>39780</i>人/起</ol></a></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这条澳大利亚自由行线路，充满了阳光和欢乐。坐水上飞机从不同的角度俯瞰整个悉尼，乘坐热气球，调戏萌萌哒的考拉，都会带给你难忘的体验。同样，也不会错过大堡礁的绝美容颜和墨尔本精致的工艺品店。</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-three.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">畅游夏威夷-蜜月狂欢之旅</span><span class="w-c-l-s1">10天</span></p>
+					    		<span class="w-c-l-s2">毛伊岛-夏威夷大岛-瓦胡岛</span>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">品味当地特色小吃</span></a><a href="w-aside.html"><span class="w-c-l-s3">一万英尺高空跳伞</span></a><a href="w-aside.html"><span class="w-c-l-s3">户外运动激情探险</span></a>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:豪华</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:34个</span></p><ol><i>23680</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这次的日本旅游路线是为一对年轻夫妻定制的短期日本游。客户工作非常繁忙，希望旅程简单轻松，说走就走，放松几天。因此我们按照客户的时间和需求，制定了一次精巧短暂的7天行程，游览东京、京都、大阪三个经典城市。整个行程从繁华的东京开始，在秋叶原感受二次元文化，在银座、原宿看日本的时尚繁华，也会游览浅草寺和明治神宫，体验日本传统文化；第四天来到最具风情的京都，欣赏美丽的岚山风光，看壮观...</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-four.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">浪漫阳光之州 甜蜜牵手同行</span><span class="w-c-l-s1">9天</span></p>
+					    		<span class="w-c-l-s2">洛杉矶-卡里科-拉斯维加斯-佩吉-大峡谷村（南缘）-弗拉格斯塔夫-纽约</span>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">不可错过的自然景观</span></a><a href="w-aside.html"><span class="w-c-l-s3">品味当地特色小吃</span></a>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:舒适</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:59个</span></p><ol><i>22580</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这条日本旅游路线是我们为三个结伴出行的男生好友定制的，客户想去日本逛街、吃美食，欣赏自然风光并且体验温泉。三位客户都是年轻人，因此我们的行程也安排得活力满满。转转充满二次元气息的秋叶原，在镰仓乘坐江之电，回忆《灌篮高手》青涩的青春。此外在箱根安排入住带有温泉的酒店，满足客户对泡汤的需求。美食方面，行程中也会安排品尝正宗的仙台牛舌，到东京的寿司店制作并品尝正宗的寿司，到筑地市...</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-five.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">走近加国，领略“雷神之水”</span><span class="w-c-l-s1">6天</span></p>
+					    		<span class="w-c-l-s2">蒙特利尔-魁北克城-渥太华-Gatineau-渥太华-多伦多-尼亚加拉瀑布城（加拿大）-多伦多</span>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">清新山野田园风光</span></a><a href="w-aside.html"><span class="w-c-l-s3">不可错过的自然景观</span></a><a href="w-aside.html"><span class="w-c-l-s3">全球经典教堂巡游</span></a>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:舒适</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:54个</span></p><ol><i>23405</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这次我们为一对客户安排了大阪-京都-东京的短期旅行，客户第一次去日本旅游，希望能把经典的三座城市走一遍，同时客户对日本传统文化比较感兴趣，也不想错过两大游乐场，还希望能吃到值得品尝的当地美食。所以我们综合考虑，定制了一条较为经典的日本旅游路线，抵达大阪后首先在心斋桥、道顿堀逛一逛，品味关西繁华有趣的第一印象；第二天在USJ环球影城尽情玩耍；第三、四天在京都体验东瀛传统风情，包...</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-six.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">巍然落基山 加国自驾行</span><span class="w-c-l-s1">14天</span></p>
+					    		<span class="w-c-l-s2">温哥华-Delta-Sidney-维多利亚-Brentwood Bay-维多利亚</span>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">不可错过的自然景观</span></a><a href="w-aside.html"><span class="w-c-l-s3">在酒庄品味美酒</span></a><a href="w-aside.html"><span class="w-c-l-s3">最佳徒步体验</span></a>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:豪华</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:62个</span></p><ol><i>26305</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这条日本旅游路线适合宅男宅女蜜月！时间自由，行程轻松欢快。会去到大阪，京都，箱根，东京几个目的地。定制师特别为漫画迷安排了去东京充满御宅文化的秋叶原和@home女仆咖啡总店，去镰仓乘坐百年火车江之电，看二次元的世界 ，在池袋银魂主题咖啡厅用餐，体会日本的动漫文化，在二次元世界里感受甜蜜与幸福。</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-seven.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">飞跃云海·去寻找梦中最美腻的地方</span><span class="w-c-l-s1">8天</span></p>
+					    		<span class="w-c-l-s2">旧金山-加州一号公路-卡马里奥-洛杉矶-卡里科-拉斯维加斯城</span>
+					    		<span class="w-c-l-s3">自然</span><span class="w-c-l-s3">舒适</span><span class="w-c-l-s3">渔人码头</span><span class="w-c-l-s3">购物血拼</span><span class="w-c-l-s3">海边</span>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:豪华</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:68个</span></p><ol><i>19080</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>本次宝岛九天的行程将会去到台北、阿里山、南投、花莲、新北等几个地方，在各个地方有不同的自然及人文风情。在台北故宫赏绝世国宝、在西门町逛街、在淡水渔人码头漫步欣赏落日余晖；之后可以去到著名的阿里山和日月潭一睹真容；在花莲可以在太鲁阁国家公园感受自然奇观；之后去野柳公园感受奇特地貌、去平溪放天灯、在九份老街品一杯淡茶。除此之外，还可以在著名的台湾夜市大饱口福。整趟行程充实但不会太赶，可以完全放松身心在宝岛悠闲度过假期。</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+   					    <li>
+					    	<a href="w-aside.html"><img src="../img/w-img/w-cont-eight.jpg" class="w-content-left-img"></a>
+					    	<div class="w-content-left-div">
+					    		<p class="w-c-l-p"><span class="w-c-l-s">说走就走的“轻”旅行</span><span class="w-c-l-s1">12天</span></p>
+					    		<span class="w-c-l-s2">东京-京都-大阪</span>
+					    		<a href="w-aside.html"><span class="w-c-l-s3">动漫二次元</span></a><a href="w-aside.html"><span class="w-c-l-s3">品味当地特色小吃</span></a>
+					    		<div class="w-c-l-d"><p><img src="../img/w-img/w-small-yi.png"><span>酒店:舒适</span></p><p><img src="../img/w-img/w-small-er.png"><span>景点活动:54个</span></p><ol><i>11880</i>人/起</ol></div>
+					    	</div>
+					    	<div class="w-cont-dw">
+					    		<p>设计思路</p>
+					    		<ol>这条路线是为一对新婚夫妇定制的新西兰蜜月旅游，北岛的行程主要以萤火虫洞和霍比屯为主，在南岛首先前往福克斯冰川，之后前往南岛的主要城市皇后镇，围绕皇后镇，各种活动也慢慢展开。15000英尺的一跃而下，体验那份刺激与感动，乘坐皇后镇天空缆车，美景尽收眼底，在天空塔享用Skyline Dinner ，感受新西兰式的独特风味，在夜空下遇见最美的新西兰皇后镇，骑马穿行在壮美的中土世界，还会享受有高山牧场的清新与自然。客户很满意这次新西兰蜜月旅游，很甜蜜很幸福。</ol>
+					    	</div>
+					    	<img src="../img/w-img/icon_hot.png" class="w-c-l-img" />
+					    </li>
+					  <div class="w-c-list2">
+					   	 <ol>1</ol>
+					   	 <ol>2</ol>
+					   	 <ol>3</ol>
+					   	 <ol>...</ol>
+					   	 <ol>最后一页</ol>
+					   	 <ol>下一页</ol>
+					   </div>
+				    </ul>
+				    
+				    <div class="w-content-right">
+				    	<img src="../img/w-img/w-c-r-one.jpg" class="w-c-r-img">
+				    	<ul class="w-c-r-list">
+				    		<li>
+				    			<p><span>专业优质</span><em>专业定制师+深度体验跟团玩不到</em></p><img src="../img/w-img/w-c-r-two.jpg">
+				    			<div><p>专业优质</p>每一条路线，都由对当地了如指掌的专业定制师精心设计，带给您最不可错过的深度体验、最值得品尝的当地美食，用最高的性价比玩转目的地！<span></span></div>
+				    		</li>
+				    		<li>
+				    	        <p><span>专业优质</span><br><em>专业定制师+深度体验跟团玩不到</em></p>
+				    	        <img src="../img/w-img/w-c-r-three.jpg">
+				    	       <div><p>专业优质</p>每一条路线，都由对当地了如指掌的专业定制师精心设计，带给您最不可错过的深度体验、最值得品尝的当地美食，用最高的性价比玩转目的地！<span></span></div> 
+				    		</li>
+				    		<li><p><span>专业优质</span><br><em>专业定制师+深度体验跟团玩不到</em></p><img src="../img/w-img/w-c-r-four.jpg">
+				    		<div><p>专业优质</p>每一条路线，都由对当地了如指掌的专业定制师精心设计，带给您最不可错过的深度体验、最值得品尝的当地美食，用最高的性价比玩转目的地！<span></span></div>
+				    		</li>
+				    		<li><p><span>专业优质</span><br><em>专业定制师+深度体验跟团玩不到</em></p><img src="../img/w-img/w-c-r-five.jpg">
+				    		<div><p>专业优质</p>每一条路线，都由对当地了如指掌的专业定制师精心设计，带给您最不可错过的深度体验、最值得品尝的当地美食，用最高的性价比玩转目的地！<span></span></div>
+				    		</li>
+				    	</ul>
+				    	<div class="w-c-r-lxbz">
+				    		<p>旅行保障</p>
+				    		<div class="w-c-r-d1"><img src="../img/w-img/w-c-r-six.png"><ol>透明安心</ol><li>行程化肥一家全包，没有灰色消费</li></div>
+				    		<div class="w-c-r-d1"><img src="../img/w-img/w-c-r-seven.png"><ol>出行无忧</ol><li>7x24小时远程保障,满满安全感</li></div>
+				    	</div>
+				    	<div class="w-c-r-div2">
+				    		<p>没有找到满意的旅行路线，你还可以</p>
+				            <li><img src="../img/w-img/w-c-r-con1png.png"><span>增加旅行天数</span></li>
+				            <li><img src="../img/w-img/w-c-r-con2.png"><span>更换景点/活动</span></li>
+				            <li><img src="../img/w-img/w-c-r-con3.png"><span>调整行程玩法</span></li>
+				            <ol>为您推荐热门路线</ol>
+				    	</div>
+				    	<div class="w-c-r-div3">
+				    		<ul class="w-c-r-list1">
+				    			<li>
+				    				<img src="../img/w-img/w-c-r-11.jpg"><p>在新加坡，享童真乐趣</p><span><em>13029</em>人/起</span>
+				    			</li>
+				    		    <li>
+				    		     <img src="../img/w-img/w-c-r-12.jpg"><p>多面新加坡，不同的角度看世界</p><span><em>12850</em>人/起</span>
+				    		    </li>
+				    		    <li><img src="../img/w-img/w-c-r-13.jpg"><p>在黄金之城，享自由洒脱</p><span><em>25201</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-14.jpg"><p>细品海滩细沙，享受童真乐趣</p><span><em>18110</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-15.jpg"><p>意大利希腊 ,爱琴海边，意往情深</p><span><em>20550</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-16.jpg"><p>出门右飞，带孩子开启零时差童心之旅</p><span><em>14520</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-17.jpg"><p>澳大利亚 10天 休闲之旅 趣味亲子游</p><span><em>14025</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-15.jpg"><p>芬兰冰岛爱沙尼亚 9天 冰与火的考验</p><span><em>17520</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-12.jpg"><p>漫步东瀛，静赏和风古韵</p><span><em>13650</em>人/起</span></li>
+				    		    <li><img src="../img/w-img/w-c-r-11.jpg"><p>在新加坡，享童真乐趣</p><span><em>20080</em>人/起</span></li>
+				    		</ul>
+				    	</div>
+				    	<p class="w-c-r-p1"><a>更多路线>></a></p>
+				    	
+				    </div>
+				</div>
+			</div>
+			
+			<div class="w-bigphone">
+	         <div class="w-bp-box"></div>
+				<div class="w-bp-left">
+					<p class="w-bp-p">
+						<span>5年来,</span>
+						<span>已有1600258位客户选择不二之旅</span>
+						<span>好评率接近<em>100%</em></span>
+						<span>我们期待能为你</span>
+						<span>定制一次有温度的旅行</span>
+					</p>
+					<div class="w-bp-div">
+						<p>你只要决定出发</p>
+						<p>剩下的一切，交给无二之旅就好</p>
+						<ul class="w-bp-list">
+							<li><input type="text" placeholder="姓名" /><input type="text" placeholder="海外目的地" /><input type="text" placeholder="天数" /></li>
+							<li><input type="text" placeholder="手机" /></li>
+							<li>备注内容</li>
+							<li><button>提交</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+
+				
+           <div class="footer">
+    <!-- pc端底部导航-->
+    <div class="footer-container">
+        <div class="footer-list">
+            <ul class="clearfix1">
+                <li><a href="">客户评价</a></li>
+                <li><a href="">出国旅游</a></li>
+                <li><a href="">私人定制旅游</a></li>
+                <li><a href="">旅游攻略</a></li>
+                <li><a href="">蜜月旅行</a></li>
+                <li><a href="">亲自旅行</a></li>
+                <li><a href="">海外婚礼</a></li>
+                <li><a href="">定制路书</a></li>
+                <li><a href="destination.html">出国自由行</a></li>
+            </ul>
+            <ul class="clearfix1">
+                <li><a href="Recommended route.html">欧洲自由行</a></li>
+                <li><a href="Recommended route.html">美国自由行</a></li>
+                <li><a href="Recommended route.html">加拿大自由行</a></li>
+                <li><a href="Recommended route.html">澳大利亚自由行</a></li>
+                <li><a href="Recommended route.html">新西兰自由行</a></li>
+                <li><a href="Recommended route.html">斯里兰卡自由行</a></li>
+                <li><a href="Recommended route.html">大溪地自由行</a></li>
+                <li><a href="Recommended route.html">毛里求斯自由行</a></li>
+                <li><a href="Recommended route.html">迪拜自由行</a></li>
+                <li><a href="Recommended route.html">日本自由行</a></li>
+            </ul>
+            <ul class="clearfix1">
+                <li><a href="Recommended route">冰岛自由行</a></li>
+                <li><a href="Recommended route.html">挪威自由行</a></li>
+                <li><a href="Recommended route.html">英国自由行</a></li>
+                <li><a href="Recommended route.html">荷兰自由行</a></li>
+                <li><a href="Recommended route.html">瑞士自由行</a></li>
+                <li><a href="Recommended route.html">德国自由行</a></li>
+                <li><a href="Recommended route.html">法国自由行</a></li>
+                <li><a href="Recommended route.html">意大利自由行</a></li>
+                <li><a href="Recommended route.html">希腊自由行</a></li>
+                <li><a href="Recommended route.html">捷克自由行</a></li>
+                <li><a href="Recommended route.html">西班牙自由行</a></li>
+                <li><a href="Recommended route.html">葡萄牙自由行</a></li>
+            </ul>
+            <ul class="clearfix1">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">隐私政策</a></li>
+                <li><a href="">加入我们</a></li>
+                <li class="links">
+                    关注我们：
+                    <a href="" class="link">
+                        <img src="../img/w-img/wechat_icon.png" alt=""/>
+                        <img src="../img/w-img/erweima1.png" alt="" class="download"/>
+                    </a>
+                    <a href="">
+                        <img src="../img/w-img/weibo_icon.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../img/w-img/fliggy.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- pc端底部联系-->
+    <div class="footer-content">
+        <div class="footer-contain">
+            <div class="row">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="../img/w-img/new_bottom_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <div class="text-container">
+                        <span>Copyright  2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
+                        <span>商务合作：010-59684420</span>
+                        <span>投诉、建议及其他反馈：400-890-3040（语音后按2#）</span>
+                        <br/>
+                        <span>北京无二之旅文化传播有限公司</span>
+                        <span>地址：北京市朝阳区百子湾路苹果社区北区二十二院街艺术区6-19</span>
+                        <span>*本网站部分图片来自网络，若作者看到，请尽快与无二之旅联系。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+
+      <!--联系您-->
+			<div class="concat">
+				<div class="concatbig">
+					<img src="../img/w-img/dong1.png" alt=""/>
+					<div class="concattao">
+						<h2>留下电话，让我详细跟您介绍</h2>
+						<p>为什么选择无二之旅，聊聊就知道</p>
+						<form action="">
+							<input type="text" class="concattel" placeholder="请输入电话号码"/>
+							<button class="concatbtn">让我们联系您</button>
+						</form>
+					</div>
+					<span class="concatx"></span>
+				</div>
+				<div class="concatsmall">
+					<p class="concatrig">让我们联系您</p>
+					<span class="spanrig"></span>
+				</div>
+			</div>
+
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/w-img/phone111.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/w-img/erweima.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/w-img/erweima1.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/w-img/fanhui7.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn3">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
+
+
+
+	</div>	
+
+
+        <div class="w22-wrap">
+			<div class="w-md-header">
+				<div class="w-md-nav">
+					<img src="../img/w-img/logo.jpg">
+					<button id="w-btn"><span></span><span></span><span></span></button>
+					<p>免费咨询</p>
+				</div>
+				<div class="w-md-dw">
+					<li>首页</li>
+					<li>定制旅行</li>
+					<li>定制书</li>
+					<li>路书</li>
+					<li>案例故事</li>
+					<li>目的地</li>
+					<li>婚礼婚拍</li>
+					<li>关于我们</li>
+				</div>
+			</div>
+              
+			<div class="w-md-title">想去哪里玩？选择你的旅行偏好吧</div>
+			<div class="w-md-class">
+				<div class="w-md-one">目的地<span class="w-md-arrow"></span></div>
+				<div class="w-md-one">特色<span class="w-md-arrow"></span></div>
+				<div class="w-md-one">天数<span class="w-md-arrow"></span></div>
+				<div class="w-md-one">排序<span class="w-md-arrow"></span></div>
+			</div>
+			
+			<div class="w-md-content">
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/aside-lbt-yi.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>从华盛顿一路到纽约，漫游国际大都市</p>
+				    	<ol>奥兰多-湾湖-奥兰多-纽约</ol>
+				    	<a><span></span>7天</a>
+				    	<li><em>12580</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/w-ad-lbt-si.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>遇见阳光的日子</p>
+				    	<ol>墨尔本-菲利普岛-墨尔本-吉朗-大洋路-墨尔本-黄金海岸-布里斯班-汉密尔顿岛-艾尔利滩-汉密尔顿岛-悉尼-Homebush-悉尼</ol>
+				    	<a><span></span>12天</a>
+				    	<li><em>26380</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/yd-small1.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>说走就走的"轻"旅行</p>
+				    	<ol> 东京-京都-大阪</ol>
+				    	<a><span></span>7天</a>
+				    	<li><em>11880</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/w-ad-lbt-wu.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>和兄弟一起再回青春</p>
+				    	<ol>东京-箱根-东京-镰仓-东京</ol>
+				    	<a><span></span>7天</a>
+				    	<li><em>10038</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/aside-lbt-yi.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>东瀛初探 日式传统+乐园激情</p>
+				    	<ol>大阪-京都-小田原-箱根-东京</ol>
+				    	<a><span></span>7天</a>
+				    	<li><em>10180</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">经典</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/w-as-small2.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>宅男宅女的蜜月游</p>
+				    	<ol>大阪-奈良-京都-小田原-箱根-御殿场-东京-藤泽-镰仓-藤泽-东京</ol>
+				    	<a><span></span>13天</a>
+				    	<li><em>12580</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">蜜月</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/w-as-small5.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>悠闲假期去宝岛玩耍</p>
+				    	<ol>高雄市-台南-垦丁-寿丰-花莲市-秀林乡-新城乡-花莲市-台北市</ol>
+				    	<a><span></span>9天</a>
+				    	<li><em>10280</em>人/起</li>
+				    </div>
+				</div>
+				
+				<div class="w-md-con-div">
+					<p class="w-con-p">蜜月</p>
+					<img src="../img/w-img/icon_hot.png" class="w-con-img">
+					<div class="w-md-con-left">
+				        <img src="../img/w-img/w-as-small4.jpg">
+				    </div>
+				    <div class="w-md-con-right">
+				    	<p>红尘作伴 穿行中土</p>
+				    	<ol>奥克兰-怀托摩-罗托鲁阿-玛塔玛塔-罗托鲁阿-基督城-格雷茅斯-福克斯冰川-瓦纳卡-皇后镇-普卡基湖-提卡波湖-普卡基湖-奥拉基/库克山国家公园</ol>
+				    	<a><span></span>7天</a>
+				    	<li><em>22058</em>人/起</li>
+				    </div>
+				</div>
+				
+			</div>
+			
+			
+			    <div class="w-md-div2">
+					<li>1</li><li>2</li>
+					<li>3</li>
+					<li>...</li>
+					<li>下一页</li>	
+				</div>
+			
+			<div class="w-md-big">
+				<p>你只需要决定出发</p>
+				<p>--剩下的一切，交给无二之旅就好--</p>
+				<form class="w-form">
+					<li><input type="text" placeholder="姓名"></li>
+					<li><input type="text" placeholder="海外目的地"><input type="text" placeholder="天数"></li>
+					<li><input type="text" placeholder="手机"></li>
+					<li><textarea placeholder="备注内容"></textarea></li>
+					<li><button>提交</button></li>
+				</form>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+<div class="mobile_footer">
+    <p class="mobilitem">Copyright  2013-2017 Uniqueway Inc. 保留所有权利 </p>
+    <p class="mobilitem">京ICP备13026868 商务合作：010-59684420 </p>
+</div>
+			
+			
+		</div>    
+	</body>
+	<script src="../js/destination.js"></script>
+	<script src="../js/yd-destination.js"></script>
+	<script src="../js/dong1.js"></script>
+</html>
