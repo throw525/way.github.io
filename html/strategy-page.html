@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/strategy-page.css"/>
+    <link rel="stylesheet" href="../css/result.css"/>
+    <link rel="stylesheet" href="../css/shade.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/mobile-util.js"></script>
+</head>
+<body onload="show()">
+<!--shade-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog book-modal" role="document">
+        <div class="modal-content book_modal">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header banner">
+                <div class="h1">你只需要决定出发</div>
+                <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+            </div>
+            <div class="modal-body contact-form1">
+                <div class="h6">填写目的地信息</div>
+                <form action="" class="planForm">
+                    <div>
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="destination_1"/>
+                        <input type="text" placeholder="天数" class="days_1"/>
+
+                    </div>
+                    <div><input type="text" placeholder="手机" class="phone_1"/></div>
+                    <div class="text"><textarea placeholder="备注内容"></textarea></div>
+                    <div class="submit"><button>提交</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--concat-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/download.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
+<!--header-->
+<div class="header">
+    <div class="header-center">
+        <div class="logo">
+            <img src="../img/y-img/header_logo.png" alt=""/>
+        </div>
+        <ul class="header-nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="travel.html">定制旅行</a></li>
+            <li><a href="">定制师</a></li>
+            <li><a href="book.html">路书</a></li>
+            <li><a href="">案例故事</a></li>
+            <li><a href="">目的地</a></li>
+            <li><a href="wedding.html">婚礼婚拍</a></li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+        <div class="header-contact">
+            <div class="tel-icon">
+                <img src="../img/y-img/icon_tel.png" alt=""/>
+            </div>
+            <p>400 890 3040</p>
+        </div>
+        <a href="#" class="refer"  data-toggle="modal" data-target="#myModal">免费咨询</a>
+    </div>
+</div>
+<!--移动端-->
+
+<!-- header-->
+<div class="header-2">
+    <div class="nav-bar1">
+        <div class="container-3">
+            <div class="nav-header1">
+                <button class="btn_1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="book-btn">免费咨询</button>
+                <a href="" class="nav-logo">
+                    <img src="../img/y-img/header_logo.png" alt=""/>
+                </a>
+            </div>
+            <div class="nav-collapse1">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="travel.html">定制旅行</a></li>
+                    <li><a href="#">定制师</a></li>
+                    <li><a href="book.html">路书</a></li>
+                    <li><a href="#">案例故事</a></li>
+                    <li><a href="#">目的地</a></li>
+                    <li><a href="#">婚礼婚拍</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--articles-->
+<div class="articles">
+    <!-- content-->
+    <div class="content-1">
+        <!-- left-->
+        <div class="left">
+            <div class="left-container">
+                <!-- tit-->
+                <div class="article-links">
+                    <span class="category">
+                        <a href="../index.html">首页</a>
+                    </span>
+                    <span class="interval">&nbsp; > &nbsp;</span>
+                    <span class="category">
+                        <a href="strategy.html">旅游攻略</a>
+                    </span>
+                    <span class="interval">&nbsp; > &nbsp;</span>
+                    <span class="category">
+                        <a href="strategy.html">欧洲</a>
+                    </span>
+                    <span class="interval">&nbsp; > &nbsp;</span>
+                    <span class="article-tit">
+                        <span class="deopdown">在欧洲游玩一天到底要花多少钱？</span>
+                        <span class="tip"></span>
+                        <ul class="deopdown-menu">
+                            <li><a href="strategy.html">最技巧、最深度的欧洲六国游</a></li>
+                            <li><a href="strategy.html">如果预算不高，去西班牙疯狂呀！</a></li>
+                            <li><a href="strategy.html">托斯卡纳在哪里&怎么玩？</a></li>
+                            <li><a href="strategy.html">瑞士冰河列车，总嫌不够慢</a></li>
+                            <li><a href="strategy.html">浪漫布拉格的101种逗逼旅行玩法</a></li>
+                            <span class="ul-arrow"></span>
+                        </ul>
+                    </span>
+                </div>
+                <!-- 文章主体-->
+                <div class="article-page">
+                    <div class="page-tit">
+                        <h1>
+                            在欧洲游玩一天到底要花多少钱？
+                            <a href="strategy.html">欧洲</a>
+                        </h1>
+                    </div>
+                    <div class="page-con">
+                        <p>去欧洲旅游是大多数人心目中理想的目的地。</p>
+                        <p></p>
+                        <p>激发我们各种文艺少女心，漫步塞纳河畔、登上埃菲尔铁塔、拜访安徒生的故乡、追逐地中海的阳光、探索风景绝美的海岛......</p>
+                        <p></p>
+                        <p>但是，面对欧洲的高物价，还没有出国，有人就已经被吓尿了。</p>
+                        <p></p>
+                        <p>无二君很负责任地告诉大家，去欧洲旅游的确很贵！很贵！</p>
+                        <p></p>
+                        <p>但是，但是，但是，也没有传说中辣么贵啊！</p>
+                        <p></p>
+                        <p>这次，无二君从欧洲各国的机票、住宿、交通以及饮食方面入手，也附带一些旅游参观的省钱小贴士，让你直观全面地了解欧洲旅游价格。</p>
+                        <p></p>
+                        <p>ps：机票均为五一假期7天单人含税往返价格，没有搜索特价机票，仅供参考。</p>
+                        <p></p>
+                        <p class="tit-1">物价较高的国家</p>
+                        <p></p>
+                        <p>01 瑞士苏黎世</p>
+                        <p></p>
+                        <p><img src="../img/y-img/n05p.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：4963元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：400元（青旅）</p>
+                        <p></p>
+                        <p>交通：可以购买苏黎世旅游卡，这种卡分为24小时和72小时有效两种，价格分别为15瑞士法郎（约102元）和30瑞士法郎（约205元）。</p>
+                        <p></p>
+                        <p>持该卡，游客可随意搭乘苏黎世及周边地区所有的公共交通工具，包括公交车，电车，机场至市区的铁路或是轮船等，还可免费参观苏黎世43家博物馆，并在24家当地餐厅免费获赠一杯饮料。该卡还包含众多的折扣，优惠等。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/4r3z.png" alt=""/></p>
+                        <p></p>
+                        <p>巨无霸套餐：95元</p>
+                        <p></p>
+                        <p>当然可以到瑞士随处可见的kebab店用餐，这是土耳其人开的餐馆，里面一个pizza大约9～18瑞士法郎，相当于61～123人民币，相对于瑞士的高物价，这是相当划算的。</p>
+                        <p></p>
+                        <p>ps：瑞士一般是不需要给小费的哦，消费都已经包含在服务费里了。</p>
+                        <p></p>
+                        <p>日均消费：400＋102＋95＊2=692元／人起</p>
+                        <p></p>
+                        <p>02 丹麦哥本哈根</p>
+                        <p></p>
+                        <p><img src="../img/y-img/jat9.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：3978元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：400元（青旅）</p>
+                        <p></p>
+                        <p>交通：丹麦风景优美，空气清新，城市也不算太大，骑自行车是非常好的选择。而且在丹麦租借城市自行车，一天只需20克朗（约20元）。</p>
+                        <p></p>
+                        <p>饮食：均价在20欧（约145元）左右，当然去超市买面包就更省钱啦。</p>
+                        <p></p>
+                        <p>巨无霸套餐：68元</p>
+                        <p></p>
+                        <p>游览可以选择哥本哈根卡：</p>
+                        <p></p>
+                        <p>1、74个景点和博物馆免费入场。</p>
+                        <p></p>
+                        <p>2、哥本哈根地铁、火车、港口游船和机场来回的交通。</p>
+                        <p></p>
+                        <p>3、租车和合作餐厅与景点的优惠折扣。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/319b.jpeg" alt=""/></p>
+                        <p></p>
+                        <p><img src="../img/y-img/i5tn.png" alt=""/></p>
+                        <p></p>
+                        <p>日均消费：400＋20＋145＊2=820元／人起</p>
+                        <p></p>
+                        <p>03 意大利威尼斯</p>
+                        <p></p>
+                        <p><img src="../img/y-img/i6ap.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：4577元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：700元（旅馆）</p>
+                        <p></p>
+                        <p>交通：威尼斯市内交通基本是水上巴士，单程为7.5欧元（54元），比较贵。</p>
+                        <p></p>
+                        <p>所以建议购买72小时水上巴士无限搭乘券，原价为40欧（约291元），6～29岁的青年可以凭借护照享受优惠，只需要29欧（约211元）就可以购买。</p>
+                        <p></p>
+                        <p>饮食：一个小三明治大约2欧，一顿顶多吃五个，妥妥的10欧（约72元）管饱。</p>
+                        <p></p>
+                        <p>巨无霸套餐：51元</p>
+                        <p></p>
+                        <p>日均消费：700+211+51＊2=1013元／人起</p>
+                        <p></p>
+                        <p>04 挪威奥斯陆</p>
+                        <p></p>
+                        <p><img src="../img/y-img/q05j.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：4665元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：300元（青旅）</p>
+                        <p></p>
+                        <p>交通：购买奥斯陆的交通卡，搭乘3次就可以回本。并且可以任意换乘市内的电车、火车（地铁）、公交车和船。（儿童小于15岁，长者大于65岁，单位：克朗）</p>
+                        <p></p>
+                        <p><img src="../img/y-img/bj99.png" alt=""/></p>
+                        <p></p>
+                        <p>巨无霸套餐：82元</p>
+                        <p></p>
+                        <p>日均消费：300+74＋82＊2=538元／人起</p>
+                        <p></p>
+                        <p>这些国家不算贵</p>
+                        <p></p>
+                        <p>01 法国巴黎</p>
+                        <p></p>
+                        <p><img src="../img/y-img/tqe7.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：5358元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：300元（青旅）</p>
+                        <p></p>
+                        <p>公交：单次1.3欧（约9.5元）</p>
+                        <p></p>
+                        <p>地铁：单次1.9欧，（约14元） 10张15.2欧（约110元）</p>
+                        <p></p>
+                        <p>如果想深入了解巴黎，建议购买Paris Museum pass，也就是巴黎博物馆通行证。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/p7c2.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>在全世界所有旅行城市的通票中，巴黎博物馆通票可以说是最有良心的，因为包含了巴黎除铁塔之外的几乎所有景点，而且还不用排队。推荐想参观巴黎博物馆的人一定要购买！(如果只待两三天就不要买啦，因为回不了本，不划算！)
+                        </p>
+                        <p></p>
+                        <p><img src="../img/y-img/m5ny.png" alt=""/></p>
+                        <p></p>
+                        <p>饮食：拉丁区 Rue de la Huchette，聚集低价餐厅，12欧（约87元）就能吃到不错的法餐。</p>
+                        <p></p>
+                        <p>大学生餐厅：只要能证明自己的学生身份，就能以3.5欧（约25元）饱吃一顿，食物的质量也是相当高的。</p>
+                        <p></p>
+                        <p>路上的餐车：欧洲街头都会有很多这种餐车，几欧就能吃到好吃的可丽饼、三明治等，非常划算。</p>
+                        <p></p>
+                        <p>巨无霸套餐：58元</p>
+                        <p></p>
+                        <p>日均消费：（不包含机票，下同，交通以5次为例）：300+55+58＊2＝471元／人起</p>
+                        <p></p>
+                        <p>02 英国伦敦</p>
+                        <p></p>
+                        <p><img src="../img/y-img/hwn0.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：4665元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：300元（青旅）</p>
+                        <p></p>
+                        <p>交通：oyster卡，乘坐大部分交通都有折扣，比单买便宜很多。</p>
+                        <p></p>
+                        <p>而且该卡还设定了上限，每天最高不会超过12英镑（约102元）。而伦敦大部分景点集中在1、2环，所以一天交通一般也不会超过6.6英镑（约56元）。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/vve7.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>巨无霸套餐：33元</p>
+                        <p></p>
+                        <p>日均消费：300+56+33＊2=422元／人起</p>
+                        <p></p>
+                        <p>物价低廉的国家</p>
+                        <p></p>
+                        <p>01 西班牙马德里</p>
+                        <p></p>
+                        <p><img src="../img/y-img/r2ee.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：4353元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：150元（青旅）</p>
+                        <p></p>
+                        <p>交通：单程票2.15欧（约15.6元）但是在马德里几本靠步行，一天坐两趟地铁已经是极限了，所以在这里的交通费并不会太贵。</p>
+                        <p></p>
+                        <p>另外购买城市观光巴士券，不仅可以欣赏马德里的城市风貌，还能省下一大笔交通费。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/849k.png" alt=""/>
+                        <p></p>
+                        <p>如果是一家人购买（2个成人+2个儿童，儿童为7～15岁）只要53欧（约385元），非常划算。</p>
+                        <p></p>
+                        <p>饮食：20欧元（约145元）左右就能吃得很好了，和国内也没有差多少。</p>
+                        <p></p>
+                        <p>巨无霸套餐：51元</p>
+                        <p></p>
+                        <p>日均消费：150＋31＋51＊2=283元／人起</p>
+                        <p></p>
+                        <p>02 俄罗斯莫斯科</p>
+                        <p></p>
+                        <p><img src="../img/y-img/ku46.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>机票：2585元（五一含税往返）</p>
+                        <p></p>
+                        <p>住宿：150元（青旅）</p>
+                        <p></p>
+                        <p>交通：次票，可以多人使用。当然还有日票以及多日票，但是个人觉得次票性价比更高，因此只列出次票。</p>
+                        <p></p>
+                        <p><img src="../img/y-img/cu1e.png" alt=""/></p>
+                        <p></p>
+                        <p>饮食：普通餐厅的消费均价是每人400卢布（约合70元人民币），可能吃不饱。</p>
+                        <p></p>
+                        <p>巨无霸套餐：30元</p>
+                        <p></p>
+                        <p>如果你既想省钱又想吃饱，不如在地铁站周边买一个土耳其卷，价格为100卢布（约合20元人民币）。
+                        </p>
+                        <p></p>
+                        <p>当然，自己做饭绝对是省钱的极致选择。莫斯科的超市非常便宜。例如一包一斤的意粉，只要20卢布（约合3.5元人民币）。再买些番茄酱和香肠，一顿饭的价格绝对不会超过550卢布（约合10元人民币）。</p>
+                        <p></p>
+                        <p>日均消费（乘车5次）：150＋21＋30＊2=231元／人起</p>
+                        <p></p>
+                        <p><img src="../img/y-img/q05j.jpeg" alt=""/></p>
+                        <p></p>
+                        <p>仔细想想，平常跟朋友吃顿饭都要好几百，唱个k，买件礼物，一天可能几千大洋就花出去了。</p>
+                        <p></p>
+                        <p>这些钱我们完全可以省下来，去那个看似遥远，又貌似有点贵的欧洲。</p>
+                        <p></p>
+                        <p>登上欧洲的童话古堡、看蒙娜丽莎的微笑、躺在普罗旺斯的薰衣草花田、在酒庄里酿一杯葡萄酒，我们还可以感受欧洲艺术，漫步小镇海滩。</p>
+                        <p></p>
+                        <p>这些美妙的经历，其实并没有那么贵。</p>
+                        <p></p>
+                        <p>作为自己最应该珍惜的人，你值得被自己宠爱一次。</p>
+                        <p></p>
+                        <p>假若你想要出发，关注无二之旅，了解更多<a href="strategy.html">欧洲旅游线路～</a></p>
+                        <p></p>
+                    </div>
+                    <div class="return">
+                        <p><a href="travel.html">了解定制旅行 >></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right-->
+        <div class="right">
+            <div class="uniq">
+                <div class="choose">
+                    <div class="header-banner"></div>
+                    <div class="uniq-items">
+                        <div>
+                            <a href="travel.html">
+                                <div class="reason">
+                                    <div class="reason_tit">什么是定制旅行？</div>
+                                    <p>省心自由、享受旅行本身</p>
+                                </div>
+                                <div class="reason-img"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="travel.html">
+                                <div class="reason">
+                                    <div class="reason_tit">定制旅行评价</div>
+                                    <p>看真实的客户评价</p>
+                                </div>
+                                <div class="reason-img-1"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="travel.html">
+                                <div class="reason">
+                                    <div class="reason_tit">路书，你的向导</div>
+                                    <p>解决旅行中99%的问题</p>
+                                </div>
+                                <div class="reason-img-2"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggest">
+                    <div class="suggest-tit">为您推荐当季线路</div>
+                    <div class="suggest-page">
+                        <a href="">
+                            <div class="suggest-item">
+                                <div class="suggest-img"></div>
+                                <div class="suggest-con">
+                                    <div class="con-tit">英国 <span>8天</span> 与哈利波特和福尔摩斯之约</div>
+                                    <p><span>15880</span>/人起</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="suggest-item">
+                                <div class="suggest-img-1"></div>
+                                <div class="suggest-con">
+                                    <div class="con-tit">西班牙葡萄牙  <span>11天</span>  伊比利亚半岛浪漫狂欢 </div>
+                                    <p><span>16080</span>/人起</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="suggest-item">
+                                <div class="suggest-img-2"></div>
+                                <div class="suggest-con">
+                                    <div class="con-tit">澳大利亚 <span>10天</span>   休闲之旅 趣味亲子游 </div>
+                                    <p><span>17480</span>/人起</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="more"><a href="">更多线路>></a></p>
+                </div>
+                <div class="ad">
+                    <p>微信关注“无二之旅”</p>
+                    <p>接收海外旅游原创好文</p>
+                    <img src="../img/y-img/QR.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pc端底部链接-->
+    <div class="footer-articles">
+        <div class="container-2">
+            <div class="content">
+
+            </div>
+        </div>
+        <div class="show-more">点击查看更多</div>
+        <div class="footer-mask"></div>
+    </div>
+    <!--form-->
+    <div class="form">
+        <div class="bg">
+            <div class="form-wrapper">
+                <!-- contact-form-->
+                <div class="contact-form">
+                    <div class="title">你只要决定出发</div>
+                    <p class="sub-title">剩下所有的一切，交给无二之旅就好</p>
+                    <form action="">
+                        <div class="row">
+                            <input type="text" placeholder="姓名" class="name"/>
+                            <input type="text" placeholder="海外目的地" class="place"/>
+                            <input type="text" placeholder="天数" class="days"/>
+                        </div>
+                        <div class="row">
+                            <input type="text" placeholder="手机" class="phone"/>
+                        </div>
+                        <div class="row text">
+                            <textarea class="comment" placeholder="备注内容"></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit">提交</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-text">
+                    <p class="tit">5年来，</p>
+                    <p>已有 <span>167908</span>位客户选择无二之旅，</p>
+                    <p>好评率近 <span class="tit">100%</span>。</p>
+                    <p>我们期待能为你，</p>
+                    <p class="tit-1">定制一次有温度的旅行。</p>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mobile_form -->
+<div class="mobile_form form-1">
+    <div class="con-form">
+        <div class="h1-1">你只需要决定出发</div>
+        <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+
+        <form action="" class="form-1">
+            <div><input type="text" placeholder="姓名" class="name-1"/></div>
+            <div>
+                <input type="text" placeholder="海外目的地" class="place"/>
+                <input type="text" placeholder="天数" class="day"/>
+            </div>
+            <div><input type="tel" placeholder="手机" class="phone-1"/></div>
+            <div class="textarea"><textarea placeholder="备注内容"></textarea></div>
+            <div class="sub"><button>提交</button></div>
+        </form>
+    </div>
+</div>
+<!-- footer-->
+<div class="mobile-footer-1">
+    <p>Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+    <p>
+        <a href="">京ICP备16058485号</a>
+        商务合作：010-59684420
+    </p>
+</div>
+<!--footer-->
+<div class="footer">
+    <!-- pc端底部导航-->
+    <div class="footer-container">
+        <div class="footer-list">
+            <ul class="clearfix">
+                <li><a href="">客户评价</a></li>
+                <li><a href="">出国旅游</a></li>
+                <li><a href="">私人定制旅游</a></li>
+                <li><a href="strategy.html">旅游攻略</a></li>
+                <li><a href="">蜜月旅行</a></li>
+                <li><a href="">亲自旅行</a></li>
+                <li><a href="">海外婚礼</a></li>
+                <li><a href="">定制路书</a></li>
+                <li><a href="">出国自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">欧洲自由行</a></li>
+                <li><a href="">美国自由行</a></li>
+                <li><a href="">加拿大自由行</a></li>
+                <li><a href="">澳大利亚自由行</a></li>
+                <li><a href="">新西兰自由行</a></li>
+                <li><a href="">斯里兰卡自由行</a></li>
+                <li><a href="">大溪地自由行</a></li>
+                <li><a href="">毛里求斯自由行</a></li>
+                <li><a href="">迪拜自由行</a></li>
+                <li><a href="">日本自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">冰岛自由行</a></li>
+                <li><a href="">挪威自由行</a></li>
+                <li><a href="">英国自由行</a></li>
+                <li><a href="">荷兰自由行</a></li>
+                <li><a href="">瑞士自由行</a></li>
+                <li><a href="">德国自由行</a></li>
+                <li><a href="">法国自由行</a></li>
+                <li><a href="">意大利自由行</a></li>
+                <li><a href="">希腊自由行</a></li>
+                <li><a href="">捷克自由行</a></li>
+                <li><a href="">西班牙自由行</a></li>
+                <li><a href="">葡萄牙自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">隐私政策</a></li>
+                <li><a href="">加入我们</a></li>
+                <li class="links">
+                    关注我们：
+                    <a href="" class="link">
+                        <img src="../img/y-img/wechat_icon.png" alt=""/>
+                        <img src="../img/y-img/download.png" alt="" class="download"/>
+                    </a>
+                    <a href="">
+                        <img src="../img/y-img/weibo_icon.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../img/y-img/fliggy.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- pc端底部联系-->
+    <div class="footer-content">
+        <div class="footer-contain">
+            <div class="row">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="../img/y-img/new_bottom_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <div class="text-container">
+                        <span>Copyright © 2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
+                        <span>商务合作：010-59684420</span>
+                        <span>投诉、建议及其他反馈：400-890-3040（语音后按2#）</span>
+                        <br/>
+                        <span>北京无二之旅文化传播有限公司</span>
+                        <span>地址：北京市朝阳区百子湾路苹果社区北区二十二院街艺术区6-19</span>
+                        <span>*本网站部分图片来自网络，若作者看到，请尽快与无二之旅联系。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+<script src="../js/result.js"></script>
+<script src="../js/strategy.js"></script>
+</html>

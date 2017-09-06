@@ -3,13 +3,101 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/shade.css"/>
+    <link rel="stylesheet" href="css/result.css"/>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mobile-util.js"></script>
 </head>
 <body>
-<!--book-banner-->
-<div class="bookbanner"></div>
+<!--shade-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog book-modal" role="document">
+        <div class="modal-content book_modal">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header banner">
+                <div class="h1">你只需要决定出发</div>
+                <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+            </div>
+            <div class="modal-body contact-form1">
+                <div class="h6">填写目的地信息</div>
+                <form action="" class="planForm">
+                    <div>
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="destination_1"/>
+                        <input type="text" placeholder="天数" class="days_1"/>
+
+                    </div>
+                    <div><input type="text" placeholder="手机" class="phone_1"/></div>
+                    <div class="text"><textarea placeholder="备注内容"></textarea></div>
+                    <div class="submit"><button>提交</button></div>
+                </form>
+            </div>
+            <img src="img/y-img/input_icon.png" alt="" class="icon"/>
+            <div class="tit">有任何关于旅行的疑问？</div>
+            <div class="sub-tit">无二之旅专业旅行顾问来帮您</div>
+            <form action="" class="Form_mobile">
+                <div class="ipt_tit">手机号</div>
+                <input type="number" placeholder="输入手机号" class="tel"/>
+                <div class="ipt_tit ipt_name">姓名</div>
+                <input type="text" class="tel input-name" placeholder="输入您的姓名"/>
+                <div class="ipt_tit ipt-name">备注</div>
+                <textarea class="ipt-comment"></textarea>
+                <button class="submit_btn">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--concat-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="backtotop">
+    <img src="img/s-img/download.png" alt=""/>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
 <!--header-->
 <div class="header">
     <div class="header-center">
@@ -17,13 +105,13 @@
             <img src="img/y-img/header_logo.png" alt=""/>
         </div>
         <ul class="header-nav">
-            <li class="on"><a href="">首页</a></li>
+            <li class="on"><a href='#'>首页</a></li>
             <li><a href="html/travel.html">定制旅行</a></li>
             <li><a href="">定制师</a></li>
-            <li><a href="">路书</a></li>
+            <li><a href="html/b">路书</a></li>
             <li><a href="">案例故事</a></li>
             <li><a href="">目的地</a></li>
-            <li><a href="">婚礼婚拍</a></li>
+            <li><a href="html/wedding.html">婚礼婚拍</a></li>
             <li><a href="">关于我们</a></li>
         </ul>
         <div class="header-contact">
@@ -32,11 +120,11 @@
             </div>
             <p>400 890 3040</p>
         </div>
-        <a href="#" class="refer">免费咨询</a>
+        <a href="#" class="refer" data-toggle="modal" data-target="#myModal">免费咨询</a>
     </div>
 </div>
 <!--container-->
-<div class="container">
+<div class="container-1">
     <!-- slider-->
     <div class="slider">
         <div class="detail">
@@ -58,7 +146,7 @@
             <p>自由行？太麻烦。</p>
             <p>有没有一种省心、自由、又不贵的出国旅行方式？</p>
             <p>这正是我们能为你做的。</p>
-            <a href="">了解定制旅行</a>
+            <a href="html/travel.html">了解定制旅行</a>
         </div>
     </div>
     <!-- guidebook-->
@@ -258,5 +346,104 @@
         </div>
     </div>
 </div>
+
+
+
+<!--移动端-->
+<div class="raw">
+    <!-- header-->
+    <div class="header-1">
+        <div class="nav-bar">
+            <div class="container-2">
+                <div class="nav-header">
+                    <button class="btn_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="">
+                        <img src="img/y-img/header_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="nav-collapse">
+                    <ul>
+                        <li class="on"><a href="#">首页</a></li>
+                        <li><a href="html/travel.html">定制旅行</a></li>
+                        <li><a href="#">定制师</a></li>
+                        <li><a href="html/book.html">路书</a></li>
+                        <li><a href="#">案例故事</a></li>
+                        <li><a href="#">目的地</a></li>
+                        <li><a href="#">婚礼婚拍</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="html/strategy.html">旅游攻略</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home_mobile-->
+    <div class="home_mobile">
+        <div class="pic-wrapper">
+            <img src="img/y-img/banner@.jpg" alt=""/>
+            <div class="banner-tit">
+                <p>无二之旅</p>
+                <p>全新定义海外自由行</p>
+            </div>
+        </div>
+        <div class="swiper-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-first" style="width: 233px">
+                        <a href="">
+                            <div style="margin-left: 20px">
+                                <img src="img/y-img/trip@3x.jpg" alt=""/>
+                                <p class="item_tit">定制旅行</p>
+                                <p class="item_con">让出国旅行更方便</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active1"  style="width: 233px">
+                        <a href="">
+                            <div>
+                                <img src="img/y-img/book@3x.jpg" alt=""/>
+                                <p class="item_tit">路书</p>
+                                <p class="item_con">是你的专属导游</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next1"  style="width: 233px">
+                        <a href="">
+                            <div style="margin-right: 20px">
+                                <img src="img/y-img/their_story@3x.jpg" alt=""/>
+                                <p class="item_tit">案例故事</p>
+                                <p class="item_con">看看他们的旅行故事</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="consult_btn" data-toggle="modal" data-target="#myModal">免费咨询</div>
+
+    </div>
+    <!-- footer-->
+    <div class="mobile-footer">
+        <p>Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+        <p>
+            <a href="">京ICP备16058485号</a>
+            商务合作：010-59684420
+        </p>
+    </div>
+</div>
 </body>
+<script src="js/result.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+    /*var mySwiper = new Swiper('.swiper-container', {
+        freeMode: true,
+        freeModeMomentum: true
+    })*/
+
+</script>
 </html>

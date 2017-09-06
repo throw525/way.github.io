@@ -3,9 +3,99 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/travel.css"/>
+    <link rel="stylesheet" href="../css/result.css"/>
+    <link rel="stylesheet" href="../css/shade.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/mobile-util.js"></script>
 </head>
-<body>
+<body onload="show()">
+<!--shade-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog book-modal" role="document">
+        <div class="modal-content book_modal">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header banner">
+                <div class="h1">你只需要决定出发</div>
+                <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+            </div>
+            <div class="modal-body contact-form1">
+                <div class="h6">填写目的地信息</div>
+                <form action="" class="planForm">
+                    <div>
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="destination_1"/>
+                        <input type="text" placeholder="天数" class="days_1"/>
+
+                    </div>
+                    <div><input type="text" placeholder="手机" class="phone_1"/></div>
+                    <div class="text"><textarea placeholder="备注内容"></textarea></div>
+                    <div class="submit"><button>提交</button></div>
+                </form>
+            </div>
+            <img src="../img/y-img/input_icon.png" alt="" class="icon"/>
+            <div class="tit">有任何关于旅行的疑问？</div>
+            <div class="sub-tit">无二之旅专业旅行顾问来帮您</div>
+            <form action="" class="Form_mobile">
+                <div class="ipt_tit">手机号</div>
+                <input type="number" placeholder="输入手机号" class="tel"/>
+                <div class="ipt_tit ipt_name">姓名</div>
+                <input type="text" class="tel input-name" placeholder="输入您的姓名"/>
+                <div class="ipt_tit ipt-name">备注</div>
+                <textarea class="ipt-comment"></textarea>
+                <button class="submit_btn">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--concat-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/download.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
 <!--header-->
 <div class="header">
     <div class="header-center">
@@ -16,7 +106,7 @@
             <li><a href="../index.html">首页</a></li>
             <li class="on"><a href="">定制旅行</a></li>
             <li><a href="">定制师</a></li>
-            <li><a href="">路书</a></li>
+            <li><a href="book.html">路书</a></li>
             <li><a href="">案例故事</a></li>
             <li><a href="">目的地</a></li>
             <li><a href="">婚礼婚拍</a></li>
@@ -28,8 +118,545 @@
             </div>
             <p>400 890 3040</p>
         </div>
-        <a href="#" class="refer">免费咨询</a>
+        <a href="#" class="refer" data-toggle="modal" data-target="#myModal">免费咨询</a>
     </div>
 </div>
+<!--主体-->
+<div class="custom">
+    <!-- banner-->
+    <div class="banner-1">
+        <div class="banner-wrap">
+            <div class="h1">- 定制旅行 -</div>
+            <p>有没有既省心又自由的出国旅行方式？这正是我们能为你做的。</p>
+        </div>
+    </div>
+    <!-- mask-->
+    <div class="mask_box">
+        <p class="tit-1">一次完美的出国旅行，我要…</p>
+        <p class="gaze"></p>
+        <div class="reason-wrap">
+            <div class="reason-list">
+                <div class="miniarrow"></div>
+                <ul class="reason_list">
+                    <li>
+                        <img src="../img/y-img/icon1.png" alt=""/>
+                        <span class="title">省心</span>
+                        <span class="content">不想折腾麻烦事</span>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/icon2.png" alt=""/>
+                        <span class="title">自由</span>
+                        <span class="content">想怎么玩就怎么玩</span>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/icon3.png" alt=""/>
+                        <span class="title">安全</span>
+                        <span class="content">遇到问题有人管</span>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/icon4.png" alt=""/>
+                        <span class="title">舒心</span>
+                        <span class="content">难得旅游不想留遗憾</span>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/icon5.png" alt=""/>
+                        <span class="title">划算</span>
+                        <span class="content">花得少玩得好</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="vs-wrap">
+                <ul class="icon-box">
+                    <!-- 跟团游-->
+                    <li><img src="../img/y-img/yes.png" alt=""/></li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>走哪都是人挤人，上个洗手间还要排大队；景点还没转够，就到集合时间了……</p>
+                    </li>
+                    <li><img src="../img/y-img/yes.png" alt=""/></li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>上车睡觉，下车拍照，我想要的旅行，不是打卡式的走马观花。</p>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>团费看似低，可是购物陷阱、大巴推销、高额自费、团餐回扣……最后钱没少花，还受气。</p>
+                    </li>
+                    <!-- 自由行-->
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>白天辛苦上班，晚上还要熬夜查攻略、看游记、准备签证、预定机票酒店活动…</p>
+                    </li>
+                    <li><img src="../img/y-img/yes.png" alt=""/></li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>出国在外，总有点不踏实，万一遇上突发情况，还怎么享受旅行？</p>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>一次旅行的准备事项多如牛毛，稍有疏漏，都会影响旅行心情。</p>
+                    </li>
+                    <li>
+                        <img src="../img/y-img/no.png" alt=""/>
+                        <span></span>
+                        <p>经验不足，难免会花冤枉钱，最重要的是，还付出了大量时间成本。</p>
+                    </li>
+                    <!-- 定制旅行-->
+                    <li><img src="../img/y-img/tick.png" alt=""/></li>
+                    <li><img src="../img/y-img/tick.png" alt=""/></li>
+                    <li><img src="../img/y-img/tick.png" alt=""/></li>
+                    <li><img src="../img/y-img/tick.png" alt=""/></li>
+                    <li><img src="../img/y-img/tick.png" alt=""/></li>
+                </ul>
+                <div class="tag tag1"><span>跟团游</span></div>
+                <div class="tag tag2"><span>自由行</span></div>
+                <div class="tag tag3"><span>定制旅行</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- detail-->
+    <div class="detail-box">
+        <p class="detail-tit">一次 <span>定制旅行</span> ，是这样的:</p>
+        <div class="con-wrap">
+            <div class="con-item">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask1.jpg" alt=""/>
+                    <div class="tab">省心</div>
+                </div>
+                <p class="tit-wrap">为你 <span>包办旅行所有麻烦事</span></p>
+                <p class="con-wrap1">
+                    专属旅行顾问提供专业的旅行建议与指导，<br/>
+                    定制师为你设计路线，完成各项琐碎预定，<br/>
+                    从出行前到回国，每个环节都有专人守候，<br/>
+                    你只需要享受旅行就好。
+                </p>
+            </div>
+            <div class="con-item">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask2.jpg" alt=""/>
+                    <div class="tab">个性</div>
+                </div>
+                <p class="tit-wrap">为你 <span>量身打造旅行方案</span></p>
+                <p class="con-wrap1">
+                    只卖成品线路，不叫定制旅行。<br/>
+                    在无二之旅，路线可以根据你的喜好调整，<br/>
+                    蜜月游／家庭游／亲子游／看球赛／跳伞…<br/>
+                    想怎么玩，就怎么玩。
+                </p>
+            </div>
+            <div class="con-item con-3">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask3.jpg" alt=""/>
+                    <div class="tab">舒心</div>
+                </div>
+                <p class="tit-wrap">为你 <span>提供更专业的定制服务</span></p>
+                <p class="con-wrap1">
+                    难得的旅行，交给兼职规划师怎能放心？<br/>
+                    无二之旅拥有100+位资深的专业定制师，<br/>
+                    为你寻觅最不可错过的体验、最地道的美食，<br/>
+                    让出国旅行不留遗憾。
+                </p>
+            </div>
+            <div class="con-item">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask4.jpg" alt=""/>
+                    <div class="tab">自由</div>
+                </div>
+                <p class="tit-wrap">为你 <span>设计独一无二的路书</span></p>
+                <p class="con-wrap1">
+                    更精致翔实的路书，这是我们与众不同的秘密。<br/>
+                    路书内行程安排细化到小时，<br/>
+                    景点、餐厅、地图、小贴士……全都有！<br/>
+                    它比导游更全能，而且是属于你的旅行纪念。
+                </p>
+            </div>
+            <div class="con-item">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask5.jpg" alt=""/>
+                    <div class="tab">划算</div>
+                </div>
+                <p class="tit-wrap">为你 <span>节省时间和金钱</span></p>
+                <p class="con-wrap1">
+                    机票／酒店／景点／活动／路书，<br/>
+                    还有签证／保险／WiFi…我们都包了。<br/>
+                    每条线路均为实时核价，<br/>
+                    没有强迫消费不花冤枉钱，行程透明更舒心。
+                </p>
+            </div>
+            <div class="con-item con-3">
+                <div class="img-wrap">
+                    <img src="../img/y-img/Mask6.jpg" alt=""/>
+                    <div class="tab">安全</div>
+                </div>
+                <p class="tit-wrap">为你 <span>全程保障旅行安全</span></p>
+                <p class="con-wrap1">
+                    配备专属保障团队，出行中7*24小时守候，<br/>
+                    当你在国外需要帮助，或是遇到突发状况<br/>
+                    无论你在地球的哪一端，<br/>
+                    一个电话，我们永远在。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--form-->
+<div class="form">
+    <div class="bg">
+        <div class="form-wrapper">
+            <!-- contact-form-->
+            <div class="contact-form">
+                <div class="title">你只要决定出发</div>
+                <p class="sub-title">剩下所有的一切，交给无二之旅就好</p>
+                <form action="">
+                    <div class="row">
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="place"/>
+                        <input type="text" placeholder="天数" class="days"/>
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="手机" class="phone"/>
+                    </div>
+                    <div class="row text">
+                        <textarea class="comment" placeholder="备注内容"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-text">
+                <p class="tit">5年来，</p>
+                <p>已有 <span>167908</span>位客户选择无二之旅，</p>
+                <p>好评率近 <span class="tit">100%</span>。</p>
+                <p>我们期待能为你，</p>
+                <p class="tit-1">定制一次有温度的旅行。</p>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <!-- pc端底部导航-->
+    <div class="footer-container">
+        <div class="footer-list">
+            <ul class="clearfix">
+                <li><a href="">客户评价</a></li>
+                <li><a href="">出国旅游</a></li>
+                <li><a href="">私人定制旅游</a></li>
+                <li><a href="../html/strategy.html">旅游攻略</a></li>
+                <li><a href="">蜜月旅行</a></li>
+                <li><a href="">亲自旅行</a></li>
+                <li><a href="">海外婚礼</a></li>
+                <li><a href="">定制路书</a></li>
+                <li><a href="">出国自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">欧洲自由行</a></li>
+                <li><a href="">美国自由行</a></li>
+                <li><a href="">加拿大自由行</a></li>
+                <li><a href="">澳大利亚自由行</a></li>
+                <li><a href="">新西兰自由行</a></li>
+                <li><a href="">斯里兰卡自由行</a></li>
+                <li><a href="">大溪地自由行</a></li>
+                <li><a href="">毛里求斯自由行</a></li>
+                <li><a href="">迪拜自由行</a></li>
+                <li><a href="">日本自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">冰岛自由行</a></li>
+                <li><a href="">挪威自由行</a></li>
+                <li><a href="">英国自由行</a></li>
+                <li><a href="">荷兰自由行</a></li>
+                <li><a href="">瑞士自由行</a></li>
+                <li><a href="">德国自由行</a></li>
+                <li><a href="">法国自由行</a></li>
+                <li><a href="">意大利自由行</a></li>
+                <li><a href="">希腊自由行</a></li>
+                <li><a href="">捷克自由行</a></li>
+                <li><a href="">西班牙自由行</a></li>
+                <li><a href="">葡萄牙自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">隐私政策</a></li>
+                <li><a href="">加入我们</a></li>
+                <li class="links">
+                    关注我们：
+                    <a href="" class="link">
+                        <img src="../img/y-img/wechat_icon.png" alt=""/>
+                        <img src="../img/y-img/download.png" alt="" class="download"/>
+                    </a>
+                    <a href="">
+                        <img src="../img/y-img/weibo_icon.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../img/y-img/fliggy.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- pc端底部联系-->
+    <div class="footer-content">
+        <div class="footer-contain">
+            <div class="row">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="../img/y-img/new_bottom_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <div class="text-container">
+                        <span>Copyright © 2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
+                        <span>商务合作：010-59684420</span>
+                        <span>投诉、建议及其他反馈：400-890-3040（语音后按2#）</span>
+                        <br/>
+                        <span>北京无二之旅文化传播有限公司</span>
+                        <span>地址：北京市朝阳区百子湾路苹果社区北区二十二院街艺术区6-19</span>
+                        <span>*本网站部分图片来自网络，若作者看到，请尽快与无二之旅联系。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--移动端-->
+<div class="raw">
+    <!-- header-->
+    <div class="header-1">
+        <div class="nav-bar">
+            <div class="container-2">
+                <div class="nav-header">
+                    <button class="btn_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="">
+                        <img src="../img/y-img/header_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="nav-collapse">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li class="on"><a href="#">定制旅行</a></li>
+                        <li><a href="#">定制师</a></li>
+                        <li><a href="book.html">路书</a></li>
+                        <li><a href="#">案例故事</a></li>
+                        <li><a href="#">目的地</a></li>
+                        <li><a href="#">婚礼婚拍</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mobile-->
+    <div class="mobile">
+        <!-- banner-->
+        <div class="banner-2">
+            <div class="banner-wrapper">
+                <div class="h1-1">- 定制旅行 -</div>
+                <p>有没有既省心又自由的出国旅行方式？这正是我们能为你做的。</p>
+            </div>
+        </div>
+        <!-- mask-->
+        <div class="phone_mask">
+            <p class="p_title">一次完美的出国旅行，我要…</p>
+            <div class="reason_wrap">
+                <div class="list_title">
+                    <div>
+                        <img src="../img/y-img/mobile_icon1.png" alt=""/>
+                        <div class="point_tit">省心</div>
+                        <div class="point_con">不想折腾 <br/>麻烦事</div>
+                    </div>
+                    <div>
+                        <img src="../img/y-img/mobile_icon2.png" alt=""/>
+                        <div class="point_tit">自由</div>
+                        <div class="point_con">想怎么玩 <br/>就怎么玩</div>
+                    </div>
+                    <div>
+                        <img src="../img/y-img/mobile_icon3.png" alt=""/>
+                        <div class="point_tit">安全</div>
+                        <div class="point_con">遇到问题 <br/>有人管</div>
+                    </div>
+                    <div>
+                        <img src="../img/y-img/mobile_icon4.png" alt=""/>
+                        <div class="point_tit">舒心</div>
+                        <div class="point_con">难得旅行 <br/>不想留遗憾</div>
+                    </div>
+                    <div>
+                        <img src="../img/y-img/mobile_icon5.png" alt=""/>
+                        <div class="point_tit">划算</div>
+                        <div class="point_con">花得少 <br/>玩得好</div>
+                    </div>
+                </div>
+                <div class="list_container">
+                    <ul>
+                        <li>
+                            <img src="../img/y-img/yes1.png" alt=""/>
+                            <div class="list_tag tag01">定制旅行</div>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/no-2501.png" alt=""/>
+                            <div class="list_tag tag02">自由行</div>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes2.png" alt=""/>
+                            <div class="list_tag tag02">跟团游</div>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes1.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes2.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/no-2501.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes1.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/no-2501.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes2.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes1.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/no-2501.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes2.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes1.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/no-2501.png" alt=""/>
+                        </li>
+                        <li>
+                            <img src="../img/y-img/yes2.png" alt=""/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- detail-->
+        <div class="phone_detail">
+            <p class="detail_tit">
+                一次 <span>定制旅行</span>，是这样的:
+            </p>
+            <div class="content_wrap">
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask1.jpg" alt=""/>
+                        <div class="tab-1">省心</div>
+                    </div>
+                    <p class="item_tit">为你 <span>包办旅行所有麻烦事</span></p>
+                    <p class="item_con">
+                        专属旅行顾问提供专业的旅行建议与指导，<br/>
+                        定制师为你设计路线，完成各项琐碎预定，<br/>
+                        从出行前到回国，每个环节都有专人守候，<br/>
+                        你只需要享受旅行就好。
+                    </p>
+                </div>
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask2.jpg" alt=""/>
+                        <div class="tab-1">个性</div>
+                    </div>
+                    <p class="item_tit">为你 <span>量身打造旅行方案</span></p>
+                    <p class="item_con">
+                        只卖成品线路，不叫定制旅行。<br/>
+                        在无二之旅，路线可以根据你的喜好调整，<br/>
+                        蜜月游／家庭游／亲子游／看球赛／跳伞…<br/>
+                        想怎么玩，就怎么玩。
+                    </p>
+                </div>
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask3.jpg" alt=""/>
+                        <div class="tab-1">舒心</div>
+                    </div>
+                    <p class="item_tit">为你 <span>提供更专业的定制服务</span></p>
+                    <p class="item_con">
+                        难得的旅行，交给兼职规划师怎能放心？<br/>
+                        无二之旅拥有100+位资深的专业定制师，<br/>
+                        为你寻觅最不可错过的体验、最地道的美食，<br/>
+                        让出国旅行不留遗憾。
+                    </p>
+                </div>
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask4.jpg" alt=""/>
+                        <div class="tab-1">自由</div>
+                    </div>
+                    <p class="item_tit">为你 <span>设计独一无二的路书</span></p>
+                    <p class="item_con">
+                        更精致翔实的路书，这是我们与众不同的秘密。<br/>
+                        路书内行程安排细化到小时，<br/>
+                        景点、餐厅、地图、小贴士……全都有！<br/>
+                        它比导游更全能，而且是属于你的旅行纪念。
+                    </p>
+                </div>
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask5.jpg" alt=""/>
+                        <div class="tab-1">划算</div>
+                    </div>
+                    <p class="item_tit">为你 <span>节省时间和金钱</span></p>
+                    <p class="item_con">
+                        机票／酒店／景点／活动／路书，<br/>
+                        还有签证／保险／WiFi…我们都包了。<br/>
+                        每条线路均为实时核价，<br/>
+                        没有强迫消费不花冤枉钱，行程透明更舒心。
+                    </p>
+                </div>
+                <div>
+                    <div class="img_wrap">
+                        <img src="../img/y-img/Mask6.jpg" alt=""/>
+                        <div class="tab-1">安全</div>
+                    </div>
+                    <p class="item_tit">为你 <span>全程保障旅行安全</span></p>
+                    <p class="item_con">
+                        配备专属保障团队，出行中7*24小时守候，<br/>
+                        当你在国外需要帮助，或是遇到突发状况<br/>
+                        无论你在地球的哪一端，<br/>
+                        一个电话，我们永远在。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- show_input-->
+        <div class="show_input show-input" id="btn"  data-toggle="modal" data-target="#myModal">
+            <img src="../img/y-img/consult_icon.png" alt=""/>
+            免费咨询
+        </div>
+    </div>
+    <!-- footer-->
+    <div class="mobile-footer">
+        <p>Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+        <p>
+            <a href="">京ICP备16058485号</a>
+            商务合作：010-59684420
+        </p>
+    </div>
+</div>
+
 </body>
+<script src="../js/result.js"></script>
 </html>

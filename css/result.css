@@ -1,0 +1,231 @@
+/*联系您*/
+.concat{
+    position: fixed;
+    bottom: 0;
+    left: -480px;
+    transition: all 1s;
+    height: 200px;
+    z-index: 201;
+}
+.concatbig{
+    width: 480px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    float: left;
+}
+.concatsmall{
+    float: left;
+    width: 54px;
+    height: 132px;
+    background-color: #F34C28;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.concatbig>img{
+    float: left;
+    transform: rotateY(180deg);
+    width: 134px;
+    height: 200px;
+}
+.concattao{
+    width: 296px;
+    height: 119px;
+    float: left;
+    padding: 40px 0 0 20px;
+}
+.concattao>h2{
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+.concattao>p{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 200;
+}
+.concattao>form{
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 3px;
+    border: 1px solid #ecebe4;
+}
+.concattao>form>input{
+    width: 170px;
+    height: 45px;
+    padding-left: 20px;
+    outline: none;
+    float: left;
+    border: 0;
+}
+.concattao>form>button{
+    float: left;
+    height: 45px;
+    padding: 0 10px;
+    background-color: #F34C28;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius:0 3px 3px 0 ;
+    border: none;
+}
+.concatx{
+    width: 25px;
+    height: 25px;
+    float: left;
+    background: url("../img/s-img/wedx.png") no-repeat center/cover;
+    cursor: pointer;
+    margin-left: 16px;
+}
+.concatsmall>p{
+    width: 14px;
+    margin: 14px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #ffffff;
+    float: left;
+}
+.concatsmall>span{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 30px;
+    background: url("../img/s-img/wedright.png") no-repeat left/cover;
+    margin-top: 50px;
+}
+/*右侧关注*/
+.contact-widget{
+    position: fixed;
+    right: 10px;
+    bottom: 155px;
+    width: 80px;
+    height: 150px;
+    text-align: center;
+    border-radius: 2px;
+    z-index: 100;
+}
+.widget-item{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.widget-item img{
+    width: 36px;
+}
+.item1{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.item2{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.widget-code{
+    position: absolute;
+    opacity: 0;
+    right: 80px;
+    bottom: -33px;
+}
+.widget-item:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+.widget-code img{
+    width: 170px;
+}
+/*返回顶部*/
+.backtotop{
+    background-color: #000;
+    opacity: 0.5;
+    padding: 8px;
+    bottom: 150px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    width: 80px;
+    text-align: center;
+    border-radius: 2px;
+    z-index: 100;
+    display: none;
+}
+.backtotop img{
+    width: 36px;
+}
+/*在线咨询*/
+.message{
+    position: fixed;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000000000;
+    border-width: 1px 1px 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.1);
+    border-left-color: rgba(0, 0, 0, 0.1);
+    border-image: initial;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+    height: 40px;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    background-color: #62c8c4
+}
+.message .pic{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url("../img/s-img/s-erji.png") no-repeat center/cover;
+}
+.message .line1{
+    display: block;
+    float: left;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .08);
+    vertical-align: middle;
+}
+.message .btn{
+    display: block;
+    float: left;
+    height: 40px;
+    margin: 0 10px;
+    line-height: 40px;
+    overflow-y: hidden;
+    font-size: 13px;
+    color: #fff;
+}
+/*弹框*/
+.uniqueway-girl{
+    position: fixed;
+    right: 210px;
+    bottom: -46px;
+    height: 89px;
+    transition: all 0.7s;
+    z-index: 9999;
+}
+.uniqueway-girl:hover{
+    bottom: 0;
+}
+.girl-image{
+    width: 92px;
+    height: 100%;
+    cursor: pointer;
+    background: url("../img/s-img/people.png") no-repeat center/cover;
+}

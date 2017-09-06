@@ -3,9 +3,87 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/strategy.css"/>
+    <link rel="stylesheet" href="../css/result.css"/>
+    <link rel="stylesheet" href="../css/shade.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/mobile-util.js"></script>
 </head>
-<body>
+<body onload="show()">
+<!--shade-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog book-modal" role="document">
+        <div class="modal-content book_modal">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-header banner">
+                <div class="h1">你只需要决定出发</div>
+                <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+            </div>
+            <div class="modal-body contact-form1">
+                <div class="h6">填写目的地信息</div>
+                <form action="" class="planForm">
+                    <div>
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="destination_1"/>
+                        <input type="text" placeholder="天数" class="days_1"/>
+
+                    </div>
+                    <div><input type="text" placeholder="手机" class="phone_1"/></div>
+                    <div class="text"><textarea placeholder="备注内容"></textarea></div>
+                    <div class="submit"><button>提交</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--concat-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/download.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
 <!--header-->
 <div class="header">
     <div class="header-center">
@@ -14,12 +92,12 @@
         </div>
         <ul class="header-nav">
             <li><a href="../index.html">首页</a></li>
-            <li><a href="../html/travel.html">定制旅行</a></li>
+            <li><a href="travel.html">定制旅行</a></li>
             <li><a href="">定制师</a></li>
-            <li><a href="">路书</a></li>
+            <li><a href="book.html">路书</a></li>
             <li><a href="">案例故事</a></li>
             <li><a href="">目的地</a></li>
-            <li><a href="">婚礼婚拍</a></li>
+            <li><a href="wedding.html">婚礼婚拍</a></li>
             <li><a href="">关于我们</a></li>
         </ul>
         <div class="header-contact">
@@ -28,7 +106,161 @@
             </div>
             <p>400 890 3040</p>
         </div>
-        <a href="#" class="refer">免费咨询</a>
+        <a href="#" class="refer"  data-toggle="modal" data-target="#myModal">免费咨询</a>
+    </div>
+</div>
+<!--articles-->
+<div class="articles">
+    <!-- articles-nav-->
+    <div class="articles-nav">
+        <div class="nav-header">
+            <ul class="nav-list">
+                <li><a href="#">日本</a></li>
+                <li><a href="#">亚洲</a></li>
+                <li><a href="#">澳大利亚</a></li>
+                <li><a href="#">新西兰</a></li>
+                <li><a href="#">美国</a></li>
+                <li><a href="#">加拿大</a></li>
+                <li><a href="#">海岛</a></li>
+                <li><a href="#">极光</a></li>
+                <li><a href="#">签证</a></li>
+                <li><a href="#">欧洲</a></li>
+                <li><a href="#">北欧</a></li>
+                <li><a href="#">英国</a></li>
+                <li><a href="#">酒店</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">购物</a></li>
+                <li><a href="#">定制游</a></li>
+                <li><a href="#">海外婚礼</a></li>
+                <li><a href="#">亲子游</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- articles-list-->
+    <div class="articles-list">
+        <div class="a-tit">
+            <span><a href="../index.html">首页</a></span>
+            <span>&nbsp; > &nbsp;</span>
+            <span><a href="">旅游攻略</a></span>
+        </div>
+        <!-- left-box-->
+        <div class="left-box">
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img" style="background: url('../img/y-img/p-1.png') no-repeat center"></div>
+                    <p class="item-tit">暑假带孩子去哪旅行比较合适？</p>
+                    <div class="item-content">暑假到了，带孩子去哪儿旅行比较合适？</div>
+                </div>
+            </a>
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img"style="background: url('../img/y-img/p-2.png') no-repeat center"></div>
+                    <p class="item-tit">欧洲蜜月旅行十日全景路线推荐</p>
+                    <div class="item-content">充满浪漫色彩的希腊与意大利，恐怕是新婚夫妇最向往的欧洲蜜月旅行目的地了。那么，如何安排合理又精彩的行程呢？</div>
+                </div>
+            </a>
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img"style="background: url('../img/y-img/p-3.png') no-repeat center"></div>
+                    <p class="item-tit">国庆去澳洲旅行哪里人最少？</p>
+                    <div class="item-content">塔斯马尼亚，一个经常被输入法坑成“他死骂你呀”的地方。</div>
+                </div>
+            </a>
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img"style="background: url('../img/y-img/p-4.png') no-repeat center"></div>
+                    <p class="item-tit">出国旅行目的地推荐：不会英语也没关系</p>
+                    <div class="item-content">出国旅行，总觉得自己是个宝宝，牙牙学语那种。被撂在异国他乡，一定会因为语言不通而寸步难行，分分钟迷失东京，饿在伦敦，困于纽约。</div>
+                </div>
+            </a>
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img"style="background: url('../img/y-img/p-5.png') no-repeat center"></div>
+                    <p class="item-tit">第一次出国旅游去哪好：澳大利亚</p>
+                    <div class="item-content">第一次出国旅游，按说亚洲周边的国家应该是最好的“试水”选择，距离近而且文化饮食方面的重合度高。但也正是因为这份相似，让出国旅行这件事少了点刺激。毕竟东南亚都快被我大天朝变成“殖民地”了，虽然也好玩，但总感觉像出了个“假国”。再说咱们出国旅行就是想看不一样的风景、收获多彩的旅行故事、吃到特色的美食啊！</div>
+                </div>
+            </a>
+            <a href="strategy-page.html">
+                <div class="left-box_item">
+                    <div class="item-img"style="background: url('../img/y-img/p-6.png') no-repeat center"></div>
+                    <p class="item-tit">冬天去哪里旅行最合适？</p>
+                    <div class="item-content">冬天去哪里旅行比较合适？</div>
+                </div>
+            </a>
+        </div>
+        <!-- right-box-->
+        <div class="right-box">
+            <div class="ad01">
+                <img src="../img/y-img/articles_right01.jpg" alt=""/>
+                <p class="title">贴心路书</p>
+                <p class="sub-title">路书是你的私人导游+旅行管家</p>
+            </div>
+            <div class="ad02">
+                <a href="travel.html"><img src="../img/y-img/articles_right02.jpg" alt=""/></a>
+            </div>
+            <div class="ad03">
+                <p>微信关注“无二之旅”</p>
+                <p>接收海外旅游原创好文</p>
+                <img src="../img/y-img/QR.png" alt=""/>
+            </div>
+        </div>
+        <!-- page-->
+        <div class="page">
+            <ul class="pag">
+                <li class="active"><a href="#"><span>1</span></a></li>
+                <li><a href=""><span>2</span></a></li>
+                <li><a href=""><span>3</span></a></li>
+                <li class="disable"><a href="">...</a></li>
+                <li><a href=""><span>最后一页</span></a></li>
+                <li class="next"><a href=""><span>下一页</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--pc端底部链接-->
+    <div class="footer-articles">
+        <div class="container-2">
+            <div class="content">
+
+            </div>
+        </div>
+        <div class="show-more">点击查看更多</div>
+        <div class="footer-mask"></div>
+    </div>
+</div>
+<!--form-->
+<div class="form">
+    <div class="bg">
+        <div class="form-wrapper">
+            <!-- contact-form-->
+            <div class="contact-form">
+                <div class="title">你只要决定出发</div>
+                <p class="sub-title">剩下所有的一切，交给无二之旅就好</p>
+                <form action="">
+                    <div class="row">
+                        <input type="text" placeholder="姓名" class="name"/>
+                        <input type="text" placeholder="海外目的地" class="place"/>
+                        <input type="text" placeholder="天数" class="days"/>
+                    </div>
+                    <div class="row">
+                        <input type="text" placeholder="手机" class="phone"/>
+                    </div>
+                    <div class="row text">
+                        <textarea class="comment" placeholder="备注内容"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-text">
+                <p class="tit">5年来，</p>
+                <p>已有 <span>167908</span>位客户选择无二之旅，</p>
+                <p>好评率近 <span class="tit">100%</span>。</p>
+                <p>我们期待能为你，</p>
+                <p class="tit-1">定制一次有温度的旅行。</p>
+            </div>
+            <div class="line"></div>
+        </div>
     </div>
 </div>
 <!--footer-->
@@ -117,5 +349,154 @@
         </div>
     </div>
 </div>
+
+<!--移动端-->
+<div class="raw">
+    <!-- header-->
+    <div class="header-2">
+        <div class="nav-bar1">
+            <div class="container-3">
+                <div class="nav-header1">
+                    <button class="btn_1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="book-btn">免费咨询</button>
+                    <a href="" class="nav-logo">
+                        <img src="../img/y-img/header_logo.png" alt=""/>
+                    </a>
+                </div>
+                <div class="nav-collapse1">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="travel.html">定制旅行</a></li>
+                        <li><a href="#">定制师</a></li>
+                        <li><a href="book.html">路书</a></li>
+                        <li><a href="#">案例故事</a></li>
+                        <li><a href="#">目的地</a></li>
+                        <li><a href="#">婚礼婚拍</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- articles-->
+    <div class="mobile_articles">
+        <!-- a-header-->
+        <div class="articles_header">
+            <div class="mobile_list">
+                <a href="#">日本</a>
+                <a href="#">亚洲</a>
+                <a href="#">澳大利亚</a>
+                <a href="#">新西兰</a>
+                <a href="#">美国</a>
+                <a href="#">加拿大</a>
+                <a href="#">海岛</a>
+                <a href="#">极光</a>
+                <a href="#">签证</a>
+                <a href="#">欧洲</a>
+                <a href="#">北欧</a>
+                <a href="#">英国</a>
+                <a href="#">酒店</a>
+                <a href="#">美食</a>
+                <a href="#">购物</a>
+                <a href="#">定制游</a>
+                <a href="#">海外婚礼</a>
+                <a href="#">亲子游</a>
+            </div>
+        </div>
+        <!-- a-new-->
+        <div class="articles-new">
+            <!-- mobile-left-->
+            <div class="mobile-left">
+                <a href="strategy-page.html">
+                    <div class="left-item item-1">
+                        <div class="item_img img1"></div>
+                        <p class="item_tit">父母去海岛旅行都能玩什么？</p>
+                        <p class="item_con">小时候看电视剧，大夫总是一脸严肃地说，病人只要过了这个冬天，就会好起来。</p>
+                    </div>
+                </a>
+                <a href="strategy-page.html">
+                    <div class="left-item">
+                        <div class="item_img img2"></div>
+                        <p class="item_tit">学会这些，轻松带父母出国旅行？</p>
+                        <p class="item_con">每次看父母的朋友圈，都觉得自己和他们不是生活在一个世界。</p>
+                    </div>
+                </a>
+                <a href="strategy-page.html">
+                    <div class="left-item">
+                        <div class="item_img img3"></div>
+                        <p class="item_tit">冬季出国旅行，有哪些不能错过的折扣？</p>
+                        <p class="item_con">出国旅行，99%的人，都是用买买买来结尾。</p>
+                    </div>
+                </a>
+                <a href="strategy-page.html">
+                    <div class="left-item">
+                        <div class="item_img img4"></div>
+                        <p class="item_tit">在欧洲游玩一天到底要花多少钱？</p>
+                        <p class="item_con">去欧洲旅游是大多数人心目中理想的目的地。</p>
+                    </div>
+                </a>
+                <a href="strategy-page.html">
+                    <div class="left-item">
+                        <div class="item_img img5"></div>
+                        <p class="item_tit">英国伦敦1.2W 10天深度游路线</p>
+                        <p class="item_con">在伦敦旅行不是一个你可以两天搞定的地方。</p>
+                    </div>
+                </a>
+                <a href="strategy-page.html">
+                    <div class="left-item">
+                        <div class="item_img img5"></div>
+                        <p class="item_tit">冰岛10日环岛自驾游路线推荐</p>
+                        <p class="item_con">冰岛，恰似游离在极地的一脉温柔。</p>
+                    </div>
+                </a>
+            </div>
+            <!-- 分页-->
+            <div class="page_mobile form-1">
+                <ul>
+                    <li class="active"><a href="#"><span>1</span></a></li>
+                    <li><a href=""><span>2</span></a></li>
+                    <li><a href=""><span>3</span></a></li>
+                    <li class="disable"><a href="">...</a></li>
+                    <li><a href=""><span>最后一页</span></a></li>
+                    <li class="next"><a href=""><span>下一页</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--mobile_form -->
+    <div class="mobile_form form-1">
+        <div class="con-form">
+            <div class="h1-1">你只需要决定出发</div>
+            <p>- 剩下所有的一切，交给无二之旅就好 -</p>
+
+            <form action="" class="form-1">
+                <div><input type="text" placeholder="姓名" class="name-1"/></div>
+                <div>
+                    <input type="text" placeholder="海外目的地" class="place"/>
+                    <input type="text" placeholder="天数" class="day"/>
+                </div>
+                <div><input type="tel" placeholder="手机" class="phone-1"/></div>
+                <div class="textarea"><textarea placeholder="备注内容"></textarea></div>
+                <div class="sub"><button>提交</button></div>
+            </form>
+        </div>
+    </div>
+    <!-- footer-->
+    <div class="mobile-footer-1">
+        <p>Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+        <p>
+            <a href="">京ICP备16058485号</a>
+            商务合作：010-59684420
+        </p>
+    </div>
+</div>
+
 </body>
+<script src="../js/result.js"></script>
+<script src="../js/strategy.js"></script>
 </html>
