@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>加入我们</title>
+    <link rel="stylesheet" href="../css/CSSreset.css"/>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/dong3.css"/>
+    <link rel="stylesheet" href="../css/join.css"/>
+    <style>
+        .modal-content{
+            background-color: #e6e6e6;
+            width: 500px;
+            height: 560px;
+        }
+        .modal-header{
+            background: url("../img/s-img/place19.png") no-repeat center/cover;
+        }
+        /*页脚表单*/
+        .wayformpp1{
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            text-align: center;
+            color: #fff;
+        }
+        .wayformp2{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.12;
+            letter-spacing: -0.5px;
+            margin: 0 0 10px;
+            text-align: center;
+            color: #fff;
+        }
+        .modal-body>form{
+            width: 440px;
+            height: 260px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .ul21{
+            width: 440px;
+            height: 48px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .ul21>li{
+            float: left;
+            margin: 0 10px 0 0;
+            width: 136px;
+            height: 42px;
+            position: relative;
+        }
+        .ul21 li>input{
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            width: 13px;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+            opacity: 0.011;
+            z-index: 100;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+        }
+        .ul21 li>label{
+            color: #5e3008;
+            text-align: center;
+            cursor: pointer;
+            z-index: 90;
+            height: 42px;
+            line-height: 42px;
+            border: none;
+            background-color: #FFF;
+            border-radius: 3px;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 134px;
+            float: left;
+            position: absolute;
+        }
+        .ul21 label:hover{
+            background: #F8F8F3;
+        }
+        .ul21>li:nth-child(2)>label{
+            background-color: #f02446;
+            color: #fff;
+        }
+        .ul22{
+            width: 440px;
+            margin: 20px auto;
+            height: 48px;
+        }
+        .ul22>.inp1{
+            width: 140px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp2{
+            width: 182px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp3{
+            width: 107px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .phone2{
+            width: 429px;
+            border-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            margin: auto;
+            border-right: 1px solid #e6e6e6;
+        }
+        .comment2{
+            width: 429px;
+            height: 43px;
+            padding: 11px;
+            border: 0;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        .submit2{
+            color: white;
+            font-size: 18px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border: 0;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #63C6C2;
+            margin: 0 180px 0;
+        }
+        .btn{
+            font-size: 12px;
+            color: #fff;
+            margin: 6px 5px 6px 0;
+            background-color: #f64b19;
+            padding: 0 15px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 3px;
+            float: right;
+            text-decoration: none;
+            border: 0;
+        }
+        .btn:hover{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+        }
+        .btn:active{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .btn:focus{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .modal-backdrop{
+            z-index: 0;
+        }
+    </style>
+</head>
+<body onload="show()">
+<!--联系您-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/wedtop.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn3">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
+<!--header-->
+<div class="header">
+    <div class="header-center">
+        <div class="logo">
+            <img src="../img/s-img/about3.png" alt=""/>
+        </div>
+        <ul class="header-nav">
+            <li><a href="">首页</a></li>
+            <li><a href="">定制旅行</a></li>
+            <li><a href="">定制师</a></li>
+            <li><a href="">路书</a></li>
+            <li><a href="">案例故事</a></li>
+            <li><a href="">目的地</a></li>
+            <li><a href="">婚礼婚拍</a></li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+        <div class="header-contact">
+            <div class="tel-icon">
+                <img src="../img/s-img/weddingphone.png" alt=""/>
+            </div>
+            <p>400 890 3040</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            免费咨询
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <p class="wayformpp1">无二婚礼</p>
+                            <p class="wayformp2">- 专业的海外婚礼 &amp; 海外婚拍团队 -</p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <ul class="ul21">
+                                <li>
+                                    <input type="radio" id="free_1" name="category" value="tour">
+                                    <label for="free_1">婚礼 + 婚拍</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="tailor_1" name="category" value="custom" checked="checked">
+                                    <label for="tailor_1">婚礼</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="none_1" name="category" value="unknown">
+                                    <label for="none_1">婚拍</label>
+                                </li>
+                            </ul>
+                            <ul class="ul22">
+                                <input class="inp1" type="text" name="name" placeholder="姓名">
+                                <input class="inp2" type="text"  placeholder="海外目的地">
+                                <input class="inp3" type="text"  placeholder="天数">
+                            </ul>
+                            <input  class="phone2" type="tel"  placeholder="手机" >
+                            <textarea name="comment" class="comment2" placeholder="备注内容"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="submit2" >提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="joinneir">
+    <!--banner-->
+    <div class="joinbanner">
+        <div class="joinbottom">
+        <div class="jointao">
+            <h1>加入我们</h1>
+            <p>Join Us</p>
+            <a class="joinbtn" href="#mao">查看详情</a>
+        </div>
+        </div>
+    </div>
+    <!--视频-->
+    <div class="joinvideo">
+        <div class="imgbox" onclick="videobox()">
+            <img src="../img/s-img/join2.jpg" alt="">
+        </div>
+    </div>
+    <div class="video1">
+        <div class="bg"></div>
+        <button  class="close" ><span>×</span></button>
+        <div  class="videotao" style="width: 1200px; height: 600px; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px;">
+            <video  class="vedio1" preload poster="https://images.cdn.uniqueway.com/uploads/94053c2dgw1emwd1x785lj21jk0v4jyr.jpg" controls >
+                <source src="https://uniqueway-video.b0.upaiyun.com/Uniqueway%20Join%20Us.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <!--改变自己-->
+    <div class="joinitem">
+        <div class="joinitemtao">
+            <div class="joinimg">
+                <img src="../img/s-img/join3.jpg" alt=""/>
+            </div>
+            <h1>一起来改变自己</h1>
+            <p>世界很大，我们很小，在工作中去发现这个世界的美丽，终会将我们也变成最美丽的自己</p>
+        </div>
+        <div class="joinitemtao">
+            <div class="joinimg">
+                <img src="../img/s-img/join4.JPG" alt=""/>
+            </div>
+            <h1>一起去改变他们</h1>
+            <p>世界这么美，他们却总是错过。我们工作最大的意义与成就，就是去帮助他们，真正领略到世界的美好</p>
+        </div>
+    </div>
+    <!--招聘职位-->
+    <div class="joinzhao" id="mao">
+        <h1>招聘职位</h1>
+        <ul class="joinul">
+            <li class="color">前端工程师(北京)</li>
+            <li>数据产品经理(北京)</li>
+            <li >产品经理(北京)</li>
+            <li>淘宝运营(北京)</li>
+            <li>新媒体运营</li>
+            <li>旅行社同业销售(重庆)</li>
+            <li>客户经理(重庆)</li>
+            <li>预定专员(北京／重庆)</li>
+            <li>旅行定制师(北京／重庆)</li>
+            <li>婚礼策划师(北京)</li>
+            <li>旅行顾问(重庆)</li>
+            <li>UI设计师(北京)</li>
+            <li>视觉设计师(北京)</li>
+            <li>法务专员(北京)</li>
+            <li>产品经理助理实习生(北京)</li>
+            <li>网站编辑实习生(北京)</li>
+            <li>旅行编辑实习生(北京)</li>
+            <li>视觉设计实习生(北京)</li>
+            <li>海外婚礼市场实习生(北京)</li>
+            <li>线下推广实习生(北京)</li>
+        </ul>
+        <div class="jointab">
+            <!-- 前端工程师（北京） -->
+            <div class="joinitem2 block">
+                <div class="h5">工作职责</div>
+                <p>1.官网维护</p>
+                <p>2.开发公司内部的业务系统,包括CRM系统，路书制作系统、路书自动化排版系统、数据仓库等</p>
+                <p>3.开发服务于合作伙伴的分销平台，包括网站前台、管理后台，线路自动规划系统、合作伙伴API对接等等</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.2年以上前端开发经验</p>
+                <p>2.熟练使用HTML5,CSS3</p>
+                <p>3.熟练使用Bootstrap,jQuery</p>
+                <p>4.熟悉任意前端框架React/Backbone/Vue.js</p>
+                <p>5.熟悉任意1门后端语言</p>
+                <p>6.善于思考问题，解决问题，有上进心，1年内阅读至少3至5本技术书籍</p>
+                <p>7.做事积极主动，敢于接受超出能力范围的工作</p>
+                <p>8.追求高质量的代码</p>
+                <p>9.心态开放，不抵触学习新技术新知识</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 数据产品经理（北京) -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.管理和分析业务方数据需求，支持业务团队调取和使用数据的需求</p>
+                <p>2.业务数据的需求整理，协调研发推进执行</p>
+                <p>3.制定数据产品运营策略，协调产品经理持续优化业务系统功能和使用体验，提高业务效率</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.1年以上互联网行业数据产品经理工作经验，有数据分析经验</p>
+                <p>2.懂技术，能够不断的学习技术知识，能与研发人员一起聊产品，聊技术逻辑</p>
+                <p>3.具备良好的数据敏锐度，对数据处理和数据可视化有深刻的理解</p>
+                <p>4.较强的逻辑思考能力和归纳总结能力，具备需求分析或业务流程设计等方案撰写能力</p>
+                <p>5.有较强的沟通协调能力和主动性，为结果负责</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 产品经理（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.根据公司的业务需求，设计公司业务系统的工作流</p>
+                <p>2.负责完成系统产品原型策划，产品流程定义和相关文档撰写</p>
+                <p>3.负责对系统的进行长期跟进，协助开发，持续改进业务部门使用的的体验和满意度</p>
+                <p>4.负责对公司业务部门对于系统使用的跟踪研究，挖掘业务部门需求，提升业务部门工作效率</p>
+                <p>5.负责收集业务部门的日常需求，根据需求的优先级，组织相关人员进行项目的推动</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.2年互联网相关工作经验，至少1年的产品相关工作经验</p>
+                <p>2.本科及以上学历，计算机，经济学，管理学或相关专业</p>
+                <p>3.具有较强的沟通能力、团队合作精神和协调组织能力</p>
+                <p>4.熟练使用常见原型工具、思维导图、办公软件等工具，具备出色的文档撰写能力</p>
+                <p>5.具备快速学习和创新能力，具备一定的数据分析能力</p>
+                <p>6.深度移动互联网用户、产品控，熟悉国内外各大榜单焦点产品，完美主义者，追求体验极致</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 淘宝运营（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.负责淘宝店铺的日常运营</p>
+                <p>2.回复客户咨询，解决客户问题</p>
+                <p>3.领导交办的其他事项</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大专以上学历，有淘宝运营经验的优先</p>
+                <p>2.了解签证办理流程</p>
+                <p>3.主动性强，有责任心，耐心，具有良好的销售意识</p>
+                <p>4.热爱旅行，有出境游经历的优先</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 新媒体运营  -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.完成无二之旅新媒体的选题策划、内容撰写</p>
+                <p>2.针对新媒体进行内容形式、互动形式、传播形式的更多探索</p>
+                <p>3.负责新媒体合作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.热爱旅行，有出境旅行经历</p>
+                <p>2.2年以上新媒体、互联网、传媒等方面工作经验</p>
+                <p>3.微博、微信、知乎等重度用户</p>
+                <p>4.思维活跃、审美良好</p>
+                <p>5.踏实认真、有责任心、追求完美、执行力强</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 旅行社同业销售（重庆）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.负责公司旅游产品在同业市场的推广和销售</p>
+                <p>2.根据公司规划，完成销售指标</p>
+                <p>3.开拓新市场，发展新客户，增加产品销售范围</p>
+                <p>4.负责客户市场信息收集及竞争对手分析，做针对性有效工作</p>
+                <p>5.管理、开发、维护客户，做好与客户长期战略合作纽带联系</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大专及以上学历，2年以上旅行社同业销售经验</p>
+                <p>2.综合素质好，表达能力强，具有较强的沟通能力及谈判技巧</p>
+                <p>3.有责任心，有亲和力，具备良好的客户服务意识</p>
+                <p>4.有团队协作精神及挑战创新精神，能承受较大的工作压力</p>
+                <p>5.热爱旅游，热爱生活，有激情，能吃苦耐劳，有开拓进取精神</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 客户经理（重庆）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.根据部门安排完成电话销售及门店客户咨询任务，并达成销售指标</p>
+                <p>2.必要情况下，协助旅行顾问以及定制师，完成已签约客户的后续服务工作</p>
+                <p>3.完成大型市场活动现场销售工作</p>
+                <p>4.必要时配合产品部门，完成新工具测试等工作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大专及以上学历，1年以上销售或者客服工作经验</p>
+                <p>2.热爱旅行，对欧美澳新日本台湾高端海岛等旅行目的地有一定了解</p>
+                <p>3.性格开朗，细致耐心，有灵活的应变能力，良好的职业素养，责任心强</p>
+                <p>4.优秀的沟通、交际能力、组织协调能力及团队合作精神</p>
+                <p>5.较强的学习以及接受新事物的能力</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 预定专员（北京／重庆） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.预定机票、酒店、活动、城市及城际交通，准确高效的落实客户行程</p>
+                <p>2.维护境外供应商，实时更新产品信息</p>
+                <p>3.配合财务对账、确保客户账单的准确性</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.熟练使用各大酒店及机票预定平台</p>
+                <p>2.良好的英文沟通及书面沟通能力</p>
+                <p>3.熟悉信用卡操作流程</p>
+                <p>4.耐心、细心、对数字敏感</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 旅行定制师（北京／重庆） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.根据客户需求，为客户定制行程、制作路书</p>
+                <p>2.根据行程安排，进行机票、酒店、租车、活动等预定工作</p>
+                <p>3.为客户的出行提供保障服务</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.有境外自助旅行经验，了解自助旅行，对旅行有狂热的兴趣，认同无二之旅的文化</p>
+                <p>2.沟通表达能力强，能清晰介绍、解说旅行中的细节</p>
+                <p>3.认真负责、细致耐心、主动性强、审美能力强、有趣</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 婚礼策划师（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.与无二之旅海外婚礼目的地的资源方进行沟通，丰富海外婚礼产品</p>
+                <p>2.跟进海外婚礼和婚拍客户，为客户做出细致的咨询并达到签约</p>
+                <p>3.策划出客户满意的婚礼方案，为客户推荐合适的婚礼和婚拍产品</p>
+                <p>4.为海外婚礼和婚拍市场渠道拓展的同事提供素材</p>
+                <p>5.细心并高效的完成每一场婚礼和婚拍客户</p>
+                <p>6.大型婚礼飞往各国目的地，与无二之旅海外资源团队配合完成婚礼</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.熟练掌握英文听说读写</p>
+                <p>2.较强的销售能力、亲和力、表达能力</p>
+                <p>3.丰富的婚礼策划和执行经验</p>
+                <p>4.熟练的设计和手绘功底</p>
+                <p>5.熟悉各类花材与色彩搭配</p>
+                <p>6.熟练掌握各类办公软件，会PS更佳</p>
+                <p>7.有很高的时尚敏感度</p>
+                <p>8.2年以上婚庆行业专业的工作经验</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 旅行顾问（重庆） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.与客户经理配合，完善已签约客户的各类信息及需求，并提供相应咨询工作</p>
+                <p>2.与定制师配合，跟进客户订单进度，为客户出行前后提供必要服务及客户关怀</p>
+                <p>3.配合产品部门，完成日常客户数据测试以及统计工作</p>
+                <p>4.完成旅行附产品的推荐、销售工作以及客户指导工作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大学本科及以上学历，1年以上销售或者客服工作经验</p>
+                <p>2.热爱旅行，对欧美澳新日本台湾高端海岛等旅行目的地有一定了解</p>
+                <p>3.性格开朗，细致耐心，服务意识强烈体贴入微，有灵活的应变能力，良好的职业素养，责任心强</p>
+                <p>4.优秀的沟通、交际能力、组织协调能力及团队合作精神</p>
+                <p>5.较强的学习以及接受新事物的能力</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- UI设计师（北京）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.独立完成团队协同工作，协助分析并理解产品需求</p>
+                <p>2.负责公司官网页面、DIST系统及合作方页面的设计</p>
+                <p>3.负责视觉手绘设计</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.2年以上的移动互联网、软件或者互联网行业UI设计工作经验</p>
+                <p>2.对UI设计具有极大的热情及独立的想法</p>
+                <p>3.能快速、高质量的完成设计工作</p>
+                <p>4.具有良好的沟通能力和团队精神</p>
+                <p>5.具有手绘能力优先</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 视觉设计师（北京）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.独立完成团队协同工作，协助分析并理解产品需求</p>
+                <p>2.负责线上方向的视觉设计</p>
+                <p>3.负责相关物料的设计</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.2年以上的移动互联网、软件或者互联网行业视觉设计工作经验</p>
+                <p>2.对视觉设计具有极大的热情及独立的想法</p>
+                <p>3.能快速、高质量的完成设计工作</p>
+                <p>4.具有良好的沟通能力和团队精神</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 法务专员（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.负责管理公司资质证件：公司基础证照、各项业务许可资质的申请、维护</p>
+                <p>2.办理新增业务所需或国家最新颁布法规要求的各种资质，保证公司和公司经营业务的合法性</p>
+                <p>3.搜集、研究公司业务相关的新的法律法规，业务法律框架的搭建及调整</p>
+                <p>4.工商注册、变更、注销等事宜</p>
+                <p>5.负责知识产权管理，申请、维护专利、商标、著作权，协助处理知识产权纠纷</p>
+                <p>6.公司内、外部法律事务的咨询与处理等其他日常法务工作</p>
+                <p>7.推动公司体系及制度的建设</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.法学专业，统招本科以上学历，通过国家司法考试</p>
+                <p>2.2-3年相关工作经验，具有证照管理、资质申请相关经验优先</p>
+                <p>3.具有扎实的法律功底，熟悉合同法、公司法、知识产权及互联网相关法律法规</p>
+                <p>4.工作细致、踏实、全面，主动性强、适应能力强、理解能力强、沟通能力及抗压能力强</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 产品经理助理实习生（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.协助产品经理收集需求，完善产品文档</p>
+                <p>2.协助产品经理整理日常数据，进行基本的数据分析工作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.211或985大学在校大四学生，理工类专业</p>
+                <p>2.优秀的执行能力，能够理解工作内容，按时保质保量完成工作</p>
+                <p>3.沟通能力、逻辑能力强，能独立分析问题</p>
+                <p>4.语言或书面表达能力出色</p>
+                <p>5.有明确职业规划，或对产品经理工作有强烈兴趣</p>
+                <p>实习生将收获</p>
+                <p>1.实习经历证明</p>
+                <p>2.有机会学习了解全球最优质,独特,有趣的旅行体验</p>
+                <p>3.接触海外旅行行业的佼佼者，以及在海外具有丰富经验的旅行达人</p>
+                <p>4.在拥有良好协作精神和创新能力的学习型团队里，充分发挥自我能力</p>
+                <p>5.国内最好具有互联网基因的海外定制旅行公司工作的独特工作经历</p>
+                <p>6.与你的付出相匹配的薪资,优秀者可在毕业后成为正式员工，参加公司员工的走遍全球的计划</p>
+                <p>7.工作地点为北京</p>
+                <p>8.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 网站编辑实习生（北京）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.负责网站的内容编辑</p>
+                <p>2.根据平台需求进行线路编辑</p>
+                <p>3.负责线路的上线</p>
+                <p>4.其他网络推广工作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大学本科及以上学历在读</p>
+                <p>2.具有良好的文字功底，耐心，细心</p>
+                <p>3.热爱旅行，有出境游经历的同学优先</p>
+                <p>4.表现优秀者可转正</p>
+                <p>5.工作地点为北京</p>
+                <p>6.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 旅行编辑实习生（北京）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>旅行目的地信息的编辑和更新</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.有自助游经历，擅长规划旅行行程，有出境游经历优先</p>
+                <p>2.文笔好，认真负责，沟通能力强，熟练使用Word或Pages</p>
+                <p>3.收到简历后会发送笔试题，请注意查收邮箱​</p>
+                <p>4.工作地点为北京</p>
+                <p>5.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 视觉设计实习生（北京）-->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.独立完成团队协同工作，协助分析并理解产品需求，优化视觉设计</p>
+                <p>2.负责banner图、线上线下物料、专题页面的设计</p>
+                <p>3.参与头脑风暴为项目设计贡献想法</p>
+                <p>4.能够独立推动和完成整个项目的设计工作</p>
+                <p>5.完成领导交办的其他工作</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.设计相关专业，本科及以上学历</p>
+                <p>2.有互联网行业视觉设计实习经验的同学优先</p>
+                <p>3.对于视觉设计具有极大热情，能快速、高质量的完成设计工作，对于设计有自己的独立想法，同时能够选择性接受不同的意见从而提高自己的工作质量</p>
+                <p>4.具有良好的沟通能力和团队精神，从项目和团队的角度思考问题</p>
+                <p>5.具有手绘能力优先</p>
+                <p>6.工作地点为北京</p>
+                <p>7.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 海外婚礼市场实习生（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.配合领导进行全国分销以及分公司的海外婚礼和婚拍拓展及维护</p>
+                <p>2.开拓婚庆同业资源和渠道，建立合作关系</p>
+                <p>3.维护无二海外婚礼&amp;婚拍的网站与各新媒体</p>
+                <p>4.跟进客户，完成销售</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.熟练掌握英文听说读写</p>
+                <p>2.较强的亲和力、表达能力</p>
+                <p>3.热爱婚礼行业，热爱旅行</p>
+                <p>4.优秀的谈判能力和市场开拓能力</p>
+                <p>5.具有良好的文字功底</p>
+                <p>6.大学本科及以上学历在读</p>
+                <p>7.工作地点为北京</p>
+                <p>8.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+            <!-- 线下推广实习生（北京） -->
+            <div class="joinitem2">
+                <div class="h5">工作职责</div>
+                <p>1.整理、修改并上传境外旅行线路</p>
+                <p>2.核对旅行产品价格并上线</p>
+                <p>3.日常数据的维护和总结</p>
+                <p>4.领导交办的其他任务</p>
+
+                <div class="h5">任职要求</div>
+                <p>1.大三以上在校生</p>
+                <p>2.主动性强，对数字敏感，沟通能力强</p>
+                <p>3.踏实，有耐心，能吃苦</p>
+                <p>4.工作地点为北京</p>
+                <p>5.每周需保证最少4个整天的出勤，连续实习3个月以上</p>
+                <p class="contact-link">简历请投递至hr@uniqueway.com  注明“职位＋工作地点＋姓名”</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- pc端底部导航-->
+        <div class="footer-container">
+            <div class="footer-list">
+                <ul class="clearfix">
+                    <li><a href="">客户评价</a></li>
+                    <li><a href="">出国旅游</a></li>
+                    <li><a href="">私人定制旅游</a></li>
+                    <li><a href="">旅游攻略</a></li>
+                    <li><a href="">蜜月旅行</a></li>
+                    <li><a href="">亲自旅行</a></li>
+                    <li><a href="">海外婚礼</a></li>
+                    <li><a href="">定制路书</a></li>
+                    <li><a href="">出国自由行</a></li>
+                </ul>
+                <ul class="clearfix">
+                    <li><a href="">欧洲自由行</a></li>
+                    <li><a href="">美国自由行</a></li>
+                    <li><a href="">加拿大自由行</a></li>
+                    <li><a href="">澳大利亚自由行</a></li>
+                    <li><a href="">新西兰自由行</a></li>
+                    <li><a href="">斯里兰卡自由行</a></li>
+                    <li><a href="">大溪地自由行</a></li>
+                    <li><a href="">毛里求斯自由行</a></li>
+                    <li><a href="">迪拜自由行</a></li>
+                    <li><a href="">日本自由行</a></li>
+                </ul>
+                <ul class="clearfix">
+                    <li><a href="">冰岛自由行</a></li>
+                    <li><a href="">挪威自由行</a></li>
+                    <li><a href="">英国自由行</a></li>
+                    <li><a href="">荷兰自由行</a></li>
+                    <li><a href="">瑞士自由行</a></li>
+                    <li><a href="">德国自由行</a></li>
+                    <li><a href="">法国自由行</a></li>
+                    <li><a href="">意大利自由行</a></li>
+                    <li><a href="">希腊自由行</a></li>
+                    <li><a href="">捷克自由行</a></li>
+                    <li><a href="">西班牙自由行</a></li>
+                    <li><a href="">葡萄牙自由行</a></li>
+                </ul>
+                <ul class="clearfix">
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li class="links">
+                        关注我们：
+                        <a href="" class="link">
+                            <img src="../img/s-img/weinxin.png" alt=""/>
+                            <img src="../img/s-img/wuerweima.png" alt="" class="download"/>
+                        </a>
+                        <a href="">
+                            <img src="../img/s-img/xinlang.png" alt=""/>
+                        </a>
+                        <a href="">
+                            <img src="../img/s-img/none.png" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- pc端底部联系-->
+        <div class="footer-content">
+            <div class="footer-contain">
+                <div class="row">
+                    <div class="footer-logo">
+                        <a href="">
+                            <img src="../img/s-img/wulogo2.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="footer-text">
+                        <div class="text-container">
+                            <span>Copyright  2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
+                            <span>商务合作：010-59684420</span>
+                            <span>投诉、建议及其他反馈：400-890-3040（语音后按2#）</span>
+                            <br/>
+                            <span>北京无二之旅文化传播有限公司</span>
+                            <span>地址：北京市朝阳区百子湾路苹果社区北区二十二院街艺术区6-19</span>
+                            <span>*本网站部分图片来自网络，若作者看到，请尽快与无二之旅联系。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../js/own.js"></script>
+<script src="../js/join.js"></script>
+<script src="../js/dong.js"></script>
+</html>

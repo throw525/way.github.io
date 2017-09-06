@@ -1,0 +1,212 @@
+.joinneir{
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.joinbanner{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    background: url("../img/s-img/join1.jpg") no-repeat center/cover;
+    position: relative;
+}
+.joinbottom{
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+}
+.jointao{
+    width: 83%;
+    height: 105px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    padding:0 15px;
+}
+.jointao>h1{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+.jointao>p{
+    margin-top: 5px;
+}
+.joinbtn{
+    border: 1px solid #fff;
+    padding: 3px 7px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.15s linear;
+    border-radius: 4px;
+}
+.joinbtn:hover{
+    background: rgba(255,255,255,0.3);
+    color: #333;
+    text-decoration: none;
+}
+.joinvideo{
+    width: 1000px;
+    height: 562px;
+    margin: 10px auto;
+}
+.imgbox{
+    cursor: pointer;
+}
+.imgbox>img{
+    width: 100%;
+    height: 100%;
+}
+.joinitem{
+    width: 1000px;
+    margin: 10px auto;
+    height: 400px;
+}
+.joinitemtao{
+    float: left;
+    width: 495px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.joinitemtao:nth-child(1){
+    margin-right: 5px;
+}
+.joinimg{
+    height: 265px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.joinimg>img{
+    width: 100%;
+}
+.joinitemtao>h1{
+    font-size: 22px;
+    color: #333;
+}
+.joinitemtao>p{
+    margin: 0 0 10px;
+}
+.joinzhao{
+    width: 60%;
+    height: 1066px;
+    margin: 70px auto;
+}
+.joinzhao>h1{
+    font-size: 24px;
+    text-align: center;
+    color: #669797;
+}
+.joinul{
+    width: 160px;
+    float: left;
+}
+.joinul>li{
+    color: #ffffff;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 160px;
+    padding: 5px 20px;
+    background: #595757;
+    list-style: disc;
+}
+.joinul>.color{
+    background: #669797;
+}
+.joinitem2{
+    margin: 25px 0 20px 190px;
+    display: none;
+}
+.block{
+    display: block;
+}
+.joinitem2>h5{
+    line-height: 1.1;
+    color: #669797;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.joinitem2>p{
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+.contact-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+/*สำฦต*/
+.video1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 999;
+    display: none;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.close{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFF;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=60);
+    opacity: .6;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.close>span{
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFF;
+    text-shadow: 0 1px 0 #fff;
+    z-index: 999999;
+}
+.videotao{
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.vedio1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.poster{
+    /*background-image: url(https://document.cdn.uniqueway.com/video/NzQueenstownWedding.png);*/
+    display: none;
+}

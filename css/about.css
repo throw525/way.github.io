@@ -1,0 +1,966 @@
+@media screen and (min-width:640px){
+    .nav-collapse{
+        display: none;
+    }
+    .mobileaboutcon{
+        display: none;
+    }
+    .mobile_footer{
+        display: none;
+    }
+    .mobileabtime{
+        display: none;
+    }
+    /*banner部分*/
+    .aboutbanner{
+        width: 100%;
+        height: 230px;
+        background: url("../img/s-img/about1.jpg") no-repeat center/cover;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .abouth3{
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: -1.2px;
+        text-align: center;
+        margin-top: 90px;
+    }
+    /*内容部分*/
+    .aboutcon{
+        width: 100%;
+        display: block;
+    }
+    .aboutittao{
+        width: 100%;
+        height: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14)
+    }
+    .aboutit{
+        width: 440px;
+        margin: 0 auto;
+        border: 0;
+    }
+    .aboutit>li{
+        width: 220px;
+        height: 40px;
+        text-align: center;
+        float: left;
+        line-height: 40px;
+    }
+    .line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 1px;
+        height: 18px;
+        margin: auto;
+        background-color: #d8d8d8;
+    }
+    .aboutcontao{
+        width: 85%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .aboutcontao>div{
+        display: none;
+    }
+    .abtaotit{
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #cec8c0;
+        padding: 40px 0 45px;
+    }
+    .abh3{
+        color: #544641;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2.0;
+        letter-spacing: -0.7px;
+    }
+    .absquare{
+        position: absolute;
+        left: calc(50% - 15px);
+        bottom: -16px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #cec8c0;
+        border-bottom: 1px solid #cec8c0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #ffffff;
+    }
+    .abtaocon{
+        margin-top: 60px;
+        height: 400px;
+    }
+    .storyitem{
+        width: 330px;
+        float: left;
+        margin: 0 60px 60px 0;
+    }
+    .storyitem>p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2;
+        letter-spacing: -0.5px;
+        color: #918682;
+        margin: 0;
+    }
+    .storyitem:nth-child(3){
+        margin-right: 0;
+    }
+    .active{
+        color: #5fc6c2;
+        border-bottom: 2px solid #5fc6c2;
+    }
+    .show{
+        display: block;
+    }
+    .abcon2map{
+        position: relative;
+        height: 700px;
+        background: url(../img/s-img/map.jpg) no-repeat center/cover;
+    }
+    .city{
+        position: absolute;
+        text-align: center;
+        color: #ffffff;
+    }
+    .head{
+        top: 220px;
+        right: 355px;
+    }
+    .chendu{
+        top: 400px;
+        left: 578px;
+    }
+    .chongqin{
+        top: 420px;
+        left: 630px;
+    }
+    .shenzhen{
+        top: 537px;
+        right: 360px;
+    }
+    .shanghai{
+        top: 400px;
+        right: 270px;
+    }
+    .jinhua{
+        top: 450px;
+        right: 295px;
+    }
+    .shuzhou{
+        top: 396px;
+        right: 303px;
+    }
+    .changzhou{
+        top: 382px;
+        right: 329px;
+    }
+    .zhangjiagang{
+        top: 367px;
+        right: 279px;
+    }
+    .head>.icon{
+        width: 40px;
+        height: 40px;
+        background: url(../img/s-img/beijing.png) no-repeat center/cover;
+        font-size: 12px;
+        border-radius: 100%;
+        display: block;
+    }
+    .branch>.icon{
+        width: 25px;
+        height: 25px;
+        background: url(../img/s-img/beijing.png) no-repeat center/cover;
+        font-size: 12px;
+        border-radius: 100%;
+        display: block;
+    }
+    .city_details{
+        display: none;
+        position: absolute;
+        top: -50px;
+        left: -320px;
+        width: 300px;
+        text-align: left;
+        border-radius: 3px;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.16);
+        z-index: 1;
+    }
+    .city_header{
+        height: 160px;
+        color: #ffffff;
+        background-color: #544641;
+        padding: 25px 0 0 30px;
+    }
+    .right_arrow{
+        position: absolute;
+        top: 58px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        background-color: #544641;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .city_header>img{
+        width: 150px;
+    }
+    .city_header>p{
+        font-size: 12px;
+        font-weight: 100;
+        margin: 0 0 10px;
+    }
+    .h6{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 12px;
+    }
+    .proxy>.icon{
+        width: 10px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+        background: url(../img/s-img/dian.png) no-repeat center/cover;
+    }
+    .contact_box{
+        display: block;
+        width: 480px;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 auto 20px;
+        border-radius: 100px;
+        border: 1px solid #5fc6c2;
+        color: #5fc6c2;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*公司发展时间线*/
+    .abtime{
+        background-color: #f4f3ee;
+    }
+    .abtimetao{
+        width: 88%;
+        height: 1303px;
+        background: url("../img/s-img/about13.png") no-repeat center/cover;
+        margin: 0 auto;
+        position: relative;
+    }
+    .item{
+        position: absolute;
+        width: 33%;
+        font-size: 14px;
+        color: #969696;
+        text-align: center;
+        padding: 0 50px;
+    }
+    .year_2012{
+        top: 112px;
+    }
+    .item>span{
+        color: #544641;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .timecon>img{
+        display: block;
+        border-radius: 3px;
+        margin: 10px auto 20px;
+    }
+    .timecon>p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        letter-spacing: -0.5px;
+        color: #544641;
+        margin: 0 0 10px;
+    }
+    .year_2013{
+        top: 112px;
+        left: 387px;
+    }
+    .year_2014_4{
+        top: 112px;
+        left: 751px;
+    }
+    .year_2014_4 img{
+        margin: 0 auto 10px;
+    }
+    .year_2014_6{
+        top: 420px;
+        right: 200px;
+    }
+    .year_2014_7{
+        top: 420px;
+        left: 200px;
+    }
+    .year_2014_10{
+        top: 650px;
+        left: 15px;
+    }
+    .year_2014_11_1{
+        top: 654px;
+        left: 375px;
+    }
+    .year_2014_11_1 img{
+        margin: 25px auto;
+    }
+    .year_2014_11_2{
+        top: 654px;
+        left: 748px;
+    }
+    .year_2014_11_2 img{
+        margin: 44px auto;
+    }
+    .year_2015_7{
+        top: 950px;
+        left: 750px;
+    }
+    .year_2016_5{
+        top: 950px;
+        left: 380px;
+    }
+    .year_2016_9{
+        top: 950px;
+    }
+    .timeimg{
+        width: 199px;
+    }
+    .map-area{
+        width: 1140px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    #dituContent {
+        width: 1140px;
+        height: 500px;
+        margin-top: 25px;
+    }
+    .BMapLib_SearchInfoWindow {
+        font: 12px arial,宋体,sans-serif;
+        position: absolute;
+        border: 1px solid #999;
+        background-color: #fff;
+        cursor: default;
+        width: 250px;
+        user-select: none;
+        bottom: -288px;
+        left: 412px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_top {
+        border-bottom: 1px solid #ccc;
+        height: 31px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_title {
+        line-height: 30px;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        height: 30px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_tools {
+        padding-right: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+        width: 64px;
+        z-index: 10000;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_center {
+        z-index: 3;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_content {
+        padding: 3px 5px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 105px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_nav {
+        width: 100%;
+        height: 75px;
+        position: relative;
+    }
+}
+@media screen and (max-width:640px){
+    .nav-collapse{
+        width: 100%;
+        height: 420px;
+        z-index: 999;
+        display: none;
+        overflow-y: scroll;
+    }
+    .nav-collapse>ul{
+        margin-top: 8px;
+        width: 100%;
+        border-top: 1px solid #f5f4ef;
+        background: #fff;
+        float: left;
+        height: 500px;
+    }
+    .nav-collapse>ul>li{
+        background: #fff;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #f5f4ef;
+        line-height: 50px;
+       padding-left: 30px;
+    }
+    .branch_box2{
+        max-height: initial;
+    }
+    .city2{
+        width: 100%;
+        height: 108px;
+    }
+    .h62{
+        width: 155px;
+        margin-top: 2px;
+        float: left;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size:24px;
+    }
+    .city_header2{
+        height: 100%;
+        background: none;
+        padding: 5px 10px 5px 20px;
+        color: #544641;
+    }
+    .city_header2>p{
+        width:285px;
+        float: left;
+        font-weight: 300;
+        font-size: 24px;
+    }
+    .branches {
+        width: 94%;
+        height: 1000px;
+        margin: 18px auto;
+        padding-top: 50px;
+        border-radius: 3px;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.16);
+        background-image: url(../img/s-img/abmobile.png);
+        background-color: rgba(99,198,194,0.6);
+        background-size: 100px;
+        background-position: 20px 15px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .mobileaboutcon{
+        display: block;
+    }
+    .aboutcon{
+        display: none;
+    }
+    .mobileabtime{
+        background-color: #f4f3ee;
+        display: block;
+    }
+    .abtime{
+        display: none;
+    }
+    .left{
+        position: absolute;
+        top: 900px;
+        bottom: 0;
+        left: 21px;
+        width: 25px;
+        height: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: url(../img/s-img/placeleft.png) no-repeat center;
+        z-index: 10;
+        cursor: pointer;
+        background-size: 27px 44px;
+        display: block;
+    }
+    .right{
+        position: absolute;
+        top: 900px;
+        bottom: 0;
+        right: 30px;
+        width: 25px;
+        height: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: url(../img/s-img/placeright.png) no-repeat center;
+        z-index: 10;
+        cursor: pointer;
+        background-size: 27px 44px;
+        display:block;
+    }
+    .mobilehead{
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        background-color: #fff;
+    }
+    .mhead{
+        width: 570px;
+        margin: 0 auto;
+    }
+    .mhead>img{
+        width: 240px;
+        float: left;
+    }
+    .mhs{
+        float: right;
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        height: 48px;
+        background-color: #fff;
+        border: 0;
+    }
+    .icon-bar{
+        margin-top: 8px;
+        display: block;
+        width: 44px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #533e3b;
+    }
+    .header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .mobile_footer{
+        width: 100%;
+        height: 160px;
+        padding-top: 44px;
+        padding-bottom: 80px;
+        text-align: center;
+        background-color: #f5f4ef;
+        display: block;
+        box-sizing: border-box;
+    }
+    .contact-widget{
+        display: none;
+    }
+    .mobilitem{
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #918682;
+    }
+    .concat{
+        display: none;
+    }
+    .message{
+        display: none;
+    }
+    .uniqueway-girl{
+        display: none;
+    }
+    /*banner部分*/
+    .aboutbanner{
+        width: 100%;
+        height: 230px;
+        background: url("../img/s-img/about1.jpg") no-repeat center/cover;
+        margin-top: 122px;
+        overflow: hidden;
+    }
+    .abouth3{
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: -1.2px;
+        text-align: center;
+        margin-top: 90px;
+    }
+    /*内容部分*/
+    .aboutcon{
+        width: 100%;
+    }
+    .aboutittao{
+        width: 100%;
+        height: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14);
+        position: relative;
+    }
+    .aboutit{
+        width: 440px;
+        margin: 0 auto;
+        border: 0;
+    }
+    .aboutit>li{
+        width: 220px;
+        height: 40px;
+        text-align: center;
+        float: left;
+        line-height: 40px;
+    }
+    .line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 1px;
+        height: 18px;
+        margin: auto;
+        background-color: #d8d8d8;
+    }
+    .aboutcontao{
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .aboutcontao>div{
+        display: none;
+    }
+    .abtaotit{
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #cec8c0;
+        padding: 40px 0 45px;
+    }
+    .abh3{
+        color: #544641;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: -0.7px;
+    }
+    .absquare{
+        position: absolute;
+        left: calc(50% - 15px);
+        bottom: -16px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-right: 1px solid #cec8c0;
+        border-bottom: 1px solid #cec8c0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #ffffff;
+    }
+    .abtaocon{
+        width:400%;
+        height: 672px;
+        margin: 0;
+    }
+    .xiao{
+        width: 544px;
+        height: 780px;
+        overflow: hidden;
+        margin-top: 60px;
+    }
+    .storyitem{
+        width: 512px;
+        height: 672px;
+        float: left;
+        margin: 0;
+    }
+    .storyitem>p{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 2;
+        letter-spacing: -0.5px;
+        color: #918682;
+        margin: 0;
+    }
+    .storyitem:nth-child(3){
+        margin-right: 0;
+    }
+    .active{
+        color: #5fc6c2;
+        border-bottom: 2px solid #5fc6c2;
+    }
+    .show{
+        display: block;
+    }
+    .abcon2map{
+        position: relative;
+        height: 700px;
+        background: url(../img/s-img/map3.jpg) no-repeat center/contain;
+    }
+    .city{
+        position: absolute;
+        text-align: center;
+        color: #ffffff;
+    }
+    .head{
+        top: 220px;
+        right: 355px;
+    }
+    .chendu{
+        top: 400px;
+        left: 578px;
+    }
+    .chongqin{
+        top: 420px;
+        left: 630px;
+    }
+    .shenzhen{
+        top: 537px;
+        right: 360px;
+    }
+    .shanghai{
+        top: 400px;
+        right: 270px;
+    }
+    .jinhua{
+        top: 450px;
+        right: 295px;
+    }
+    .shuzhou{
+        top: 396px;
+        right: 303px;
+    }
+    .changzhou{
+        top: 382px;
+        right: 329px;
+    }
+    .zhangjiagang{
+        top: 367px;
+        right: 279px;
+    }
+    .head>.icon{
+        width: 40px;
+        height: 40px;
+        background: url(../img/s-img/beijing.png) no-repeat center/cover;
+        font-size: 12px;
+        border-radius: 100%;
+        display: block;
+    }
+    .branch>.icon{
+        width: 25px;
+        height: 25px;
+        background: url(../img/s-img/beijing.png) no-repeat center/cover;
+        font-size: 12px;
+        border-radius: 100%;
+        display: block;
+    }
+    .city_details{
+        display: none;
+        position: absolute;
+        top: -50px;
+        left: -320px;
+        width: 300px;
+        text-align: left;
+        border-radius: 3px;
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.16);
+        z-index: 1;
+    }
+    .city_header{
+        height: 160px;
+        color: #ffffff;
+        background-color: #544641;
+        padding: 25px 0 0 30px;
+    }
+    .right_arrow{
+        position: absolute;
+        top: 58px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        background-color: #544641;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .city_header>img{
+        width: 150px;
+    }
+    .city_header>p{
+        font-size: 12px;
+        font-weight: 100;
+        margin: 0 0 10px;
+    }
+    .h6{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 12px;
+    }
+    .proxy>.icon{
+        width: 10px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+        background: url(../img/s-img/dian.png) no-repeat center/cover;
+    }
+    .contact_box{
+        display: block;
+        width: 480px;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 auto 20px;
+        border-radius: 100px;
+        border: 1px solid #5fc6c2;
+        color: #5fc6c2;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*公司发展时间线*/
+    .abtimetao{
+        width: 88%;
+        height: 1303px;
+        background: url("../img/s-img/map2.jpg") no-repeat center/cover;
+        margin: 0 auto;
+        position: relative;
+    }
+    .item{
+        width: 250px;
+        padding: 0;
+    }
+    .year_2012{
+        top: 15px;
+        left: 0;
+    }
+    .item>span{
+        color: #544641;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .timecon>img{
+        display: block;
+        border-radius: 3px;
+        width: 100px;
+    }
+    .timecon>p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        letter-spacing: -0.5px;
+        color: #544641;
+        margin: 0 0 10px;
+    }
+    .year_2013{
+        top: 15px;
+        left: 280px;
+    }
+    .year_2014_4{
+        top: 204px;
+        left: 275px;
+    }
+    .year_2014_4 img{
+        margin: 0 auto 10px;
+    }
+    .year_2014_6{
+        top: 204px;
+        left: 0;
+    }
+    .year_2014_7{
+        top: 424px;
+        left: 0;
+    }
+    .year_2014_10{
+        top: 424px;
+        left: 280px;
+    }
+    .year_2014_11_1{
+        top: 638px;
+        left: 280px;
+    }
+    .year_2014_11_1 img{
+        margin: 25px auto;
+    }
+    .year_2014_11_2{
+        top: 638px;
+        left: 0;
+    }
+    .year_2014_11_2 img{
+        margin: 44px auto;
+    }
+    .year_2015_7{
+        width: 493px;
+        top: 841px;
+        left: 36px;
+    }
+    .year_2016_5{
+        top: 1065px;
+        left: 280px;
+    }
+    .year_2016_9{
+        top: 1065px;
+        left: 0;
+    }
+    .timeimg{
+        width: 199px;
+    }
+    .map-area{
+        width: 1140px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    #dituContent {
+        width: 100%;
+        height: 500px;
+        margin-top: 25px;
+    }
+    .BMapLib_SearchInfoWindow {
+        font: 12px arial,宋体,sans-serif;
+        position: absolute;
+        border: 1px solid #999;
+        background-color: #fff;
+        cursor: default;
+        width: 250px;
+        user-select: none;
+        bottom: -288px;
+        left: 412px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_top {
+        border-bottom: 1px solid #ccc;
+        height: 31px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_title {
+        line-height: 30px;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        height: 30px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_tools {
+        padding-right: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+        width: 64px;
+        z-index: 10000;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_center {
+        z-index: 3;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_bubble_content {
+        padding: 3px 5px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 105px;
+    }
+    .BMapLib_SearchInfoWindow .BMapLib_nav {
+        width: 100%;
+        height: 75px;
+        position: relative;
+    }
+}

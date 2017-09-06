@@ -1,520 +1,1226 @@
-/*header*/
-.header{
-    width: 100%;
-    height: 73px;
-    padding: 15px 0;
-    transition: all 0.15s linear;
-    border-bottom: 1px solid #e5e5e5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    background-color: #ffffff;
-}
-.logo>img{
-    width: 140px;
-    height: 42px;
-}
-.header-center{
-    width: 1140px;
-    height: 43px;
-    margin: auto;
-}
-.logo{
-    width: 170px;
-    height: 42px;
-    float: left;
-}
-.header-nav{
-    width: 604px;
-    height: 25px;
-    float: left;
-    margin-top: 10px;
-}
-.header-nav li{
-    float: left;
-    padding-bottom: 5px;
-    margin-right: 30px;
-}
-.header-nav li a{
-    padding-bottom: 3px;
-    font-size: 14px;
-}
-.header-nav li.on a{
-    color: #5fc6c2;
-    border-bottom: 2px solid #65c8c4;
-}
-.header-nav li a:hover{
-    border-bottom: 2px solid #65c8c4;
-}
-.header-contact{
-    width: 160px;
-    height: 30px;
-    float: left;
-    border-radius: 2px;
-    border: 1px solid #969696;
-    margin: 6px 10px 6px 105px;
-}
-.tel-icon{
-    width: 30px;
-    height: 28px;
-    float: left;
-    background-color: #918682;
-}
-.header-contact p{
-    color: #918682;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    font-family: 'Titillium Web', sans-serif;
-    float: left;
-    margin: 0 3px;
-}
-.refer{
-    font-size: 12px;
-    color: #fff;
-    margin: 6px 5px 6px 0;
-    background-color: #f64b19;
-    padding: 0 15px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 3px;
-    float: right;
-    text-decoration: none;
-}
-/*footer*/
-body{
-    overflow-x: hidden;
-}
-.footer{
-    width: 100%;
-    height: 264px;
-    font-size: 12px;
-    margin-top: 50px;
-    text-align: center;
-    color: #669797;
-}
-.footer-container{
-    width: 1140px;
-    height: 140px;
-    margin: auto;
-}
-.footer-list{
-    width: 1140px;
-    height: 115px;
-    margin: 0 auto;
-    text-align: center;
-}
-.clearfix{
-    width: 1200px;
-    height: 17px;
-    margin: 10px auto 15px;
-}
-.clearfix li {
-    display: inline;
-    border-left: 1px solid #669797;
-    padding: 0 16px;
-    margin-bottom: 17px;
-    color: #669797;
-}
-.clearfix li:first-child{
-    border-left: none;
-}
-.clearfix li a{
-    color: #669797;
-}
-.clearfix li.links a{
-    margin-left: 6px;
-}
-.clearfix li.links a.link{
-    position: relative;
-}
-.clearfix li.links a img{
-    width: 18px;
-    vertical-align: middle;
-}
-.clearfix li.links a img.download{
-    width: 150px;
-    position: absolute;
-    top: -155px;
-    left: -67px;
-    z-index: 999;
-    display: none;
-
-}
-.clearfix li.links a:hover img.download{
-    display: block;
-}
-.footer-content{
-    width: 100%;
-    height: 124px;
-    background-color: #524641;
-}
-.footer-contain{
-    width: 1230px;
-    height: 124px;
-    margin: auto;
-}
-.row{
-    margin: 0 -15px;
-}
-.footer-logo{
-    width: 25%;
-    float: left;
-    text-align: right;
-}
-.footer-logo a img{
-    position: relative;
-    left: -70px;
-    width: 176px;
-    margin-top: 30px;
-}
-.footer-text{
-    width: 74.5%;
-    float: right;
-}
-.text-container{
-    position: relative;
-    width: 100%;
-    margin-top: 46px;
-    text-align: left;
-}
-.text-container span{
-    color: #918682;
-    font-size: 11px;
-    text-align: left;
-    margin: 4px 0;
-    padding-right: 14px;
-    line-height: 20px;
-}
-.text-container span a{
-    color: #918682;
-}
-
-/*内容*/
-.wedbanner{
-    width: 100%;
-    height: 500px;
-    background: url("../img/s-img/wedding.jpg") no-repeat center/cover;
-    position: relative;
-    margin-top: 103px;
-}
-.bannertao{
-    width: 90%;
-    max-width: 430px;
-    height: 240px;
-    margin: auto;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 1px solid rgba(255,255,255,0.3);
-}
-.color{
-    height: 218px;
-    padding-top: 20px;
-    background-color: rgba(255,255,255,0.8);
-}
-.color>img{
-    width: 120px;
-    height: 100px;
-    margin: 0 144px 10px
-}
-.wedp1{
-    font-weight: 300;
-    color: #5e3008;
-    letter-spacing: 3px;
-    text-align: center;
-    line-height: 1.1;
-    font-size: 18px;
-    margin: 10px 0;
-}
-.wedp2{
-    color: #462205;
-    text-align: center;
-    line-height: 1.1;
-    font-size: 18px;
-    margin: 10px 0;
-}
-.go{
-    width: 100%;
-    height: 200px;
-    background-color: #F5F4EF;
-}
-.gop{
-    height: 200px;
-    line-height: 200px;
-    font-size: 40px;
-    font-weight: 100;
-    color: #544641;
-    text-align: center;
-    letter-spacing: 5px;
-}
-.place{
-    width: 100%;
-    height: 550px;
-}
-.placetao1{
-    width: 50%;
-    height: 100%;
-    background: url("../img/s-img/wedding26.jpg") no-repeat center/cover;
-    position: relative;
-    float: left;
-}
-.placetao2{
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    float: left;
-    overflow: hidden;
-}
-.imgbox{
-    width: 106px;
-    height: 106px;
-    margin: auto;
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
-    background-color: rgba(255,255,255,0.4);
-}
-.imgbox>img{
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 3px;
-    border-radius: 100%;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
-}
-.dan{
-    width: 90%;
-    max-width: 200px;
-    height: 80px;
-    margin: 0 auto;
-    color: #ffffff;
-    background: url("../img/s-img/weedingred.png") no-repeat center/cover;
-    background-position-y: -27px;
-}
-.cn{
-    line-height: 4.1;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -0.6px;
-    color: #fff;
-}
-.en{
-    line-height: 4.1;
-    font-size: 18px;
-    letter-spacing: -0.6px;
-    color: #fff;
-}
-.danp1{
-    line-height: 1.1;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.8px;
-    color: #544641;
-}
-.danp2{
-    line-height: 1.1;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    color: #918682;
-}
-.dana1{
-    display: block;
-    width: 70%;
-    max-width: 110px;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #63c6c2;
-    letter-spacing: -0.4px;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 2px;
-}
-.danimgs{
-    width: 90%;
-    max-width: 450px;
-    margin: 20px auto 0;
-}
-.danimgs>img:nth-child(1){
-    float: left;
-    width: 210px;
-    height: 140px;
-}
-.danimgs>img:nth-child(2){
-    float: right;
-    width: 210px;
-    height: 140px;
-}
-.clear{
-    clear: both;
-}
-.danp3{
-    width: 88%;
-    max-width: 450px;
-    margin: 30px auto 0;
-    font-size: 14px;
-    font-weight: 200;
-    color: #918682;
-    text-align: left;
-    line-height: 1.57;
-    letter-spacing: -0.5px;
-}
-.queen{
-    width: 100%;
-    height: 550px;
-    background: url("../img/s-img/wedding22.jpg") no-repeat center/cover;
-    text-align: center;
-}
-.queenp1{
-    color: #ffffff;
-    line-height: 1.1;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.8px;
-}
-.queenp2{
-    color: #cec8c0;
-    line-height: 1.1;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-}
-.queenbox{
-    width: 106px;
-    height: 106px;
-    margin: 70px auto 0;
-    padding: 3px;
-    border-radius: 100%;
-    cursor: pointer;
-    background-color: rgba(255,255,255,0.4);
-}
-.queenbox>img{
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 3px;
-    border-radius: 100%;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
-}
-.placetao3{
-    width: 50%;
-    height: 100%;
-    background: url("../img/s-img/wedding25.jpg") no-repeat center/cover;
-    position: relative;
-    float: left;
-}
-.dream{
-    width: 100%;
-    height: 550px;
-    background: url("../img/s-img/wedding27.jpg") no-repeat center/cover;
-    text-align: center;
-}
-.smallplace{
-    width: 100%;
-    background-color: #F7F8EE;
-    height: 1580px;
-}
-.smallplacetao{
-    width: 100%;
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 80px 0 20px;
-}
-.smallp1{
-    position: relative;
-    width: 457px;
-    max-width: 500px;
-    height: 680px;
-    background-color: #ffffff;
-    margin-bottom: 60px;
-    border-radius: 3px;
-    text-align: center;
-    float: left;
-}
-.smallp2{
-    position: relative;
-    width: 457px;
-    max-width: 500px;
-    height: 680px;
-    background-color: #ffffff;
-    margin-bottom: 60px;
-    border-radius: 3px;
-    text-align: center;
-    float: right;
-}
-.bgimg{
-    background: url("../img/s-img/wedding28.jpg") no-repeat center/cover;
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-.bgimg2{
-    background: url("../img/s-img/wedding29.jpg") no-repeat center/cover;
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-.bgimg3{
-    background: url("../img/s-img/wedding30.jpg") no-repeat center/cover;
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-.bgimg4{
-    background: url("../img/s-img/wedding31.jpg") no-repeat center/cover;
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-.smalldan{
-    width: 90%;
-    max-width: 200px;
-    height: 80px;
-    margin: 0 auto;
-    color: #ffffff;
-    background: url("../img/s-img/weedingred.png") no-repeat center/cover;
-    background-position-y: -27px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-.smallpl1{
-    line-height: 1.1;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.8px;
-    color: #544641;
-}
-.smallpl2{
-    line-height: 1.1;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    color: #918682;
+@media screen and (min-width:640px) {
+    .nav-collapse{
+        display: none;
+    }
+    .mobile_footer{
+        display: none;
+    }
+    /*内容*/
+    .wedbanner{
+        width: 100%;
+        height: 500px;
+        background: url("../img/s-img/wedding.jpg") no-repeat center/cover;
+        position: relative;
+        margin-top: 15px;
+    }
+    .bannertao{
+        width: 32%;
+        height: 240px;
+        margin: auto;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+    .color{
+        height: 218px;
+        padding-top: 20px;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .color>img{
+        width: 120px;
+        height: 100px;
+        margin: 0 144px 10px
+    }
+    .wedp1{
+        font-weight: 300;
+        color: #5e3008;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 1.1;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .wedp2{
+        color: #462205;
+        text-align: center;
+        line-height: 1.1;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .go{
+        width: 100%;
+        height: 200px;
+        background-color: #F5F4EF;
+    }
+    .gop{
+        height: 200px;
+        line-height: 200px;
+        font-size: 40px;
+        font-weight: 100;
+        color: #544641;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .place{
+        width: 100%;
+        height: 550px;
+    }
+    .placetao1{
+        width: 50%;
+        height: 100%;
+        background: url("../img/s-img/wedding26.jpg") no-repeat center/cover;
+        position: relative;
+        float: left;
+    }
+    .placetao2{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        float: left;
+        overflow: hidden;
+    }
+    .imgbox{
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .imgbox>img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 3px;
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .dan{
+        width: 90%;
+        max-width: 200px;
+        height: 80px;
+        margin: 0 auto;
+        color: #ffffff;
+        background: url("../img/s-img/weedingred.png") no-repeat center/cover;
+        background-position-y: -27px;
+    }
+    .cn{
+        line-height: 4.1;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        color: #fff;
+    }
+    .en{
+        line-height: 4.1;
+        font-size: 18px;
+        letter-spacing: -0.6px;
+        color: #fff;
+    }
+    .danp1{
+        line-height: 1.1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+        color: #544641;
+    }
+    .danp2{
+        line-height: 1.1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        color: #918682;
+    }
+    .dana1{
+        display: block;
+        width: 106px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #63c6c2;
+        letter-spacing: -0.4px;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 2px;
+    }
+    .danimgs{
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .danimgs>img:nth-child(1){
+        float: left;
+        width: 210px;
+        height: 140px;
+    }
+    .danimgs>img:nth-child(2){
+        float: right;
+        width: 210px;
+        height: 140px;
+    }
+    .clear{
+        clear: both;
+    }
+    .danp3{
+        width: 88%;
+        max-width: 450px;
+        margin: 30px auto 0;
+        font-size: 14px;
+        font-weight: 200;
+        color: #918682;
+        text-align: left;
+        line-height: 1.57;
+        letter-spacing: -0.5px;
+    }
+    .queen{
+        width: 100%;
+        height: 550px;
+        background: url("../img/s-img/wedding22.jpg") no-repeat center/cover;
+        text-align: center;
+    }
+    .queenp1{
+        color: #ffffff;
+        line-height: 1.1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+    }
+    .queenp2{
+        color: #cec8c0;
+        line-height: 1.1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+    }
+    .queenbox{
+        width: 106px;
+        height: 106px;
+        margin: 70px auto 0;
+        padding: 3px;
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .queenbox>img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        /*margin: 3px;*/
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .placetao3{
+        width: 50%;
+        height: 100%;
+        background: url("../img/s-img/wedding25.jpg") no-repeat center/cover;
+        position: relative;
+        float: left;
+    }
+    .dream{
+        width: 100%;
+        height: 550px;
+        background: url("../img/s-img/wedding27.jpg") no-repeat center/cover;
+        text-align: center;
+    }
+    .smallplace{
+        width: 100%;
+        background-color: #F7F8EE;
+        height: 1580px;
+    }
+    .smallplacetao{
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 80px 0 20px;
+    }
+    .smallp1{
+        position: relative;
+        width: 457px;
+        height: 680px;
+        background-color: #ffffff;
+        margin-bottom: 60px;
+        border-radius: 3px;
+        text-align: center;
+        float: left;
+    }
+    .smallp2{
+        position: relative;
+        width: 457px;
+        height: 680px;
+        background-color: #ffffff;
+        margin-bottom: 60px;
+        border-radius: 3px;
+        text-align: center;
+        float: right;
+    }
+    .bgimg{
+        background: url("../img/s-img/wedding28.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg2{
+        background: url("../img/s-img/wedding29.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg3{
+        background: url("../img/s-img/wedding30.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg4{
+        background: url("../img/s-img/wedding31.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .smalldan{
+        width: 200px;
+        height: 80px;
+        margin: 0 auto;
+        color: #ffffff;
+        background: url("../img/s-img/weedingred.png") no-repeat center/cover;
+        background-position-y: -27px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .smallpl1{
+        line-height: 1.1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+        color: #544641;
+    }
+    .smallpl2{
+        line-height: 1.1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        color: #918682;
+    }
+    .wayform{
+        width: 100%;
+        height: 800px;
+        background:url("../img/s-img/place19.png") no-repeat center/cover;
+        overflow: hidden;
+    }
+    .wayformtao{
+        width: 480px;
+        height: 500px;
+        margin:110px auto 0;
+        color: #fff;
+        overflow: hidden;
+    }
+    .wayformp1{
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: center;
+    }
+    .wayformp2{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2.12;
+        letter-spacing: -0.5px;
+        margin: 0 0 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .wayform>form{
+        width: 480px;
+        height: 390px;
+        overflow: hidden;
+    }
+    .ul1{
+        width: 480px;
+        height: 48px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .ul1>li{
+        float: left;
+        margin: 0 10px 0 0;
+        width: 150px;
+        height: 42px;
+        position: relative;
+    }
+    li>input{
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        width: 13px;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+        opacity: 0.011;
+        z-index: 100;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+    li>label{
+        color: #5e3008;
+        text-align: center;
+        cursor: pointer;
+        z-index: 90;
+        height: 42px;
+        line-height: 42px;
+        border: none;
+        background-color: #FFF;
+        border-radius: 3px;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: bold;
+        width: 134px;
+        float: left;
+        position: absolute;
+    }
+    label:hover{
+        background: #F8F8F3;
+    }
+    .ul2{
+        width: 480px;
+        margin: 20px auto;
+        height: 48px;
+    }
+    .ul2>.inp1{
+        width: 140px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .ul2>.inp2{
+        width: 182px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .ul2>.inp3{
+        width: 133px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .phone{
+        width: 460px;
+        border-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        margin: auto;
+        border-right: 1px solid #e6e6e6;
+    }
+    .comment{
+        width: 470px;
+        height: 80px;
+        padding: 11px;
+        border: 0;
+        border-radius: 3px;
+        font-size: 14px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+    .submit{
+        color: white;
+        font-size: 18px;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        border: 0;
+        border-radius: 6px;
+        text-align: center;
+        background-color: #63C6C2;
+        margin: 20px 150px 0;
+    }
+    /*视频*/
+    .video1,.video2,.video3{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 999;
+        display: none;
+    }
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+    }
+    .close,.close2,.close3{
+        -webkit-appearance: none;
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFF;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=60);
+        opacity: .6;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .close>span,.close2>span,.close3>span{
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFF;
+        text-shadow: 0 1px 0 #fff;
+        z-index: 999999;
+    }
+    .videotao{
+        background-color: #000;
+        position: relative;
+        padding: 0;
+        font-size: 10px;
+        vertical-align: middle;
+        font-weight: normal;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .vedio1,.vedio2,.vedio3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .poster{
+        background-image: url(https://document.cdn.uniqueway.com/video/NzQueenstownWedding.png);
+        display: none;
+    }
+}
+@media screen and (max-width:640px) {
+    .nav-collapse{
+        width: 100%;
+        height: 420px;
+        z-index: 999;
+        display: none;
+        overflow-y: scroll;
+    }
+    .nav-collapse>ul{
+        margin-top: 8px;
+        width: 100%;
+        border-top: 1px solid #f5f4ef;
+        background: #fff;
+        float: left;
+        height: 500px;
+    }
+    .nav-collapse>ul>li{
+        background: #fff;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #f5f4ef;
+        line-height: 50px;
+        padding-left: 30px;
+    }
+    .mobilehead{
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        background-color: #fff;
+    }
+    .mhead{
+        width: 570px;
+        margin: 0 auto;
+    }
+    .mhead>img{
+        width: 240px;
+        float: left;
+    }
+    .mhs{
+        float: right;
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        height: 48px;
+        background-color: #fff;
+        border: 0;
+    }
+    .icon-bar{
+        margin-top: 8px;
+        display: block;
+        width: 44px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #533e3b;
+    }
+    .header{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .mobile_footer{
+        width: 100%;
+        height: 160px;
+        padding-top: 44px;
+        padding-bottom: 80px;
+        text-align: center;
+        background-color: #f5f4ef;
+        display: block;
+        box-sizing: border-box;
+    }
+    .contact-widget{
+        display: none;
+    }
+    .mobilitem{
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #918682;
+    }
+    .concat{
+        display: none;
+    }
+    .message{
+        display: none;
+    }
+    .uniqueway-girl{
+        display: none;
+    }
+    /*内容*/
+    .wedbanner{
+        width: 100%;
+        height: 840px;
+        background: url("../img/s-img/wedding.jpg") no-repeat center/cover;
+        position: relative;
+        margin-top: 120px;
+    }
+    .bannertao{
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+    .color{
+        height: 356px;
+        padding-top: 40px;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .color>img{
+        width: 240px;
+        height: 200px;
+        margin: 0 144px 10px
+    }
+    .wedp1{
+        font-weight: 300;
+        color: #5e3008;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 1.1;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .wedp2{
+        color: #462205;
+        text-align: center;
+        line-height: 1.1;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .go{
+        width: 100%;
+        height: 200px;
+        background-color: #F5F4EF;
+    }
+    .gop{
+        height: 200px;
+        line-height: 200px;
+        font-size: 40px;
+        font-weight: 100;
+        color: #544641;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .place{
+        width: 100%;
+        height: 1040px;
+    }
+    .placetao1{
+        width: 100%;
+        height: 440px;
+        background: url("../img/s-img/wedding26.jpg") no-repeat center/cover;
+        position: relative;
+        float: left;
+    }
+    .placetao2{
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        float: left;
+        overflow: hidden;
+    }
+    .imgbox{
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .imgbox>img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 3px;
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .dan{
+        width: 240px;
+        height: 80px;
+        margin: 0 auto;
+        color: #ffffff;
+        background: url("../img/s-img/weedingred.png") no-repeat center/cover;
+        background-position-y: -27px;
+    }
+    .cn{
+        line-height: 4.1;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        color: #fff;
+    }
+    .en{
+        line-height: 4.1;
+        font-size: 18px;
+        letter-spacing: -0.6px;
+        color: #fff;
+    }
+    .danp1{
+        line-height: 1.1;
+        margin-top: 60px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+        color: #544641;
+    }
+    .danp2{
+        line-height: 1.1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        color: #918682;
+    }
+    .dana1{
+        display: block;
+        width: 70%;
+        max-width: 110px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #63c6c2;
+        letter-spacing: -0.4px;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 2px;
+    }
+    .danimgs{
+        width: 90%;
+        max-width: 450px;
+        margin: 20px auto 0;
+    }
+    .danimgs>img:nth-child(1){
+        float: left;
+        width: 210px;
+        height: 140px;
+    }
+    .danimgs>img:nth-child(2){
+        float: right;
+        width: 210px;
+        height: 140px;
+    }
+    .clear{
+        clear: both;
+    }
+    .danp3{
+        width: 88%;
+        max-width: 450px;
+        margin: 30px auto 0;
+        font-size: 14px;
+        font-weight: 200;
+        color: #918682;
+        text-align: left;
+        line-height: 1.57;
+        letter-spacing: -0.5px;
+    }
+    .queen{
+        width: 100%;
+        height: 800px;
+        background: url("../img/s-img/wedding22.jpg") no-repeat center/cover;
+        text-align: center;
+    }
+    .queenp1{
+        color: #ffffff;
+        line-height: 1.1;
+        margin-top: 60px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+    }
+    .queenp2{
+        color: #cec8c0;
+        line-height: 1.1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+    }
+    .queenbox{
+        width: 106px;
+        height: 106px;
+        margin: 70px auto 0;
+        padding: 3px;
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.4);
+    }
+    .queenbox>img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        /*margin: 3px;*/
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+    .placetao3{
+        width: 100%;
+        height: 440px;
+        background: url("../img/s-img/wedding25.jpg") no-repeat center/cover;
+        position: relative;
+        float: left;
+    }
+    .dream{
+        width: 100%;
+        height: 800px;
+        background: url("../img/s-img/wedding27.jpg") no-repeat center/cover;
+        text-align: center;
+    }
+    .smallplace{
+        width: 100%;
+        background-color: #F7F8EE;
+        height: 2917px;
+    }
+    .smallplacetao{
+        width: 90%;
+        margin: 0 auto;
+        padding: 80px 0 20px;
+    }
+    .smallp1{
+        position: relative;
+        width: 100%;
+        height: 680px;
+        padding: 0 5%;
+        background-color: #F7F8EE;
+        border-radius: 3px;
+        text-align: center;
+        float: left;
+        margin: 0 auto;
+    }
+    .smallp2{
+        position: relative;
+        width: 100%;
+        padding: 0 5%;
+        height: 680px;
+        background-color: #F7F8EE;
+        margin-bottom: 60px;
+        border-radius: 3px;
+        text-align: center;
+        float: right;
+    }
+    .bgimg{
+        background: url("../img/s-img/wedding28.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg2{
+        background: url("../img/s-img/wedding29.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg3{
+        background: url("../img/s-img/wedding30.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .bgimg4{
+        background: url("../img/s-img/wedding31.jpg") no-repeat center/cover;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    .smalldan{
+        width: 90%;
+        max-width: 200px;
+        height: 80px;
+        margin: 0 auto;
+        color: #ffffff;
+        background: url("../img/s-img/weedingred.png") no-repeat center/cover;
+        background-position-y: -27px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .smallpl1{
+        line-height: 1.1;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+        color: #544641;
+    }
+    .smallpl2{
+        line-height: 1.1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        color: #918682;
+    }
+    .wayform{
+        width: 100%;
+        height: 800px;
+        background:url("../img/s-img/place19.png") no-repeat center/cover;
+        overflow: hidden;
+    }
+    .wayformtao{
+        width: 480px;
+        height: 500px;
+        margin:110px auto 0;
+        color: #fff;
+        overflow: hidden;
+    }
+    .wayformp1{
+        font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: center;
+    }
+    .wayformp2{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2.12;
+        letter-spacing: -0.5px;
+        margin: 0 0 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .wayform>form{
+        width: 480px;
+        height: 390px;
+        overflow: hidden;
+    }
+    .ul1{
+        width: 480px;
+        height: 48px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .ul1>li{
+        float: left;
+        margin: 0 10px 0 0;
+        width: 150px;
+        height: 42px;
+        position: relative;
+    }
+    li>input{
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        width: 13px;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+        opacity: 0.011;
+        z-index: 100;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+    li>label{
+        color: #5e3008;
+        text-align: center;
+        cursor: pointer;
+        z-index: 90;
+        height: 42px;
+        line-height: 42px;
+        border: none;
+        background-color: #FFF;
+        border-radius: 3px;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: bold;
+        width: 134px;
+        float: left;
+        position: absolute;
+    }
+    label:hover{
+        background: #F8F8F3;
+    }
+    .ul2{
+        width: 480px;
+        margin: 20px auto;
+        height: 48px;
+    }
+    .ul2>.inp1{
+        width: 140px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .ul2>.inp2{
+        width: 182px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .ul2>.inp3{
+        width: 133px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        margin: 0;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        border-right: 1px solid #e6e6e6;
+    }
+    .phone{
+        width: 460px;
+        border-radius: 3px;
+        color: #b6aea2;
+        font-size: 14px;
+        float: left;
+        border: none;
+        background: white;
+        height: 48px;
+        line-height: 20px;
+        padding-left: 11px;
+        margin: auto;
+        border-right: 1px solid #e6e6e6;
+    }
+    .comment{
+        width: 470px;
+        height: 80px;
+        padding: 11px;
+        border: 0;
+        border-radius: 3px;
+        font-size: 14px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+    .submit{
+        color: white;
+        font-size: 18px;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        border: 0;
+        border-radius: 6px;
+        text-align: center;
+        background-color: #63C6C2;
+        margin: 20px 150px 0;
+    }
+    /*视频*/
+    .video1,.video2,.video3{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 999;
+        display: none;
+    }
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+    }
+    .close,.close2,.close3{
+        -webkit-appearance: none;
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFF;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=60);
+        opacity: .6;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .close>span,.close2>span,.close3>span{
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFF;
+        text-shadow: 0 1px 0 #fff;
+        z-index: 999999;
+    }
+    .videotao{
+        background-color: #000;
+        position: relative;
+        padding: 0;
+        font-size: 10px;
+        vertical-align: middle;
+        font-weight: normal;
+        font-style: normal;
+        font-family: Arial, sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .vedio1,.vedio2,.vedio3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .poster{
+        background-image: url(https://document.cdn.uniqueway.com/video/NzQueenstownWedding.png);
+        display: none;
+    }
 }

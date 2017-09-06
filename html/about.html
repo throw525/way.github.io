@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="../css/CSSreset.css"/>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/dong3.css"/>
+    <link rel="stylesheet" href="../css/about.css"/>
+    <link rel="stylesheet" href="https://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <meta name="viewport" content="width=640">
+    <script src="../js/mobile-util.js"></script>
+    <style>
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        .modal-content{
+            background-color: #e6e6e6;
+            width: 500px;
+            height: 560px;
+        }
+        .modal-header{
+            background: url("../img/s-img/place19.png") no-repeat center/cover;
+        }
+        /*页脚表单*/
+        .wayformpp1{
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            text-align: center;
+            color: #fff;
+        }
+        .wayformp2{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.12;
+            letter-spacing: -0.5px;
+            margin: 0 0 10px;
+            text-align: center;
+            color: #fff;
+        }
+        .modal-body>form{
+            width: 440px;
+            height: 260px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .ul21{
+            width: 440px;
+            height: 48px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .ul21>li{
+            float: left;
+            margin: 0 10px 0 0;
+            width: 136px;
+            height: 42px;
+            position: relative;
+        }
+        .ul21 li>input{
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            width: 13px;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+            opacity: 0.011;
+            z-index: 100;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+        }
+        .ul21 li>label{
+            color: #5e3008;
+            text-align: center;
+            cursor: pointer;
+            z-index: 90;
+            height: 42px;
+            line-height: 42px;
+            border: none;
+            background-color: #FFF;
+            border-radius: 3px;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 134px;
+            float: left;
+            position: absolute;
+        }
+        .ul21 label:hover{
+            background: #F8F8F3;
+        }
+        .ul21>li:nth-child(2)>label{
+            background-color: #f02446;
+            color: #fff;
+        }
+        .ul22{
+            width: 440px;
+            margin: 20px auto;
+            height: 48px;
+        }
+        .ul22>.inp1{
+            width: 140px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp2{
+            width: 182px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp3{
+            width: 107px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .phone2{
+            width: 429px;
+            border-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            margin: auto;
+            border-right: 1px solid #e6e6e6;
+        }
+        .comment2{
+            width: 429px;
+            height: 43px;
+            padding: 11px;
+            border: 0;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        .submit2{
+            color: white;
+            font-size: 18px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border: 0;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #63C6C2;
+            margin: 0 180px 0;
+        }
+        .btn{
+            font-size: 12px;
+            color: #fff;
+            margin: 6px 5px 6px 0;
+            background-color: #f64b19;
+            padding: 0 15px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 3px;
+            float: right;
+            text-decoration: none;
+            border: 0;
+        }
+        .btn:hover{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+        }
+        .btn:active{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .btn:focus{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .modal-backdrop{
+            z-index: 0;
+        }
+    </style>
+</head>
+<body onload="show()">
+<!--联系您-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/wedtop.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn3">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
+<!--header-->
+<div class="mobilehead">
+    <div class="mhead">
+        <img src="../img/s-img/about3.png" alt=""/>
+        <button class="mhs">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="nav-collapse">
+        <ul>
+            <li class="on"><a href="#">首页</a></li>
+            <li><a href="html/travel.html">定制旅行</a></li>
+            <li><a href="#">定制师</a></li>
+            <li><a href="html/book.html">路书</a></li>
+            <li><a href="#">案例故事</a></li>
+            <li><a href="#">目的地</a></li>
+            <li><a href="wedding.html">婚礼婚拍</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="html/strategy.html">旅游攻略</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="header-center">
+        <div class="logo">
+            <img src="../img/s-img/about3.png" alt=""/>
+        </div>
+        <ul class="header-nav">
+            <li><a href="">首页</a></li>
+            <li><a href="">定制旅行</a></li>
+            <li><a href="">定制师</a></li>
+            <li><a href="">路书</a></li>
+            <li><a href="">案例故事</a></li>
+            <li><a href="">目的地</a></li>
+            <li ><a href="">婚礼婚拍</a></li>
+            <li class="on"><a href="">关于我们</a></li>
+        </ul>
+        <div class="header-contact">
+            <div class="tel-icon">
+                <img src="../img/s-img/weddingphone.png" alt=""/>
+            </div>
+            <p>400 890 3040</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            免费咨询
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <p class="wayformpp1">无二婚礼</p>
+                            <p class="wayformp2">- 专业的海外婚礼 &amp; 海外婚拍团队 -</p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <ul class="ul21">
+                                <li>
+                                    <input type="radio" id="free_1" name="category" value="tour">
+                                    <label for="free_1">婚礼 + 婚拍</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="tailor_1" name="category" value="custom" checked="checked">
+                                    <label for="tailor_1">婚礼</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="none_1" name="category" value="unknown">
+                                    <label for="none_1">婚拍</label>
+                                </li>
+                            </ul>
+                            <ul class="ul22">
+                                <input class="inp1" type="text" name="name" placeholder="姓名">
+                                <input class="inp2" type="text"  placeholder="海外目的地">
+                                <input class="inp3" type="text"  placeholder="天数">
+                            </ul>
+                            <input  class="phone2" type="tel"  placeholder="手机" >
+                            <textarea name="comment" class="comment2" placeholder="备注内容"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="submit2" >提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner部分-->
+<div class="aboutbanner">
+   <h3 class="abouth3">关于无二之旅</h3>
+</div>
+<!--内容部分-->
+<div class="mobileaboutcon">
+    <div class="aboutittao">
+       <ul class="aboutit">
+           <li class="active">关于我们</li>
+           <li>分公司</li>
+       </ul>
+        <div class="line"></div>
+    </div>
+    <div class="aboutcontao">
+        <div class="abus show">
+           <div class="abtaotit">
+            <h3 class="abh3">无二之旅，国内专业的出国旅行定制公司，</h3>
+            <h3 class="abh3">致力于为每位客户提供省心、自由、高性价比的海外自由行方案，让旅行有温度。</h3>
+            <span class="absquare"></span>
+        </div>
+            <div class="xiao">
+           <div class="abtaocon">
+            <div class="storyitem">
+                <p>2012年，无二之旅在北京诞生了（隶属于北京独一之旅国际旅行社有限公司）。<br>最初，我们只是为小圈子里的朋友们，提供个性化的定制旅行服务。</p>
+                <p>但随着业务的发展，我们发现，原来有那么多不认识我们的朋友，也都在寻找着这种自由、省心、又有性价比的私人定制旅行方式。<br>渐渐地，慕名而来的朋友越来越多。找我们定制旅行的朋友遍布大江南北，甚至还有很多旅居国外的朋友。我们欣喜的同时，也深感惶恐。</p>
+                <p>这既是信任，也是责任。我们知道，将自己的旅行交给别人，真的是一件很重要的决定，我们能不能做到不辜负这种信任，我们能不能做到比预期的更好，这始终是激励我们向前的动力。</p>
+            </div>
+            <div class="storyitem">
+                <p>近五年间，我们的队伍不断发展壮大，从最初的几位海外旅行达人，到近百余位拥有丰富自由行经验、长期海外生活经历的专业旅行定制师与专业旅行顾问。</p>
+                <p>无二之旅也从一间小工作室发展为600平米LOFT体验店，并在重庆、上海、成都、深圳开办了分公司，区域合作伙伴遍布苏州、金华、张家港等城市。走过大山大海的小伙伴们聚集在这里，怀揣着对旅行的热忱与爱，努力把每一个看似遥远的旅行梦想变成现实。
+                </p>
+            </div>
+            <div class="storyitem">
+                <p>如今，已有超过10万人通过无二之旅定制了属于自己的出国旅行。有悄悄找定制师策划海外婚礼的甜蜜情侣，有坚持不跟团的蜜月旅行的听障夫妇，有想牵着彼此的手走天涯的花甲老人，还有更多像你我一样，只是想带着家人、恋人、朋友一起看世界，真正享受一次自在旅行的普通人。</p>
+                <p>我们常常收到他们从世界各地寄来的明信片、信件、小礼物，每一份珍贵的心意都令我们幸福不已。这意味着我们真的帮他们享受到了出国自由行的乐趣，我们永远以此为荣。</p>
+                <p>我们相信，旅行是有温度的。我们希望能在这个总是冰冷冷的世界里，用我们的专业与热情，带给你一抹属于旅行的温度。</p>
+            </div>
+            <div class="storyitem">
+                   <p>2012年，无二之旅在北京诞生了（隶属于北京独一之旅国际旅行社有限公司）。<br>最初，我们只是为小圈子里的朋友们，提供个性化的定制旅行服务。</p>
+                   <p>但随着业务的发展，我们发现，原来有那么多不认识我们的朋友，也都在寻找着这种自由、省心、又有性价比的私人定制旅行方式。<br>渐渐地，慕名而来的朋友越来越多。找我们定制旅行的朋友遍布大江南北，甚至还有很多旅居国外的朋友。我们欣喜的同时，也深感惶恐。</p>
+                   <p>这既是信任，也是责任。我们知道，将自己的旅行交给别人，真的是一件很重要的决定，我们能不能做到不辜负这种信任，我们能不能做到比预期的更好，这始终是激励我们向前的动力。</p>
+               </div>
+        </div>
+                <span class="left" ></span>
+                <span class="right" ></span>
+            </div>
+        </div>
+        <div class="branch">
+            <div class="abtaotit">
+                <h3 class="abh3">致力于海外自由行定制的无二之旅，正在不断发展壮大，<br>除北京总部扩建外，<br>也在重庆、上海、成都、深圳等地开办了分公司，<br>区域合作遍布苏州、金华、张家港等城市</h3>
+                <span class="absquare"></span>
+            </div>
+            <div class="abtaocon2">
+                <div class="abcon2map">
+                    <div class="branch_box">
+                        <div class="city head beijing">
+                            <span class="icon"></span>
+                            <span>北京</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">北京总公司</div>
+                                    <p>北京市朝阳区百子湾路苹果社区二十二院街艺术区 6-19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch chendu">
+                            <span class="icon"></span>
+                            <span>成都</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">成都分公司</div>
+                                    <p>成都市青羊区贝森北路1号西村大院2号楼307-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch chongqin">
+                            <span class="icon"></span>
+                            <span>重庆</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">重庆分公司</div>
+                                    <p>重庆市九龙坡区万象城华润广场B座1901-1907</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch shenzhen">
+                            <span class="icon"></span>
+                            <span>深圳</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">深圳分公司</div>
+                                    <p>深圳市南山区粤兴三道街8号中地大楼A208室</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch shanghai">
+                            <span class="icon"></span>
+                            <span>上海</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">上海分公司</div>
+                                    <p>上海市黄浦区淮海中路金钟广场5楼</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy jinhua">
+                            <span class="icon"></span>
+                            <span>金华</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">金华门店</div>
+                                    <p>浙江省金华市婺城区婺江东路188号帝壹城1F</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy shuzhou">
+                            <span class="icon"></span>
+                            <span>苏州</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">苏州门店</div>
+                                    <p>苏州园区SIFC圆融时代广场24幢7楼</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy changzhou">
+                            <span class="icon"></span>
+                            <span>常州</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">常州门店</div>
+                                    <p>常州市新世纪商城B座14楼半山书局无二之旅</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy zhangjiagang">
+                            <span class="icon"></span>
+                            <span>张家港</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">张家港门店</div>
+                                    <p>张家港市购物公园克拉水岸一楼C13铺</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="branches slide">
+                    <div class="branch_box2">
+                        <div class="city2 head2 beijing2">
+                            <div class="city_header2">
+                                <div class="h62">北京总公司</div>
+                                <p>北京市朝阳区百子湾路苹果社区二十二院街艺术区 6-19</p>
+                            </div>
+                        </div>
+                        <div class="city2 branch2 chendu2">
+
+                                <div class="city_header2">
+                                    <div class="h62">成都分公司</div>
+                                    <p>成都市青羊区贝森北路1号西村大院2号楼307-4</p>
+                                </div>
+
+                        </div>
+                        <div class="city2 branch2 chongqin2">
+                                <div class="city_header2">
+                                    <div class="h62">重庆分公司</div>
+                                    <p>重庆市九龙坡区万象城华润广场B座1901-1907</p>
+                                </div>
+                        </div>
+                        <div class="city2 branch2 shenzhen2">
+                                <div class="city_header2">
+                                    <div class="h62">深圳分公司</div>
+                                    <p>深圳市南山区粤兴三道街8号中地大楼A208室</p>
+                                </div>
+                        </div>
+                        <div class="city2 branch2 shanghai2">
+                                <div class="city_header2">
+                                    <div class="h62">上海分公司</div>
+                                    <p>上海市黄浦区淮海中路金钟广场5楼</p>
+                                </div>
+                        </div>
+                        <div class="city2 proxy2 jinhua2">
+                                <div class="city_header2">
+                                    <div class="h62">金华门店</div>
+                                    <p>浙江省金华市婺城区婺江东路188号帝壹城1F</p>
+                                </div>
+                        </div>
+                        <div class="city2 proxy2 shuzhou2">
+                                <div class="city_header2">
+                                    <div class="h62">苏州门店</div>
+                                    <p>苏州园区SIFC圆融时代广场24幢7楼</p>
+                                </div>
+                        </div>
+                        <div class="city2 proxy2 changzhou2">
+                                <div class="city_header2">
+                                    <div class="h62">常州门店</div>
+                                    <p>常州市新世纪商城B座14楼半山书局无二之旅</p>
+                                </div>
+                        </div>
+                        <div class="city2 proxy2 zhangjiagang2">
+                                <div class="city_header2">
+                                    <div class="h62">张家港门店</div>
+                                    <p>张家港市购物公园克拉水岸一楼C13铺</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="contact_box">
+        欢迎加盟、同业合作，联系电话：010-59684428
+      </span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="aboutcon">
+    <div class="aboutittao">
+        <ul class="aboutit">
+            <li class="active">关于我们</li>
+            <li>分公司</li>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div class="aboutcontao">
+        <div class="abus show">
+            <div class="abtaotit">
+                <h3 class="abh3">无二之旅，国内专业的出国旅行定制公司，</h3>
+                <h3 class="abh3">致力于为每位客户提供省心、自由、高性价比的海外自由行方案，让旅行有温度。</h3>
+                <span class="absquare"></span>
+            </div>
+                <div class="abtaocon">
+                    <div class="storyitem">
+                        <p>2012年，无二之旅在北京诞生了（隶属于北京独一之旅国际旅行社有限公司）。<br>最初，我们只是为小圈子里的朋友们，提供个性化的定制旅行服务。</p>
+                        <p>但随着业务的发展，我们发现，原来有那么多不认识我们的朋友，也都在寻找着这种自由、省心、又有性价比的私人定制旅行方式。<br>渐渐地，慕名而来的朋友越来越多。找我们定制旅行的朋友遍布大江南北，甚至还有很多旅居国外的朋友。我们欣喜的同时，也深感惶恐。</p>
+                        <p>这既是信任，也是责任。我们知道，将自己的旅行交给别人，真的是一件很重要的决定，我们能不能做到不辜负这种信任，我们能不能做到比预期的更好，这始终是激励我们向前的动力。</p>
+                    </div>
+                    <div class="storyitem">
+                        <p>近五年间，我们的队伍不断发展壮大，从最初的几位海外旅行达人，到近百余位拥有丰富自由行经验、长期海外生活经历的专业旅行定制师与专业旅行顾问。</p>
+                        <p>无二之旅也从一间小工作室发展为600平米LOFT体验店，并在重庆、上海、成都、深圳开办了分公司，区域合作伙伴遍布苏州、金华、张家港等城市。走过大山大海的小伙伴们聚集在这里，怀揣着对旅行的热忱与爱，努力把每一个看似遥远的旅行梦想变成现实。
+                        </p>
+                    </div>
+                    <div class="storyitem">
+                        <p>如今，已有超过10万人通过无二之旅定制了属于自己的出国旅行。有悄悄找定制师策划海外婚礼的甜蜜情侣，有坚持不跟团的蜜月旅行的听障夫妇，有想牵着彼此的手走天涯的花甲老人，还有更多像你我一样，只是想带着家人、恋人、朋友一起看世界，真正享受一次自在旅行的普通人。</p>
+                        <p>我们常常收到他们从世界各地寄来的明信片、信件、小礼物，每一份珍贵的心意都令我们幸福不已。这意味着我们真的帮他们享受到了出国自由行的乐趣，我们永远以此为荣。</p>
+                        <p>我们相信，旅行是有温度的。我们希望能在这个总是冰冷冷的世界里，用我们的专业与热情，带给你一抹属于旅行的温度。</p>
+                    </div>
+                </div>
+                <span class="left" ></span>
+                <span class="right" ></span>
+            </div>
+        <div class="branch">
+            <div class="abtaotit">
+                <h3 class="abh3">致力于海外自由行定制的无二之旅，正在不断发展壮大，<br>除北京总部扩建外，<br>也在重庆、上海、成都、深圳等地开办了分公司，<br>区域合作遍布苏州、金华、张家港等城市</h3>
+                <span class="absquare"></span>
+            </div>
+            <div class="abtaocon2">
+                <div class="abcon2map">
+                    <div class="branch_box">
+                        <div class="city head beijing">
+                            <span class="icon"></span>
+                            <span>北京</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">北京总公司</div>
+                                    <p>北京市朝阳区百子湾路苹果社区二十二院街艺术区 6-19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch chendu">
+                            <span class="icon"></span>
+                            <span>成都</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">成都分公司</div>
+                                    <p>成都市青羊区贝森北路1号西村大院2号楼307-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch chongqin">
+                            <span class="icon"></span>
+                            <span>重庆</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">重庆分公司</div>
+                                    <p>重庆市九龙坡区万象城华润广场B座1901-1907</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch shenzhen">
+                            <span class="icon"></span>
+                            <span>深圳</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">深圳分公司</div>
+                                    <p>深圳市南山区粤兴三道街8号中地大楼A208室</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city branch shanghai">
+                            <span class="icon"></span>
+                            <span>上海</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">上海分公司</div>
+                                    <p>上海市黄浦区淮海中路金钟广场5楼</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy jinhua">
+                            <span class="icon"></span>
+                            <span>金华</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">金华门店</div>
+                                    <p>浙江省金华市婺城区婺江东路188号帝壹城1F</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy shuzhou">
+                            <span class="icon"></span>
+                            <span>苏州</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">苏州门店</div>
+                                    <p>苏州园区SIFC圆融时代广场24幢7楼</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy changzhou">
+                            <span class="icon"></span>
+                            <span>常州</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">常州门店</div>
+                                    <p>常州市新世纪商城B座14楼半山书局无二之旅</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city proxy zhangjiagang">
+                            <span class="icon"></span>
+                            <span>张家港</span>
+                            <div class="city_details">
+                                <div class="city_header">
+                                    <span class="right_arrow"></span>
+                                    <img src="../img/s-img/uniab.png" alt="Buttom logo">
+                                    <div class="h6">张家港门店</div>
+                                    <p>张家港市购物公园克拉水岸一楼C13铺</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="contact_box">
+        欢迎加盟、同业合作，联系电话：010-59684428
+      </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--公司发展时间线-->
+<div class="mobileabtime">
+    <div class="abtimetao">
+        <div class="item year_2012">
+            <span>2012</span>
+            <div class="timecon">
+                <img src="../img/s-img/about2.png" alt="1">
+                <p>几位热爱旅行的小伙伴聚集在北京<br>为小圈子里热爱深度旅行的朋友们提供<br><a href="/" class="no_style_link">私人定制旅行服务</a>。这也是<a href="/" class="no_style_link">无二之旅</a>的前身。</p>
+            </div>
+        </div>
+        <div class="item year_2013">
+            <span>2013.7</span>
+            <div class="timecon">
+                <img src="../img/s-img/about3.png" alt="2">
+                <p><a href="/" class="no_style_link">无二之旅</a>注册品牌<br>公司在北京金融街正式运营。</p>
+            </div>
+        </div>
+        <div class="item year_2014_4">
+            <span>2014.4</span>
+            <div class="timecon">
+                <img src="../img/s-img/about4.png" alt="3">
+                <p><a href="/" class="no_style_link">无二之旅</a>成为腾讯<br>全球益行家合作伙伴。</p>
+            </div>
+        </div>
+        <div class="item year_2014_6">
+            <span>2014.6</span>
+            <div class="timecon">
+                <img src="../img/s-img/about5.png" alt="4">
+                <p>百度“<a href="/" class="no_style_link">定制旅行</a>”“<a href="/" class="no_style_link">定制旅游</a>”<br>等搜索关键词<br>
+                    <a href="/" class="no_style_link">无二之旅</a>自然搜索排名前三。</p>
+            </div>
+        </div>
+        <div class="item year_2014_7">
+            <span>2014.7</span>
+            <div class="timecon">
+                <img src="../img/s-img/about6.png" alt="5">
+                <p><a href="/" class="no_style_link">无二之旅</a>成为央视纪录片<br>《<a href="/our_story" class="no_style_link">旅行定制师</a>》独家跟拍对象</p>
+            </div>
+        </div>
+        <div class="item year_2014_10">
+            <span>2014.10</span>
+            <div class="timecon">
+                <img src="../img/s-img/about7.png" alt="6">
+                <p><a href="/" class="no_style_link">无二之旅</a>从金融街工作室<br>迁至国贸附近二十二院街艺术区<br>600平米体验店。</p>
+            </div>
+        </div>
+        <div class="item year_2014_11_1">
+            <span>2014.11</span>
+            <div class="timecon">
+                <img src="../img/s-img/about8.png" alt="7">
+                <p>与新西兰旅游局、新西兰航空联合举办<br>“新西兰纯净国度探秘”大型活动。</p>
+            </div>
+        </div>
+        <div class="item year_2014_11_2">
+            <span>2014.11</span>
+            <div class="timecon">
+                <img src="../img/s-img/about9.png" alt="8">
+                <p>与北欧旅游局、芬兰航空联合举办<br>“深入北极圈、探寻极光”大型活动。</p>
+            </div>
+        </div>
+        <div class="item year_2015_7">
+            <span>2015.7</span>
+            <div class="timecon">
+                <img alt="无二之旅定制旅行" src="../img/s-img/about12.png">
+                <p>《<a href="/" class="no_style_link">无二之旅</a>》旅行微电影上线，获优酷土豆、<br>爱奇艺、乐视、凤凰视频等各大视频网站首页<br>推荐，并收到多项微电影节邀请。</p>
+            </div>
+        </div>
+        <div class="item year_2016_5">
+            <span>2016.5</span>
+            <a href="http://tv.cntv.cn/video/C10095/8eba07adb8ad4719943598855054f076" target="_blank" class="timecon">
+                <img src="../img/s-img/about11.png" alt="5" class="timeimg">
+                <p>北京电视台早间新闻专题报道。</p>
+            </a>
+        </div>
+        <div class="item year_2016_9">
+            <span>2016.9</span>
+            <div class="timecon">
+                <img src="../img/s-img/about10.png" alt="9" class="timeimg">
+                <p><a href="/" class="no_style_link">无二之旅</a>荣获2016最佳定制旅行平台。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="abtime">
+    <div class="abtimetao">
+        <div class="item year_2012">
+            <span>2012</span>
+            <div class="timecon">
+                <img src="../img/s-img/about2.png" alt="1">
+                <p>几位热爱旅行的小伙伴聚集在北京<br>为小圈子里热爱深度旅行的朋友们提供<br><a href="/" class="no_style_link">私人定制旅行服务</a>。这也是<a href="/" class="no_style_link">无二之旅</a>的前身。</p>
+            </div>
+        </div>
+        <div class="item year_2013">
+            <span>2013.7</span>
+            <div class="timecon">
+                <img src="../img/s-img/about3.png" alt="2">
+                <p><a href="/" class="no_style_link">无二之旅</a>注册品牌<br>公司在北京金融街正式运营。</p>
+            </div>
+        </div>
+        <div class="item year_2014_4">
+            <span>2014.4</span>
+            <div class="timecon">
+                <img src="../img/s-img/about4.png" alt="3">
+                <p><a href="/" class="no_style_link">无二之旅</a>成为腾讯<br>全球益行家合作伙伴。</p>
+            </div>
+        </div>
+        <div class="item year_2014_6">
+            <span>2014.6</span>
+            <div class="timecon">
+                <img src="../img/s-img/about5.png" alt="4">
+                <p>百度“<a href="/" class="no_style_link">定制旅行</a>”“<a href="/" class="no_style_link">定制旅游</a>”<br>等搜索关键词<br>
+                    <a href="/" class="no_style_link">无二之旅</a>自然搜索排名前三。</p>
+            </div>
+        </div>
+        <div class="item year_2014_7">
+            <span>2014.7</span>
+            <div class="timecon">
+                <img src="../img/s-img/about6.png" alt="5">
+                <p><a href="/" class="no_style_link">无二之旅</a>成为央视纪录片<br>《<a href="/our_story" class="no_style_link">旅行定制师</a>》独家跟拍对象</p>
+            </div>
+        </div>
+        <div class="item year_2014_10">
+            <span>2014.10</span>
+            <div class="timecon">
+                <img src="../img/s-img/about7.png" alt="6">
+                <p><a href="/" class="no_style_link">无二之旅</a>从金融街工作室<br>迁至国贸附近二十二院街艺术区<br>600平米体验店。</p>
+            </div>
+        </div>
+        <div class="item year_2014_11_1">
+            <span>2014.11</span>
+            <div class="timecon">
+                <img src="../img/s-img/about8.png" alt="7">
+                <p>与新西兰旅游局、新西兰航空联合举办<br>“新西兰纯净国度探秘”大型活动。</p>
+            </div>
+        </div>
+        <div class="item year_2014_11_2">
+            <span>2014.11</span>
+            <div class="timecon">
+                <img src="../img/s-img/about9.png" alt="8">
+                <p>与北欧旅游局、芬兰航空联合举办<br>“深入北极圈、探寻极光”大型活动。</p>
+            </div>
+        </div>
+        <div class="item year_2015_7">
+            <span>2015.7</span>
+            <div class="timecon">
+                <img alt="无二之旅定制旅行" src="../img/s-img/about12.png">
+                <p>《<a href="/" class="no_style_link">无二之旅</a>》旅行微电影上线，获优酷土豆、<br>爱奇艺、乐视、凤凰视频等各大视频网站首页<br>推荐，并收到多项微电影节邀请。</p>
+            </div>
+        </div>
+        <div class="item year_2016_5">
+            <span>2016.5</span>
+            <a href="http://tv.cntv.cn/video/C10095/8eba07adb8ad4719943598855054f076" target="_blank" class="timecon">
+                <img src="../img/s-img/about11.png" alt="5" class="timeimg">
+                <p>北京电视台早间新闻专题报道。</p>
+            </a>
+        </div>
+        <div class="item year_2016_9">
+            <span>2016.9</span>
+            <div class="timecon">
+                <img src="../img/s-img/about10.png" alt="9" class="timeimg">
+                <p><a href="/" class="no_style_link">无二之旅</a>荣获2016最佳定制旅行平台。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-area " id="dituContent">
+    <div id="bj_map" style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;https://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 1140px; height: 500px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: auto; left: 0px; top: 0px; z-index: 800;"><div class="BMapLib_SearchInfoWindow" id="BMapLib_SearchInfoWindow0" style="width: 250px; user-select: none; bottom: -288px; left: 412px;"><div class="BMapLib_bubble_top"><div class="BMapLib_bubble_title" id="BMapLib_bubble_title0">无二之旅</div><div class="BMapLib_bubble_tools"><div class="BMapLib_bubble_close" title="关闭" id="BMapLib_bubble_close0"></div><div class="BMapLib_sendToPhone" title="发送到手机" id="BMapLib_sendToPhone0"></div></div></div><div class="BMapLib_bubble_center"><div class="BMapLib_bubble_content" id="BMapLib_bubble_content0" style="height: 105px;"><div style="margin:0;line-height:20px;padding:2px;"><img src="https://assets.cdn.uniqueway.com/assets/contact_us/foreground-ed5e921ce0e67e3dd60804b9d49cd6cec30c3d603abe921ff22552c4e2e72ccc.jpg" alt="无二之旅" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;">地址：北京市朝阳区百子湾路苹果社区二十二院街艺术区 6-19 <br>电话：400-8903040 <br></div></div><div class="BMapLib_nav" id="BMapLib_nav0"><ul class="BMapLib_nav_tab" id="BMapLib_nav_tab0"><li class="BMapLib_current BMapLib_first" id="BMapLib_tab_search0" style="display: block; width: 82px;"><span class="BMapLib_icon BMapLib_icon_nbs"></span>在附近找</li><li class="" id="BMapLib_tab_tohere0" style="display: block; width: 82px;"><span class="BMapLib_icon BMapLib_icon_tohere"></span>到这里去</li><li class="" id="BMapLib_tab_fromhere0" style="display: block; width: 84px;"><span class="BMapLib_icon BMapLib_icon_fromhere"></span>从这里出发</li></ul><ul class="BMapLib_nav_tab_content"><li id="BMapLib_searchBox0" style="display: block;"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="padding-left:8px;"><input id="BMapLib_search_text0" class="BMapLib_search_text" type="text" maxlength="100" autocomplete="off"></td><td width="55" style="padding-left:7px;"><input id="BMapLib_search_nb_btn0" type="submit" value="搜索" class="iw_bt" data-disable-with="saving..."></td></tr></tbody></table></li><li id="BMapLib_transBox0" style="display:none"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td width="30" style="padding-left:8px;"><div id="BMapLib_stationText0">起点</div></td><td><input id="BMapLib_trans_text0" class="BMapLib_trans_text" type="text" maxlength="100" autocomplete="off"></td><td width="106" style="padding-left:7px;"><input id="BMapLib_search_bus_btn0" type="button" value="公交" class="iw_bt" style="margin-right:5px;"><input id="BMapLib_search_drive_btn0" type="button" class="iw_bt" value="驾车"></td></tr></tbody></table></li></ul></div></div><div class="BMapLib_bubble_bottom"></div><img src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/iw_tail.png" width="58" height="31" alt="" class="BMapLib_trans" id="BMapLib_trans0" style="left: 94px; top: 211px;"></div></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background: url(&quot;https://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height: 25px; left: 499px; top: 320px; z-index: -7981122;" title=""></span><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background: url(&quot;https://api.map.baidu.com/images/blank.gif&quot;); width: 18px; height: 18px; left: 30px; top: 53px; z-index: 19000000; user-select: none; display: none;" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; background-color: rgb(255, 255, 225); border: 1px solid rgb(140, 140, 140); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: 80; user-select: none; color: rgb(77, 77, 77);">点击可查看详情</label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 499px; top: 320px; z-index: -7981122;"><div style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;"><img src="https://api.map.baidu.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:0px; margin-top:0px; "></div></span><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 30px; top: 53px; z-index: 19000000; display: none;"><div style="position: absolute; margin: 0px; padding: 0px; width: 18px; height: 18px; overflow: hidden;"><img src="https://api.map.baidu.com/images/spotmkrs.png" style="display: block; border:none;margin-left:-196px; margin-top:-244px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"><span unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 503px; top: 334px;"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;"><img src="https://api.map.baidu.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:-19px; margin-top:-13px; "></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; overflow: visible; z-index: -100; left: 570px; top: 250px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="https://gss0.bdstatic.com/8bo_dTSlRcgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12661&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -454px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlQ1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12663&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 58px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlQ1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12662&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -198px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRcgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12662&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -198px; top: 221px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12660&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -710px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12664&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 314px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRsgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12663&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 58px; top: 221px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRsgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12661&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -454px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12663&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 58px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12661&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -454px; top: 221px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlQ1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12664&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 314px; top: 221px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRcgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12660&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -710px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12664&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 314px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12660&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -710px; top: 221px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRsgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12662&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: -198px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRMgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12665&amp;y=4711&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 570px; top: -35px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlRcgBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12665&amp;y=4712&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 570px; top: -291px; max-width: none; opacity: 1;"><img src="https://gss0.bdstatic.com/8bo_dTSlR1gBo1vgoIiO_jowehsv/tile/?qt=tile&amp;x=12665&amp;y=4710&amp;z=16&amp;styles=pl&amp;scaler=1&amp;udt=20170818" style="position: absolute; border: none; width: 256px; height: 256px; left: 570px; top: 221px; max-width: none; opacity: 1;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none; visibility: hidden;"><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div></div><div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div></div><div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; text-size-adjust: none; bottom: 20px; right: auto; top: auto; left: 1px;"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="https://api.map.baidu.com/images/copyright_logo.png"></a></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(https://api.map.baidu.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; background: none; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 2px; position: absolute; z-index: 10; text-size-adjust: none;"><span _cid="1" style="display: inline;"><span style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2017 Baidu - GS(2016)2089号&nbsp;- Data © 长地万方</span></span></div></div>
+</div>
+<div class="footer">
+    <!-- pc端底部导航-->
+    <div class="footer-container">
+        <div class="footer-list">
+            <ul class="clearfix">
+                <li><a href="">客户评价</a></li>
+                <li><a href="">出国旅游</a></li>
+                <li><a href="">私人定制旅游</a></li>
+                <li><a href="">旅游攻略</a></li>
+                <li><a href="">蜜月旅行</a></li>
+                <li><a href="">亲自旅行</a></li>
+                <li><a href="">海外婚礼</a></li>
+                <li><a href="">定制路书</a></li>
+                <li><a href="">出国自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">欧洲自由行</a></li>
+                <li><a href="">美国自由行</a></li>
+                <li><a href="">加拿大自由行</a></li>
+                <li><a href="">澳大利亚自由行</a></li>
+                <li><a href="">新西兰自由行</a></li>
+                <li><a href="">斯里兰卡自由行</a></li>
+                <li><a href="">大溪地自由行</a></li>
+                <li><a href="">毛里求斯自由行</a></li>
+                <li><a href="">迪拜自由行</a></li>
+                <li><a href="">日本自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">冰岛自由行</a></li>
+                <li><a href="">挪威自由行</a></li>
+                <li><a href="">英国自由行</a></li>
+                <li><a href="">荷兰自由行</a></li>
+                <li><a href="">瑞士自由行</a></li>
+                <li><a href="">德国自由行</a></li>
+                <li><a href="">法国自由行</a></li>
+                <li><a href="">意大利自由行</a></li>
+                <li><a href="">希腊自由行</a></li>
+                <li><a href="">捷克自由行</a></li>
+                <li><a href="">西班牙自由行</a></li>
+                <li><a href="">葡萄牙自由行</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a href="">合作伙伴</a></li>
+                <li><a href="">隐私政策</a></li>
+                <li><a href="">加入我们</a></li>
+                <li class="links">
+                    关注我们：
+                    <a href="" class="link">
+                        <img src="../img/s-img/weinxin.png" alt=""/>
+                        <img src="../img/s-img/wuerweima.png" alt="" class="download"/>
+                    </a>
+                    <a href="">
+                        <img src="../img/s-img/xinlang.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../img/s-img/none.png" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- pc端底部联系-->
+    <div class="footer-content">
+        <div class="footer-contain">
+            <div class="row">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="../img/s-img/wulogo2.png" alt=""/>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <div class="text-container">
+                        <span>Copyright  2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
+                        <span>商务合作：010-59684420</span>
+                        <span>投诉、建议及其他反馈：400-890-3040（语音后按2#）</span>
+                        <br/>
+                        <span>北京无二之旅文化传播有限公司</span>
+                        <span>地址：北京市朝阳区百子湾路苹果社区北区二十二院街艺术区6-19</span>
+                        <span>*本网站部分图片来自网络，若作者看到，请尽快与无二之旅联系。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile_footer">
+    <p class="mobilitem">Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+    <p class="mobilitem">京ICP备13026868 商务合作：010-59684420 </p>
+</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../js/own.js"></script>
+<script src="../js/ab.js"></script>
+<script src="../js/dong.js"></script>
+</html>

@@ -1,0 +1,33 @@
+.polneir{
+    width: 100%;
+    background: #f0f0f0;;
+    margin-top: 73px;
+}
+.poltao{
+    width: 85%;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:0 15px;
+}
+.poltao>h2{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.poltao>p{
+    margin: 0 0 10px;
+}
+.poltao>h3{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+.poltao>ul>li{
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 4px solid #646464;
+    margin-bottom: 8px;
+    line-height: 16px;
+}

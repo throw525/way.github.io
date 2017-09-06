@@ -2,25 +2,302 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>无二之旅</title>
+    <title>无二之旅婚礼婚拍</title>
     <link rel="stylesheet" href="../css/CSSreset.css"/>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/dong3.css"/>
     <link rel="stylesheet" href="../css/wedding.css"/>
+    <meta name="viewport" content="width=640">
+    <script src="../js/mobile-util.js"></script>
+    <style>
+        .modal-content{
+            background-color: #e6e6e6;
+            width: 500px;
+            height: 560px;
+        }
+        .modal-header{
+            background: url("../img/s-img/place19.png") no-repeat center/cover;
+        }
+        /*页脚表单*/
+        .wayformpp1{
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.1;
+            text-align: center;
+            color: #fff;
+        }
+        .wayformp2{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.12;
+            letter-spacing: -0.5px;
+            margin: 0 0 10px;
+            text-align: center;
+            color: #fff;
+        }
+        .modal-body>form{
+            width: 440px;
+            height: 260px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .ul21{
+            width: 440px;
+            height: 48px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .ul21>li{
+            float: left;
+            margin: 0 10px 0 0;
+            width: 136px;
+            height: 42px;
+            position: relative;
+        }
+        .ul21 li>input{
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            width: 13px;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+            opacity: 0.011;
+            z-index: 100;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+        }
+        .ul21 li>label{
+            color: #5e3008;
+            text-align: center;
+            cursor: pointer;
+            z-index: 90;
+            height: 42px;
+            line-height: 42px;
+            border: none;
+            background-color: #FFF;
+            border-radius: 3px;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 134px;
+            float: left;
+            position: absolute;
+        }
+        .ul21 label:hover{
+            background: #F8F8F3;
+        }
+        .ul21>li:nth-child(2)>label{
+            background-color: #f02446;
+            color: #fff;
+        }
+        .ul22{
+            width: 440px;
+            margin: 20px auto;
+            height: 48px;
+        }
+        .ul22>.inp1{
+            width: 140px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp2{
+            width: 182px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .ul22>.inp3{
+            width: 107px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            margin: 0;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            border-right: 1px solid #e6e6e6;
+        }
+        .phone2{
+            width: 429px;
+            border-radius: 3px;
+            color: #b6aea2;
+            font-size: 14px;
+            float: left;
+            border: none;
+            background: white;
+            height: 48px;
+            line-height: 20px;
+            padding-left: 11px;
+            margin: auto;
+            border-right: 1px solid #e6e6e6;
+        }
+        .comment2{
+            width: 429px;
+            height: 43px;
+            padding: 11px;
+            border: 0;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+        .submit2{
+            color: white;
+            font-size: 18px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border: 0;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #63C6C2;
+            margin: 0 180px 0;
+        }
+        .btn{
+            font-size: 12px;
+            color: #fff;
+            margin: 6px 5px 6px 0;
+            background-color: #f64b19;
+            padding: 0 15px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 3px;
+            float: right;
+            text-decoration: none;
+            border: 0;
+        }
+        .btn:hover{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+        }
+        .btn:active{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .btn:focus{
+            color: #fff;
+            background-color: #f64b19;
+            border: 0;
+            outline: none;
+        }
+        .modal-backdrop{
+            z-index: 0;
+        }
+    </style>
 </head>
-<body>
+<body onload="show()">
+<!--联系您-->
+<div class="concat">
+    <div class="concatbig">
+        <img src="../img/s-img/weddingtel.png" alt=""/>
+        <div class="concattao">
+            <h2>留下电话，让我详细跟您介绍</h2>
+            <p>为什么选择无二之旅，聊聊就知道</p>
+            <form action="">
+                <input type="text" class="concattel" placeholder="请输入电话号码"/>
+                <button class="concatbtn">让我们联系您</button>
+            </form>
+        </div>
+        <span class="concatx"></span>
+    </div>
+    <div class="concatsmall">
+        <p class="concatrig">让我们联系您</p>
+        <span class="spanrig"></span>
+    </div>
+</div>
+<!--右侧关注-->
+<div class="contact-widget">
+    <a class="widget-item item1">
+        <img src="../img/s-img/weddingphone.png" alt=""/>
+    </a>
+    <div class="widget-item item2">
+        <img src="../img/s-img/weddinger.png" alt=""/>
+        <div class="widget-code">
+            <img src="../img/s-img/erweima.png" alt=""/>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div class="widget-item backtotop">
+        <img src="../img/s-img/wedtop.png" alt=""/>
+    </div>
+</div>
+<!--在线咨询-->
+<div class="message">
+    <span class="pic"></span>
+    <span class="line1"></span>
+    <span class="btn3">在线咨询</span>
+</div>
+<!--uniqueway-girl-->
+<div class="uniqueway-girl">
+    <div class="girl-image"></div>
+</div>
 <!--header-->
+<div class="mobilehead">
+    <div class="mhead">
+        <img src="../img/s-img/about3.png" alt=""/>
+        <button class="mhs">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="nav-collapse">
+        <ul>
+            <li class="on"><a href="#">首页</a></li>
+            <li><a href="html/travel.html">定制旅行</a></li>
+            <li><a href="#">定制师</a></li>
+            <li><a href="html/book.html">路书</a></li>
+            <li><a href="#">案例故事</a></li>
+            <li><a href="#">目的地</a></li>
+            <li><a href="wedding.html">婚礼婚拍</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="html/strategy.html">旅游攻略</a></li>
+        </ul>
+    </div>
+</div>
 <div class="header">
     <div class="header-center">
         <div class="logo">
             <img src="../img/s-img/about3.png" alt=""/>
         </div>
         <ul class="header-nav">
-            <li class="on"><a href="">首页</a></li>
+            <li><a href="">首页</a></li>
             <li><a href="">定制旅行</a></li>
             <li><a href="">定制师</a></li>
             <li><a href="">路书</a></li>
             <li><a href="">案例故事</a></li>
             <li><a href="">目的地</a></li>
-            <li><a href="">婚礼婚拍</a></li>
+            <li class="on"><a href="">婚礼婚拍</a></li>
             <li><a href="">关于我们</a></li>
         </ul>
         <div class="header-contact">
@@ -29,7 +306,51 @@
             </div>
             <p>400 890 3040</p>
         </div>
-        <a href="" class="refer">免费咨询</a>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            免费咨询
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <p class="wayformpp1">无二婚礼</p>
+                            <p class="wayformp2">- 专业的海外婚礼 &amp; 海外婚拍团队 -</p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <ul class="ul21">
+                                <li>
+                                    <input type="radio" id="free_1" name="category" value="tour">
+                                    <label for="free_1">婚礼 + 婚拍</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="tailor_1" name="category" value="custom" checked="checked">
+                                    <label for="tailor_1">婚礼</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="none_1" name="category" value="unknown">
+                                    <label for="none_1">婚拍</label>
+                                </li>
+                            </ul>
+                            <ul class="ul22">
+                                <input class="inp1" type="text" name="name" placeholder="姓名">
+                                <input class="inp2" type="text"  placeholder="海外目的地">
+                                <input class="inp3" type="text"  placeholder="天数">
+                            </ul>
+                            <input  class="phone2" type="tel"  placeholder="手机" >
+                            <textarea name="comment" class="comment2" placeholder="备注内容"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="submit2" >提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--banner部分-->
@@ -48,7 +369,7 @@
 </div>
 <div class="place">
     <div class="placetao1">
-       <div class="imgbox">
+       <div class="imgbox" onclick="videobox()">
            <img src="../img/s-img/red.png" alt=""/>
        </div>
     </div>
@@ -58,7 +379,7 @@
         </div>
         <p class="danp1">丹麦童话婚礼</p>
         <p class="danp2">[ 丹麦驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-        <a href="" class="dana1">婚礼场地</a>
+        <a href="place.html" class="dana1">婚礼场地</a>
         <div class="danimgs">
             <img src="../img/s-img/wedding20.jpg" alt=""/>
             <img src="../img/s-img/wedding21.jpg" alt=""/>
@@ -73,8 +394,8 @@
     </div>
     <p class="queenp1">皇后镇中土世界婚礼</p>
     <p class="queenp2">[ 新西兰驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-    <a href="" class="dana1">婚礼场地</a>
-    <div class="queenbox">
+    <a href="place.html" class="dana1">婚礼场地</a>
+    <div class="queenbox" onclick="videobox2()">
         <img src="../img/s-img/red.png" alt=""/>
     </div>
 </div>
@@ -85,7 +406,7 @@
         </div>
         <p class="danp1">教堂、沙滩、草坪婚礼</p>
         <p class="danp2">[ 巴厘岛驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-        <a href="" class="dana1">婚礼场地</a>
+        <a href="place.html" class="dana1">婚礼场地</a>
         <div class="danimgs">
             <img src="../img/s-img/wedding23.jpg" alt=""/>
             <img src="../img/s-img/wedding24.jpg" alt=""/>
@@ -95,7 +416,7 @@
             在巴厘岛，你可以拥有各种类型的婚礼：教堂、沙滩、花园、别墅、草地、水上婚礼……我们会以最高的性价比，帮你实现所有的巴厘岛婚礼梦想。</p>
     </div>
     <div class="placetao3">
-        <div class="imgbox">
+        <div class="imgbox" onclick="videobox3()">
             <img src="../img/s-img/red.png" alt=""/>
         </div>
     </div>
@@ -106,7 +427,7 @@
     </div>
     <p class="queenp1">大溪地 梦幻婚礼、波拉波拉蓝色誓约婚礼</p>
     <p class="queenp2">[ 大溪地驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-    <a href="" class="dana1">婚礼场地</a>
+    <a href="place.html" class="dana1">婚礼场地</a>
 </div>
 <div class="smallplace">
     <div class="smallplacetao">
@@ -129,7 +450,7 @@
             </div>
             <p class="smallpl1">老城教堂城堡婚礼</p>
             <p class="smallpl2">[ 布拉格驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-            <a href="" class="dana1">婚礼场地</a>
+            <a href="place.html" class="dana1">婚礼场地</a>
             <p class="danp3">如果说巴黎是热恋中的少女，那布拉格就像等待恋人回家的女孩。她是欧洲最美的城市之一，在这里，你可以选择举办一场教堂婚礼、城堡婚礼、或是花园婚礼。当你穿着嫁衣从布拉格广场经过，在天文钟下许下誓言，在卡夫卡门前拍摄大片……那一刻，就像步入了真正的童话。</p>
         </div>
         <div class="smallp1">
@@ -139,7 +460,7 @@
             </div>
             <p class="smallpl1">维罗纳朱丽叶之家婚礼</p>
             <p class="smallpl2">[ 意大利驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-            <a href="" class="dana1">婚礼场地</a>
+            <a href="place.html" class="dana1">婚礼场地</a>
             <p class="danp3">谁也想不到，原来可以在这里办一场婚礼——在朱丽叶的阳台上。<br>是的，这座位于维罗纳的小宫殿，便是几千年前莎翁笔下罗密欧与朱丽叶许下诺言的地方。朱丽叶驻⾜的露台，如今也被称为世界上最浪漫的露台。你，愿意做我的朱丽叶吗？</p>
         </div>
         <div class="smallp2">
@@ -149,10 +470,70 @@
             </div>
             <p class="smallpl1">从拉普兰到冰岛的秘密婚礼</p>
             <p class="smallpl2">[ 拉普兰地区驻地摄影师 专业旅拍 &amp; 婚纱摄影 ]</p>
-            <a href="" class="dana1">婚礼场地</a>
+            <a href="place.html" class="dana1">婚礼场地</a>
             <p class="danp3">不是所有人都有这份勇气——在北极圈举办自己的婚礼。在夏天的极昼举办肆意浪漫的婚礼，在极光幕布中举办瑰丽奇幻的婚礼，在冰岛辽阔的苔藓原野上举办最柔软的秘密婚礼，在冰教堂里举办冰雪奇缘般的纯美婚礼……这是无二海外婚礼最酷的选择，我们来帮你梦想成真。</p>
         </div>
     </div>
+</div>
+<!--视频-->
+<div class="video1">
+    <div class="bg"></div>
+    <button  class="close" ><span>×</span></button>
+    <div  class="videotao" style="width: 1200px; height: 600px; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px;">
+        <video  class="vedio1" preload poster="https://document.cdn.uniqueway.com/video/DenMarkFunenWedding.png" controls >
+        <source src="https://document.cdn.uniqueway.com/video/DenMarkFunenWedding.mp4" type="video/mp4">
+    </video>
+    </div>
+</div>
+<div class="video2">
+    <div class="bg"></div>
+    <button  class="close2" ><span>×</span></button>
+    <div  class="videotao" style="width: 1200px; height: 600px; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px;">
+        <video  class="vedio2" preload poster="https://document.cdn.uniqueway.com/video/DenMarkFunenWedding.png" controls >
+            <source src="https://document.cdn.uniqueway.com/video/NzQueenstownWedding.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<div class="video3">
+    <div class="bg"></div>
+    <button  class="close3" ><span>×</span></button>
+    <div  class="videotao" style="width: 1200px; height: 600px; left: 50%; top: 50%; margin-left: -600px; margin-top: -300px;">
+        <video  class="vedio3" preload poster="https://document.cdn.uniqueway.com/video/DenMarkFunenWedding.png" controls >
+            <source src="https://document.cdn.uniqueway.com/video/baliislandWedding.m4v" type="video/mp4">
+        </video>
+    </div>
+</div>
+<!--底部表单-->
+<div class="wayform">
+   <div class="wayformtao">
+       <p class="wayformp1">无二婚礼</p>
+       <p class="wayformp2">- 专业的海外婚礼 &amp; 海外婚拍团队 -</p>
+       <form action="">
+           <ul class="ul1">
+                   <li>
+                       <input type="radio" id="free_1" name="category" value="tour">
+                       <label for="free_1">婚礼 + 婚拍</label>
+                   </li>
+                   <li>
+                       <input type="radio" id="tailor_1" name="category" value="custom" checked="checked">
+                       <label for="tailor_1">婚礼</label>
+                   </li>
+                   <li>
+                       <input type="radio" id="none_1" name="category" value="unknown">
+                       <label for="none_1">婚拍</label>
+                   </li>
+           </ul>
+           <ul class="ul2">
+               <input class="inp1" type="text" name="name" placeholder="姓名">
+               <input class="inp2" type="text"  placeholder="海外目的地">
+               <input class="inp3" type="text"  placeholder="天数">
+           </ul>
+           <input  class="phone" type="tel"  placeholder="手机" >
+           <textarea name="comment" class="comment" placeholder="备注内容"></textarea>
+           <button type="submit" class="submit" >提交</button>
+
+       </form>
+   </div>
 </div>
 <div class="footer">
     <!-- pc端底部导航-->
@@ -224,7 +605,7 @@
                         <img src="../img/s-img/wulogo2.png" alt=""/>
                     </a>
                 </div>
-                <div class="footer-text">swww
+                <div class="footer-text">
                     <div class="text-container">
                         <span>Copyright  2012-2017 Uniqueway Inc. 保留所有权利   <a href="">京ICP备13026868</a>  </span>
                         <span>商务合作：010-59684420</span>
@@ -239,7 +620,13 @@
         </div>
     </div>
 </div>
+<div class="mobile_footer">
+    <p class="mobilitem">Copyright © 2013-2017 Uniqueway Inc. 保留所有权利 </p>
+    <p class="mobilitem">京ICP备13026868 商务合作：010-59684420 </p>
+</div>
 </body>
-<script src="../js/jquery-1.8.3.js"></script>
-<script src="../js/wed.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../js/wedd.js"></script>
+<script src="../js/dong.js"></script>
 </html>

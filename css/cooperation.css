@@ -1,0 +1,148 @@
+.partner{
+    background: #faf6ee;
+    height: 200px;
+    padding-top: 90px;
+    margin-bottom: 30px;
+}
+.partao{
+    width: 121px;
+    margin: 0 auto;
+    color: #669797;
+    text-align: center;
+    padding-bottom: 9px;
+}
+.partao>h4{
+    font-size: 22px;
+    border-bottom: 1px solid #669797;
+}
+.partao>p{
+    font-size: 14px;
+}
+.parneir1{
+    width: 850px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.parlist1{
+    width: 385px;
+    height: 150px;
+    float: left;
+    margin-right: 80px;
+}
+.parlist2{
+    width: 385px;
+    height: 150px;
+    float: left;
+}
+.parlist3{
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+.parfix>a{
+    width: 182px;
+    height: 110px;
+    line-height: 110px;
+    display: inline-block;
+    text-align: center;
+}
+.parfix3>a{
+    width: 125px;
+    height: 110px;
+    line-height: 110px;
+    display: inline-block;
+    text-align: center;
+}
+.parfix4>a{
+    width: 208px;
+    height: 110px;
+    line-height: 110px;
+    display: inline-block;
+    text-align: center;
+}
+.parfix2>a{
+    display: block;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+.parfix>a>img,.parfix2>a>img,.parfix3>a>img,.parfix4>a>img{
+    max-width: 100%;
+}
+.pardesc{
+    color: white;
+    background: #8dbec3;
+    text-align: center;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.pardesc>a{
+    color: #337ab7;
+    text-decoration: none;
+}
+.blank{
+    margin-bottom: 60px;
+}
+.pardesc>.para1{
+    color: #ffffff;
+}
+.parpage{
+    width: 820px;
+    height: 38px;
+    padding-bottom: 9px;
+    margin: 40px auto 20px;
+    border-bottom: 1px solid #eee;
+}
+.parpage>h1{
+    font-size: 24px;
+}
+.parpage>h1>a{
+    color: #3279a9;
+    text-decoration: none;
+    border-left: 2px solid #000;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.parother{
+    width: 850px;
+    margin: 0 auto;
+}
+.parota,.parota2,.parota3{
+    height: 110px;
+}
+.parota3{
+    width: 400px;
+    height: 110px;
+    margin: 0 auto;
+}
+.parota>a{
+    margin: 0 auto;
+    width: 160px;
+    height: 110px;
+    line-height: 110px;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.parota2>a{
+    margin: 0 auto;
+    width: 208px;
+    height: 110px;
+    line-height: 110px;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.parota3>a{
+    width: 182px;
+    height: 110px;
+    line-height: 110px;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.parota3>a>img{
+    max-width: 100%;
+}
