@@ -118,6 +118,11 @@ body,html{
 	padding-bottom: 5px;
 	border-bottom: 2px solid transparent;
 }
+	.wyb-top .min-width .ul-top li.on{
+		border-bottom: 2px solid #65c8c4;
+		color: #65c8c4;
+	}
+
 .wyb-top .min-width .ul-top li a:hover {
 	border-bottom: 2px solid #65c8c4;
 	text-decoration: none;
@@ -658,7 +663,6 @@ body,html{
 }
 
 .w-content-dk .w-content-box .w-content-right .w-c-r-div2 li{
-	margin-top: ;
 	width: 248px;
 	height: 50px;
 	background: #FFFFFF;

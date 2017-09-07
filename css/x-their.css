@@ -10,6 +10,7 @@ body{ background: #f0f0f0; }
 .x-pnav{ width: 100%; background: #ffffff; position: fixed; top: 0; left: 0; z-index: 1;}
 .x-pnavx{ border-bottom: 2px solid #e5e5e5;}
 .x-pnavs img:nth-child(1){ padding-right: 90px; height: 120px; float: left; vertical-align: middle;}
+
 .x-pnavs div{ float: left;}
 .x-pnavs{ overflow: hidden;}
 .x-pnavred{ width: 156px; height: 60px; color: #FFFFFF; background: #f64b19; line-height: 60px; text-align: center; margin-top: 35px; border-radius: 5px; margin-right: 32px; font-size: 24px; font-weight: bold;}
@@ -78,7 +79,10 @@ body{ background: #f0f0f0; position: relative; }
 .logo{ width: 136px; height: 40px; float: left; padding-right: 16px; }
 .x-navtext{ float: left; padding-top: 17px; padding-right: 80px; }
 .x-navtext a{ vertical-align: bottom; margin: 0 16px; color: #3e3a39; }
-.x-navtext a:hover{ border-bottom: 2px solid #65c8c4; color: #65c8c4;}
+.x-navtext a:hover{ border-bottom: 2px solid #65c8c4; }
+	.x-navtext a.on{
+		border-bottom: 2px solid #65c8c4; color: #65c8c4;
+	}
 .x-tell{ width: 150px; height: 28px; border: 1px solid #969696; float: left; margin-top: 6px; border-radius: 1px; color: #918682; font-weight: bold; line-height: 28px; font-size: 14px; cursor: pointer; }
 .telimg{ width: 30px; height: 28px; background: #918682; vertical-align: top; margin-right: 6px;}
 .x-mian{ float: left; background: #f64b19; color: #FFFFFF; width: 78px; height: 30px; border-radius: 2px; text-align: center; line-height: 30px; margin: 6px 0 0 18px; cursor: pointer;}

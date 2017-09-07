@@ -21,4 +21,3 @@ input,button,textarea,select{*font-size:100%;}
 .clearfix:after{clear:both;display: block;content: "...";visibility: hidden;height: 0;font-size: 0;}
 input[type="submit"],input[type="reset"],input[type="button"],button {-webkit-appearance: none;outline:none;cursor:pointer;}
 .clearfix{*zoom:1;}
-a{-webkit-transition:all 0.2s linear 0s;-moz-transition: all 0.2s linear 0s;transition: all 0.2s linear 0s;cursor:pointer;}

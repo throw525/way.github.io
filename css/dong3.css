@@ -277,12 +277,17 @@ a{
     padding-bottom: 3px;
     font-size: 14px;
 }
+.header-nav li a:hover{
+    border-bottom: 2px solid #65c8c4;
+    color: #333;
+}
 .header-nav li.on a{
     color: #5fc6c2;
     border-bottom: 2px solid #65c8c4;
 }
-.header-nav li a:hover{
+.header-nav li a:hover,.header-nav li a:active,.header-nav li a:visited{
     border-bottom: 2px solid #65c8c4;
+    text-decoration: none;
 }
 .header-contact{
     width: 160px;
